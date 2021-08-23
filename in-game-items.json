@@ -1,0 +1,220 @@
+{
+	"inGameItems": [
+		{
+			"name": "any-evil-sword",
+			"displayName": "Any Evil Sword",
+			"craftingStation": "",
+			"ingredients": [[16, 1],[2, 1]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "blade-of-grass",
+			"displayName": "Blade of Grass",
+			"craftingStation": "anvil",
+			"ingredients": [[23, 12],[15, 12]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "blood-butcherer",
+			"displayName": "Blood Butcherer",
+			"craftingStation": "anvil",
+			"ingredients": [[6, 10]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "broken-hero-sword",
+			"displayName": "Broken Hero Sword",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "chlorophyte-bar",
+			"displayName": "Chlorophyte Bar",
+			"craftingStation": "hardmodeForge",
+			"ingredients": [[5, 5]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "chlorophyte-ore",
+			"displayName": "Chlorophyte Ore",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Mined in the Underground Jungle",
+			"mod": "terraria"
+		},
+		{
+			"name": "crimtane-bar",
+			"displayName": "Crimtane Bar",
+			"craftingStation": "furnace",
+			"ingredients": [[7, 3]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "crimtane-ore",
+			"displayName": "Crimtane Ore",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Mined in The Crimson",
+			"mod": "terraria"
+		},
+		{
+			"name": "demonite-bar",
+			"displayName": "Demonite Bar",
+			"craftingStation": "furnace",
+			"ingredients": [[9, 3]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "demonite-ore",
+			"displayName": "Demonite Ore",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Mined in The Corruption",
+			"mod": "terraria"
+		},
+		{
+			"name": "excalibur",
+			"displayName": "Excalibur",
+			"craftingStation": "hardmodeAnvil",
+			"ingredients": [[12, 12]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "fiery-greatsword",
+			"displayName": "Fiery Greatsword",
+			"craftingStation": "anvil",
+			"ingredients": [[14, 20]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "hallowed-bar",
+			"displayName": "Hallowed Bar",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by the mechanical bosses",
+			"mod": "terraria"
+		},
+		{
+			"name": "hellstone",
+			"displayName": "Hellstone",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Mined in The Underworld",
+			"mod": "terraria"
+		},
+		{
+			"name": "hellstone-bar",
+			"displayName": "Hellstone Bar",
+			"craftingStation": "hellforge",
+			"ingredients": [[13, 3],[19, 1]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "jungle-spores",
+			"displayName": "Jungle Spores",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Grows in the Underground Jungle",
+			"mod": "terraria"
+		},
+		{
+			"name": "lights-bane",
+			"displayName": "Light's Bane",
+			"craftingStation": "anvil",
+			"ingredients": [[8, 10]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "muramasa",
+			"displayName": "Muramasa",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Found in chests in The Dungeon",
+			"mod": "terraria"
+		},
+		{
+			"name": "nights-edge",
+			"displayName": "Night's Edge",
+			"craftingStation": "altar",
+			"ingredients": [[17, 1],[11, 1],[0, 1],[1, 1]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "obsidian",
+			"displayName": "Obsidian",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Forms when water and lava collide",
+			"mod": "terraria"
+		},
+		{
+			"name": "soul-of-fright",
+			"displayName": "Soul of Fright",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by Skeletron Prime",
+			"mod": "terraria"
+		},
+		{
+			"name": "soul-of-might",
+			"displayName": "Soul of Might",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by The Destroyer",
+			"mod": "terraria"
+		},
+		{
+			"name": "soul-of-sight",
+			"displayName": "Soul of Sight",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by The Twins",
+			"mod": "terraria"
+		},
+		{
+			"name": "stinger",
+			"displayName": "Stinger",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by Hornets and Spiked Jungle Slimes",
+			"mod": "terraria"
+		},
+		{
+			"name": "terra-blade",
+			"displayName": "Terra Blade",
+			"craftingStation": "hardmodeAnvil",
+			"ingredients": [[25, 1],[26, 1]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "true-excalibur",
+			"displayName": "True Excalibur",
+			"craftingStation": "hardmodeAnvil",
+			"ingredients": [[10, 1],[4, 24]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "true-nights-edge",
+			"displayName": "True Night's Edge",
+			"craftingStation": "hardmodeAnvil",
+			"ingredients": [[18, 1],[22, 20],[21, 20],[20, 20]],
+			"acquisition": "",
+			"mod": "terraria"
+		}
+	]
+}
