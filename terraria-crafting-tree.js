@@ -1,4 +1,9 @@
-let someItems = [];
+let treeItems = [];
+let inGameItemsData;
+
+function preload() {
+    inGameItemsData = loadJSON("in-game-items.json");
+}
 
 function setup() {
     createCanvas(windowWidth - 20, windowHeight - 20);
@@ -7,28 +12,31 @@ function setup() {
     noStroke();
     fill(255, 0, 0, 50);
 
-    reset();
+    let inGameItems = inGameItemsData.inGameItems;
+    for (let i = 0; i < inGameItems.length; i++) {
+        inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png");
+    }
+    treeItems.push(new Item(width/2, height/2, inGameItems[1]))
 }
 
 function draw() {
     background(240);
 
-    for (item of someItems) {
+    for (item of treeItems) {
         item.display();
-        item.update(someItems);
+        item.update(treeItems);
     }
-    // someItems[0].update(someItems);
 
-    if (mouseIsPressed) {
-        someItems[0].position.x = mouseX;
-        someItems[0].position.y = mouseY;
-    }
+    // if (mouseIsPressed) {
+    //     someItems[0].position.x = mouseX;
+    //     someItems[0].position.y = mouseY;
+    // }
 }
 
 function keyPressed() {
-    if (keyCode == ENTER) {
-        reset();
-    }
+    // if (keyCode == ENTER) {
+    //     reset();
+    // }
 }
 
 function mouseIsPressed() {
@@ -40,8 +48,8 @@ function windowResized() {
 }
 
 function reset() {
-    someItems = [];
-    for (let i = 0; i < 40; i++) {
-        someItems.push(new Item(random(width), random(height)));
-    }
+    // treeItems = [];
+    // for (let i = 0; i < 40; i++) {
+    //     treeItems.push(new Item(random(width), random(height), "bloop"));
+    // }
 }

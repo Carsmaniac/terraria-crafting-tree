@@ -1,13 +1,13 @@
 class Item {
-    constructor(x, y) {
+    constructor(x, y, inGameItem) {
         this.position = new p5.Vector(x, y);
-        this.sprite = loadImage("images/muramasa.png");
+        this.inGameItem = inGameItem;
         this.socialDistance = 100;
     }
 
     display() {
         ellipse(this.position.x, this.position.y, this.socialDistance);
-        image(this.sprite, this.position.x-(this.sprite.width/2), this.position.y-(this.sprite.height/2), this.sprite.width*0.9, this.sprite.height*0.9);
+        image(this.inGameItem.sprite, this.position.x-(this.inGameItem.sprite.width/2), this.position.y-(this.inGameItem.sprite.height/2), this.inGameItem.sprite.width*0.9, this.inGameItem.sprite.height*0.9);
     }
 
     update(someItems) {
