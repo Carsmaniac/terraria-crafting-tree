@@ -14,7 +14,7 @@ function setup() {
     fill(255, 0, 0, 50);
 
     inGameItems = inGameItemsData.inGameItems;
-    for (let i = 0; i < inGameItems.length; i++) {
+    for (let i = 0; i < inGameItems.length; i ++) {
         inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png");
     }
 
@@ -42,13 +42,12 @@ function keyPressed() {
 
 function loadItemRecursive(treeItem, parentItem) {
     if (treeItem.ingredients) {
-        for (let i = 0; i < treeItem.ingredients.length; i++) {
+        for (let i = 0; i < treeItem.ingredients.length; i ++) {
             let ingredient = treeItem.ingredients[i];
             let ingredientNumber;
             let newItemPosition = new p5.Vector();
             if (parentItem.parent == null) {
                 ingredientNumber = (1 / treeItem.ingredients.length) * i;
-                console.log(ingredientNumber);
                 newItemPosition.set(150, 0);
                 newItemPosition.rotate(TWO_PI - TWO_PI * ingredientNumber);
             } else {
@@ -68,7 +67,24 @@ function loadItemRecursive(treeItem, parentItem) {
 function reset() {
     treeItems = [];
 
-    firstItem = new Item(width / 2, height / 2, inGameItems[24], 1, null);
+    firstItem = new Item(width / 2, height / 2, inGameItems[38], 1, null);
     treeItems.push(firstItem);
-    loadItemRecursive(inGameItems[24], firstItem);
+    loadItemRecursive(inGameItems[38], firstItem);
+
+    for (treeItem of treeItems) {
+        countChildrenRecursive(treeItem, treeItem.inGameItem, inGameItems);
+    }
+}
+
+function countChildrenRecursive(treeItem, inGameItem, inGameItems) {
+    if (treeItem.inGameItem.ingredients.length == 0) {
+        treeItem.children = 1;
+    } else {
+        for (let i = 0; i < inGameItem.ingredients.length; i ++) {
+            if (inGameItems[inGameItem.ingredients[i][0]].ingredients.length == 0) {
+                treeItem.children ++;
+            }
+            countChildrenRecursive(treeItem, inGameItems[inGameItem.ingredients[i][0]], inGameItems);
+        }
+    }
 }

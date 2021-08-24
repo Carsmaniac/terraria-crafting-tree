@@ -5,6 +5,7 @@ class Item {
         this.quantity = quantity;
         this.parent = parent;
         this.socialDistance = 100;
+        this.children = 0;
     }
 
     display() {
@@ -62,16 +63,6 @@ class Item {
                 this.position.x = lerp(this.position.x, intendedPosition.x + random(-0.05, 0.05), 0.15);
                 this.position.y = lerp(this.position.y, intendedPosition.y + random(-0.05, 0.05), 0.15);
             }
-
-            // for (item of treeItems) {
-            //     let distance = dist(this.position.x, this.position.y, item.position.x, item.position.y);
-            //
-            //     if (item != this && distance < (this.socialDistance / 2 + item.socialDistance / 2)) {
-            //         fill(0,255,0,50);
-            //         ellipse(this.position.x, this.position.y, this.socialDistance);
-            //         fill(255,0,0,50);
-            //     }
-            // }
         }
     }
 }

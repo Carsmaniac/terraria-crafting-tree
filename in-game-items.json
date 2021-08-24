@@ -4,15 +4,23 @@
 			"name": "any-evil-sword",
 			"displayName": "Any Evil Sword",
 			"craftingStation": "",
-			"ingredients": [[16, 1],[2, 1]],
+			"ingredients": [[22, 1],[3, 1]],
 			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "bee-keeper",
+			"displayName": "Bee Keeper",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by Queen Bee",
 			"mod": "terraria"
 		},
 		{
 			"name": "blade-of-grass",
 			"displayName": "Blade of Grass",
 			"craftingStation": "anvil",
-			"ingredients": [[23, 12],[15, 12]],
+			"ingredients": [[33, 12],[21, 12]],
 			"acquisition": "",
 			"mod": "terraria"
 		},
@@ -20,7 +28,7 @@
 			"name": "blood-butcherer",
 			"displayName": "Blood Butcherer",
 			"craftingStation": "anvil",
-			"ingredients": [[6, 10]],
+			"ingredients": [[10, 10]],
 			"acquisition": "",
 			"mod": "terraria"
 		},
@@ -35,8 +43,8 @@
 		{
 			"name": "chlorophyte-bar",
 			"displayName": "Chlorophyte Bar",
-			"craftingStation": "hardmodeForge",
-			"ingredients": [[5, 5]],
+			"craftingStation": "hardmode-forge",
+			"ingredients": [[6, 5]],
 			"acquisition": "",
 			"mod": "terraria"
 		},
@@ -49,10 +57,34 @@
 			"mod": "terraria"
 		},
 		{
+			"name": "copper-bar",
+			"displayName": "Copper Bar",
+			"craftingStation": "furnace",
+			"ingredients": [],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "copper-ore",
+			"displayName": "Copper Ore",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Mined underground",
+			"mod": "terraria"
+		},
+		{
+			"name": "copper-shortsword",
+			"displayName": "Copper Shortsword",
+			"craftingStation": "anvil",
+			"ingredients": [[7, 5],[8, 15]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
 			"name": "crimtane-bar",
 			"displayName": "Crimtane Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[7, 3]],
+			"ingredients": [[11, 3]],
 			"acquisition": "",
 			"mod": "terraria"
 		},
@@ -68,7 +100,7 @@
 			"name": "demonite-bar",
 			"displayName": "Demonite Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[9, 3]],
+			"ingredients": [[13, 3]],
 			"acquisition": "",
 			"mod": "terraria"
 		},
@@ -81,10 +113,18 @@
 			"mod": "terraria"
 		},
 		{
+			"name": "enchanted-sword",
+			"displayName": "Enchanted Sword",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Found underground or in Gold/Titanium Crates",
+			"mod": "terraria"
+		},
+		{
 			"name": "excalibur",
 			"displayName": "Excalibur",
-			"craftingStation": "hardmodeAnvil",
-			"ingredients": [[12, 12]],
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[17, 12]],
 			"acquisition": "",
 			"mod": "terraria"
 		},
@@ -92,7 +132,7 @@
 			"name": "fiery-greatsword",
 			"displayName": "Fiery Greatsword",
 			"craftingStation": "anvil",
-			"ingredients": [[14, 20]],
+			"ingredients": [[19, 20]],
 			"acquisition": "",
 			"mod": "terraria"
 		},
@@ -116,8 +156,16 @@
 			"name": "hellstone-bar",
 			"displayName": "Hellstone Bar",
 			"craftingStation": "hellforge",
-			"ingredients": [[13, 3],[19, 1]],
+			"ingredients": [[18, 3],[26, 1]],
 			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "influx-waver",
+			"displayName": "Influx Waver",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by Martian Saucer",
 			"mod": "terraria"
 		},
 		{
@@ -132,8 +180,16 @@
 			"name": "lights-bane",
 			"displayName": "Light's Bane",
 			"craftingStation": "anvil",
-			"ingredients": [[8, 10]],
+			"ingredients": [[12, 10]],
 			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "meowmere",
+			"displayName": "Meowmere",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by the Moon Lord",
 			"mod": "terraria"
 		},
 		{
@@ -148,7 +204,7 @@
 			"name": "nights-edge",
 			"displayName": "Night's Edge",
 			"craftingStation": "altar",
-			"ingredients": [[17, 1],[11, 1],[0, 1],[1, 1]],
+			"ingredients": [[24, 1],[16, 1],[0, 1],[2, 1]],
 			"acquisition": "",
 			"mod": "terraria"
 		},
@@ -158,6 +214,14 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Forms when water and lava collide",
+			"mod": "terraria"
+		},
+		{
+			"name": "seedler",
+			"displayName": "Seedler",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by Plantera",
 			"mod": "terraria"
 		},
 		{
@@ -185,6 +249,22 @@
 			"mod": "terraria"
 		},
 		{
+			"name": "star-wrath",
+			"displayName": "Star Wrath",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by the Moon Lord",
+			"mod": "terraria"
+		},
+		{
+			"name": "starfury",
+			"displayName": "Starfury",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Found in Floating Islands or in Sky Crates",
+			"mod": "terraria"
+		},
+		{
 			"name": "stinger",
 			"displayName": "Stinger",
 			"craftingStation": "",
@@ -195,24 +275,40 @@
 		{
 			"name": "terra-blade",
 			"displayName": "Terra Blade",
-			"craftingStation": "hardmodeAnvil",
-			"ingredients": [[25, 1],[26, 1]],
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[36, 1],[37, 1]],
 			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "the-horsemans-blade",
+			"displayName": "The Horseman's Blade",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by Pumpking",
 			"mod": "terraria"
 		},
 		{
 			"name": "true-excalibur",
 			"displayName": "True Excalibur",
-			"craftingStation": "hardmodeAnvil",
-			"ingredients": [[10, 1],[4, 24]],
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[15, 1],[5, 24]],
 			"acquisition": "",
 			"mod": "terraria"
 		},
 		{
 			"name": "true-nights-edge",
 			"displayName": "True Night's Edge",
-			"craftingStation": "hardmodeAnvil",
-			"ingredients": [[18, 1],[22, 20],[21, 20],[20, 20]],
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[25, 1],[30, 20],[29, 20],[28, 20]],
+			"acquisition": "",
+			"mod": "terraria"
+		},
+		{
+			"name": "zenith",
+			"displayName": "Zenith",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[9, 1],[32, 1],[14, 1],[1, 1],[34, 1],[27, 1],[35, 1],[20, 1],[32, 1],[23, 1]],
 			"acquisition": "",
 			"mod": "terraria"
 		}
