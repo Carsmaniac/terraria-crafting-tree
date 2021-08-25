@@ -1,11 +1,16 @@
 class Item {
-    constructor(x, y, inGameItem, quantity, parent) {
+    constructor(x, y, inGameItem, quantity, parent, itemSpacing) {
         this.position = new p5.Vector(x, y);
         this.inGameItem = inGameItem;
         this.quantity = quantity;
         this.parent = parent;
         this.socialDistance = 100;
         this.children = 0;
+        this.itemSpacing = 0;
+
+        if (parent != null) {
+            this.itemSpacing = parent.itemSpacing + itemSpacing;
+        }
     }
 
     display() {
@@ -23,7 +28,7 @@ class Item {
     }
 
     update(treeItems) {
-        this.socialDistance = max(this.inGameItem.sprite.width, this.inGameItem.sprite.height) * 1.4 + 10;
+        this.socialDistance = max(this.inGameItem.sprite.width, this.inGameItem.sprite.height) * 1.4 + 40;
 
         if (this.parent != null) {
             stroke(1);
