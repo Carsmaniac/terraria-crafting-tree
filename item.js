@@ -7,6 +7,7 @@ class Item {
         this.socialDistance = 100;
         this.children = 0;
         this.itemSpacing = 0;
+        this.hoveredOver = false;
 
         if (parent != null) {
             this.itemSpacing = parent.itemSpacing + itemSpacing;
@@ -14,30 +15,34 @@ class Item {
     }
 
     display(mousePos) {
-        if (dist(mousePos.x, mousePos.y, this.position.x, this.position.y) < this.socialDistance / 2) {
+        if (dist(mousePos.x, mousePos.y, this.position.x, this.position.y) < max(this.socialDistance / 2, 25)) {
+            this.hoveredOver = true;
+            noStroke();
             fill(0, 255, 0, 50);
+            fill(255);
+            ellipse(this.position.x, this.position.y, 50);
         } else {
-            fill(255, 0, 0, 50);
+            this.hoveredOver = false;
         }
-        // ellipse(this.position.x, this.position.y, this.socialDistance);
         image(this.inGameItem.sprite, this.position.x-(this.inGameItem.sprite.width / 2) + 1, this.position.y-(this.inGameItem.sprite.height / 2) + 1, this.inGameItem.sprite.width * 0.9, this.inGameItem.sprite.height * 0.9);
         if (this.parent != null) {
-            stroke(0);
-            strokeWeight(2);
             fill(0);
+            noStroke();
+
             let arrowStart = p5.Vector.sub(this.position, this.parent.position);
             arrowStart.setMag(-this.socialDistance / 2);
             arrowStart.add(this.position);
             let arrowEnd = p5.Vector.sub(this.parent.position, this.position);
             arrowEnd.setMag(-this.parent.socialDistance / 2 - 20);
             arrowEnd.add(this.parent.position);
-            line(arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y);
+
             push();
-            translate(arrowEnd.x, arrowEnd.y);
+            translate(arrowStart.x, arrowStart.y);
             rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() - HALF_PI);
-            triangle(-5, -5, 5, -5, 0, 10);
+            rect(-1, 5, 2, dist(arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y) - 5);
+            rotate(PI);
+            triangle(-4.5, -15, 4.5, -15, 0, 0);
             pop();
-            noStroke();
         }
     }
 
@@ -79,5 +84,19 @@ class Item {
                 this.position.y = lerp(this.position.y, intendedPosition.y + random(-0.05, 0.05), 0.15);
             }
         }
+    }
+
+    showName() {
+        textSize(20);
+        textFont(openSansBold);
+        textAlign(CENTER);
+        let textPosition = new p5.Vector(this.position.x, this.position.y + (this.inGameItem.sprite.height / 2) + 16);
+        fill(255);
+        text(this.inGameItem.displayName, textPosition.x + 1.5, textPosition.y + 1.5);
+        text(this.inGameItem.displayName, textPosition.x + 1.5, textPosition.y - 1.5);
+        text(this.inGameItem.displayName, textPosition.x - 1.5, textPosition.y + 1.5);
+        text(this.inGameItem.displayName, textPosition.x - 1.5, textPosition.y - 1.5);
+        fill(0);
+        text(this.inGameItem.displayName, textPosition.x, textPosition.y);
     }
 }

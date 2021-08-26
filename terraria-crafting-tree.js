@@ -3,6 +3,8 @@ let inGameItemsData;
 let inGameItems;
 
 let itemSpacing = 250;
+let openSansRegular;
+let openSansBold;
 
 let cameraPan = new p5.Vector(0, 0);
 let dragStart = new p5.Vector();
@@ -15,8 +17,12 @@ let zoomLevel = 1.5;
 
 let mousePos = new p5.Vector();
 
+let hoveringOverItem
+
 function preload() {
     inGameItemsData = loadJSON("in-game-items.json");
+    openSansRegular = loadFont("open-sans-regular.ttf");
+    openSansBold = loadFont("open-sans-bold.ttf");
 }
 
 function setup() {
@@ -26,9 +32,6 @@ function setup() {
     cameraHeight = (height/2) / tan(PI/6);
     cam = createCamera();
     cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight);
-
-    noStroke();
-    fill(255, 0, 0, 50);
 
     inGameItems = inGameItemsData.inGameItems;
     for (let i = 0; i < inGameItems.length; i ++) {
@@ -53,12 +56,23 @@ function draw() {
         item.update(treeItems);
     }
 
+    hoveringOverItem = false;
+    cursor(ARROW);
+    for (item of treeItems) {
+        if (item.hoveredOver) {
+            hoveringOverItem = true;
+            fill(255, 255, 255, 50);
+            circle(0, 0, 30000);
+            image(item.inGameItem.sprite, item.position.x-(item.inGameItem.sprite.width / 2) + 1, item.position.y-(item.inGameItem.sprite.height / 2) + 1,
+                  item.inGameItem.sprite.width * 0.9, item.inGameItem.sprite.height * 0.9)
+            item.showName();
+            cursor("pointer");
+        }
+    }
+
     mousePos.x = mouseX - (width / 2) + cameraPan.x + (cameraPan.x * (-(zoomLevel - 1) / zoomLevel));
     mousePos.y = mouseY - (height / 2) + cameraPan.y + (cameraPan.y * (-(zoomLevel - 1) / zoomLevel));
     mousePos.setMag(mousePos.mag() * zoomLevel);
-    fill(0, 0, 170, 50);
-    ellipse(mousePos.x, mousePos.y, 30);
-    fill(255, 0, 0, 50);
 }
 
 function windowResized() {
@@ -72,7 +86,7 @@ function keyPressed() {
 }
 
 function mousePressed() {
-    if (!dragging) {
+    if (!dragging && !hoveringOverItem) {
         dragStart.set(mouseX, mouseY);
         panStart.set(cameraPan);
         dragging = true;
@@ -85,13 +99,24 @@ function mouseReleased() {
     }
 }
 
+function mouseClicked() {
+    if (hoveringOverItem) {
+        let hoverItem;
+        for (item of treeItems) {
+            if (item.hoveredOver) {
+                hoverItem = item;
+            }
+        }
+        console.log(hoverItem.inGameItem.name);
+    }
+}
+
 function mouseWheel(mouseEvent) {
     if (mouseEvent.delta > 0) {
         zoomLevel = min(zoomLevel * 1.1, 10);
     } else {
         zoomLevel = max(zoomLevel * 0.9, 0.4);
     }
-    console.log(zoomLevel);
 }
 
 function loadItemRecursive(treeItem, parentItem) {
