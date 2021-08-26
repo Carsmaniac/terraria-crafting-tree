@@ -40,8 +40,12 @@ class Item {
             translate(arrowStart.x, arrowStart.y);
             rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() - HALF_PI);
             rect(-1, 5, 2, dist(arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y) - 5);
+            pop();
+            push();
+            translate(arrowEnd.x, arrowEnd.y);
+            rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() + HALF_PI);
             rotate(PI);
-            triangle(-4.5, -15, 4.5, -15, 0, 0);
+            triangle(-4.5, -5, 4.5, -5, 0, 10);
             pop();
         }
     }
@@ -84,19 +88,5 @@ class Item {
                 this.position.y = lerp(this.position.y, intendedPosition.y + random(-0.05, 0.05), 0.15);
             }
         }
-    }
-
-    showName() {
-        textSize(20);
-        textFont(openSansBold);
-        textAlign(CENTER);
-        let textPosition = new p5.Vector(this.position.x, this.position.y + (this.inGameItem.sprite.height / 2) + 16);
-        fill(255);
-        text(this.inGameItem.displayName, textPosition.x + 1.5, textPosition.y + 1.5);
-        text(this.inGameItem.displayName, textPosition.x + 1.5, textPosition.y - 1.5);
-        text(this.inGameItem.displayName, textPosition.x - 1.5, textPosition.y + 1.5);
-        text(this.inGameItem.displayName, textPosition.x - 1.5, textPosition.y - 1.5);
-        fill(0);
-        text(this.inGameItem.displayName, textPosition.x, textPosition.y);
     }
 }
