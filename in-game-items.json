@@ -6,7 +6,7 @@
 			"craftingStation": "",
 			"ingredients": [[22, 1],[3, 1]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": ""
 		},
 		{
 			"name": "bee-keeper",
@@ -14,7 +14,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by Queen Bee",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Bee_Keeper"
 		},
 		{
 			"name": "blade-of-grass",
@@ -22,7 +22,7 @@
 			"craftingStation": "anvil",
 			"ingredients": [[33, 12],[21, 12]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Blade_of_Grass"
 		},
 		{
 			"name": "blood-butcherer",
@@ -30,15 +30,15 @@
 			"craftingStation": "anvil",
 			"ingredients": [[10, 10]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Blood_Butcherer"
 		},
 		{
 			"name": "broken-hero-sword",
 			"displayName": "Broken Hero Sword",
 			"craftingStation": "",
 			"ingredients": [],
-			"acquisition": "",
-			"mod": "terraria"
+			"acquisition": "Dropped by Mothron",
+			"wikiLink": "https://terraria.fandom.com/wiki/Broken_Hero_Sword"
 		},
 		{
 			"name": "chlorophyte-bar",
@@ -46,7 +46,7 @@
 			"craftingStation": "hardmode-forge",
 			"ingredients": [[6, 5]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Chlorophyte_Bar"
 		},
 		{
 			"name": "chlorophyte-ore",
@@ -54,7 +54,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Mined in the Underground Jungle",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Chlorophyte_Ore"
 		},
 		{
 			"name": "copper-bar",
@@ -62,7 +62,7 @@
 			"craftingStation": "furnace",
 			"ingredients": [],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Copper_Bar"
 		},
 		{
 			"name": "copper-ore",
@@ -70,7 +70,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Mined underground",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Copper_Ore"
 		},
 		{
 			"name": "copper-shortsword",
@@ -78,7 +78,7 @@
 			"craftingStation": "anvil",
 			"ingredients": [[7, 5],[8, 15]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Copper_Shortsword"
 		},
 		{
 			"name": "crimtane-bar",
@@ -86,7 +86,7 @@
 			"craftingStation": "furnace",
 			"ingredients": [[11, 3]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Crimtane_Bar"
 		},
 		{
 			"name": "crimtane-ore",
@@ -94,7 +94,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Mined in The Crimson",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Crimtane_Ore"
 		},
 		{
 			"name": "demonite-bar",
@@ -102,7 +102,7 @@
 			"craftingStation": "furnace",
 			"ingredients": [[13, 3]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Demonite_Bar"
 		},
 		{
 			"name": "demonite-ore",
@@ -110,7 +110,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Mined in The Corruption",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Demonite_Ore"
 		},
 		{
 			"name": "enchanted-sword",
@@ -118,7 +118,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Found underground or in Gold/Titanium Crates",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Enchanted_Sword_(item)"
 		},
 		{
 			"name": "excalibur",
@@ -126,7 +126,7 @@
 			"craftingStation": "hardmode-anvil",
 			"ingredients": [[17, 12]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Excalibur"
 		},
 		{
 			"name": "fiery-greatsword",
@@ -134,7 +134,7 @@
 			"craftingStation": "anvil",
 			"ingredients": [[19, 20]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Fiery_Greatsword"
 		},
 		{
 			"name": "hallowed-bar",
@@ -142,7 +142,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by the mechanical bosses",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Hallowed_Bar"
 		},
 		{
 			"name": "hellstone",
@@ -150,7 +150,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Mined in The Underworld",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Hellstone"
 		},
 		{
 			"name": "hellstone-bar",
@@ -158,7 +158,7 @@
 			"craftingStation": "hellforge",
 			"ingredients": [[18, 3],[26, 1]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Hellstone_Bar"
 		},
 		{
 			"name": "influx-waver",
@@ -166,7 +166,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by Martian Saucer",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Influx_Waver"
 		},
 		{
 			"name": "jungle-spores",
@@ -174,7 +174,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Grows in the Underground Jungle",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Jungle_Spores"
 		},
 		{
 			"name": "lights-bane",
@@ -182,7 +182,7 @@
 			"craftingStation": "anvil",
 			"ingredients": [[12, 10]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Light%27s_Bane"
 		},
 		{
 			"name": "meowmere",
@@ -190,7 +190,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by the Moon Lord",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Meowmere"
 		},
 		{
 			"name": "muramasa",
@@ -198,7 +198,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Found in chests in The Dungeon",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Muramasa"
 		},
 		{
 			"name": "nights-edge",
@@ -206,7 +206,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[24, 1],[16, 1],[0, 1],[2, 1]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Night%27s_Edge"
 		},
 		{
 			"name": "obsidian",
@@ -214,7 +214,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Forms when water and lava collide",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian"
 		},
 		{
 			"name": "seedler",
@@ -222,7 +222,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by Plantera",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Seedler"
 		},
 		{
 			"name": "soul-of-fright",
@@ -230,7 +230,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by Skeletron Prime",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Fright"
 		},
 		{
 			"name": "soul-of-might",
@@ -238,7 +238,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by The Destroyer",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Might"
 		},
 		{
 			"name": "soul-of-sight",
@@ -246,7 +246,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by The Twins",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Sight"
 		},
 		{
 			"name": "star-wrath",
@@ -254,7 +254,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by the Moon Lord",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Star_Wrath"
 		},
 		{
 			"name": "starfury",
@@ -262,7 +262,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Found in Floating Islands or in Sky Crates",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Starfury"
 		},
 		{
 			"name": "stinger",
@@ -270,7 +270,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by Hornets and Spiked Jungle Slimes",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Stinger"
 		},
 		{
 			"name": "terra-blade",
@@ -278,7 +278,7 @@
 			"craftingStation": "hardmode-anvil",
 			"ingredients": [[36, 1],[37, 1],[4, 1]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Terra_Blade"
 		},
 		{
 			"name": "the-horsemans-blade",
@@ -286,7 +286,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by Pumpking",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/The_Horseman%27s_Blade"
 		},
 		{
 			"name": "true-excalibur",
@@ -294,7 +294,7 @@
 			"craftingStation": "hardmode-anvil",
 			"ingredients": [[15, 1],[5, 24]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/True_Excalibur"
 		},
 		{
 			"name": "true-nights-edge",
@@ -302,7 +302,7 @@
 			"craftingStation": "hardmode-anvil",
 			"ingredients": [[25, 1],[30, 20],[29, 20],[28, 20]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/True_Night%27s_Edge"
 		},
 		{
 			"name": "zenith",
@@ -310,7 +310,7 @@
 			"craftingStation": "hardmode-anvil",
 			"ingredients": [[9, 1],[32, 1],[14, 1],[1, 1],[34, 1],[27, 1],[35, 1],[20, 1],[32, 1],[23, 1]],
 			"acquisition": "",
-			"mod": "terraria"
+			"wikiLink": "https://terraria.fandom.com/wiki/Zenith"
 		}
 	],
 	"craftingStations": [

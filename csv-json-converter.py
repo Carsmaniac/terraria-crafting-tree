@@ -30,7 +30,7 @@ for item in csv_list:
                 ingredient_list_3.append("[{}, {}]".format(each_ingredient["id"], raw_ingredient[1]))
     file.write("\t\t\t\"ingredients\": [{}],\n".format(",".join(ingredient_list_3)))
     file.write("\t\t\t\"acquisition\": \"{}\",\n".format(item["acquisition"]))
-    file.write("\t\t\t\"mod\": \"{}\"\n".format(item["mod"]))
+    file.write("\t\t\t\"wikiLink\": \"{}\"\n".format(item["wikiLink"]))
     if item == csv_list[-1]:
         file.write("\t\t}\n")
     else:

@@ -21,7 +21,6 @@ let mousePos = new p5.Vector();
 
 function preload() {
     inGameItemsData = loadJSON("in-game-items.json");
-    openSansRegular = loadFont("open-sans-regular.ttf");
     openSansBold = loadFont("open-sans-bold.ttf");
 }
 
@@ -160,7 +159,9 @@ function mouseClicked() {
                 hoverItem = item;
             }
         }
-        console.log(hoverItem.inGameItem.name);
+        if (hoverItem.inGameItem.wikiLink != "") {
+            window.open(hoverItem.inGameItem.wikiLink);
+        }
     }
 }
 
