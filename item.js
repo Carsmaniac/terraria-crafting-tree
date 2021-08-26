@@ -19,18 +19,32 @@ class Item {
         } else {
             fill(255, 0, 0, 50);
         }
-        ellipse(this.position.x, this.position.y, this.socialDistance);
+        // ellipse(this.position.x, this.position.y, this.socialDistance);
         image(this.inGameItem.sprite, this.position.x-(this.inGameItem.sprite.width / 2) + 1, this.position.y-(this.inGameItem.sprite.height / 2) + 1, this.inGameItem.sprite.width * 0.9, this.inGameItem.sprite.height * 0.9);
+        if (this.parent != null) {
+            stroke(0);
+            strokeWeight(2);
+            fill(0);
+            let arrowStart = p5.Vector.sub(this.position, this.parent.position);
+            arrowStart.setMag(-this.socialDistance / 2);
+            arrowStart.add(this.position);
+            let arrowEnd = p5.Vector.sub(this.parent.position, this.position);
+            arrowEnd.setMag(-this.parent.socialDistance / 2 - 20);
+            arrowEnd.add(this.parent.position);
+            line(arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y);
+            push();
+            translate(arrowEnd.x, arrowEnd.y);
+            rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() - HALF_PI);
+            triangle(-5, -5, 5, -5, 0, 10);
+            pop();
+            noStroke();
+        }
     }
 
     update(treeItems) {
         this.socialDistance = max(this.inGameItem.sprite.width, this.inGameItem.sprite.height) * 1.4 + 10;
 
         if (this.parent != null) {
-            stroke(1);
-            line(this.position.x, this.position.y, this.parent.position.x, this.parent.position.y);
-            noStroke();
-
             let nearbyItems = [];
             for (item of treeItems) {
                 let distance = dist(this.position.x, this.position.y, item.position.x, item.position.y)
