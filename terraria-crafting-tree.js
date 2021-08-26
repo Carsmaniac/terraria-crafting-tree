@@ -4,13 +4,28 @@ let inGameItems;
 
 let itemSpacing = 250;
 
+let cameraPan = new p5.Vector(0, 0);
+let dragStart = new p5.Vector();
+let dragMouse = new p5.Vector();
+let panStart = new p5.Vector();
+let dragging = false;
+
+let cameraHeight;
+let zoomLevel = 1.5;
+
+let mousePos = new p5.Vector();
+
 function preload() {
     inGameItemsData = loadJSON("in-game-items.json");
 }
 
 function setup() {
-    createCanvas(windowWidth - 20, windowHeight - 20);
+    createCanvas(windowWidth - 20, windowHeight - 20, WEBGL);
     frameRate(60);
+
+    cameraHeight = (height/2) / tan(PI/6);
+    cam = createCamera();
+    cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight);
 
     noStroke();
     fill(255, 0, 0, 50);
@@ -26,10 +41,24 @@ function setup() {
 function draw() {
     background(240);
 
+    cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight * zoomLevel);
+
+    if (dragging) {
+        dragMouse.x = (mouseX - dragStart.x) * zoomLevel;
+        cameraPan.set(panStart.x - ((mouseX - dragStart.x) * zoomLevel), panStart.y - ((mouseY - dragStart.y) * zoomLevel));
+    }
+
     for (item of treeItems) {
-        item.display();
+        item.display(mousePos);
         item.update(treeItems);
     }
+
+    mousePos.x = mouseX - (width / 2) + cameraPan.x + (cameraPan.x * (-(zoomLevel - 1) / zoomLevel));
+    mousePos.y = mouseY - (height / 2) + cameraPan.y + (cameraPan.y * (-(zoomLevel - 1) / zoomLevel));
+    mousePos.setMag(mousePos.mag() * zoomLevel);
+    fill(0, 0, 170, 50);
+    ellipse(mousePos.x, mousePos.y, 30);
+    fill(255, 0, 0, 50);
 }
 
 function windowResized() {
@@ -40,6 +69,29 @@ function keyPressed() {
     if (keyCode == ENTER) {
         reset();
     }
+}
+
+function mousePressed() {
+    if (!dragging) {
+        dragStart.set(mouseX, mouseY);
+        panStart.set(cameraPan);
+        dragging = true;
+    }
+}
+
+function mouseReleased() {
+    if (dragging) {
+        dragging = false;
+    }
+}
+
+function mouseWheel(mouseEvent) {
+    if (mouseEvent.delta > 0) {
+        zoomLevel = min(zoomLevel * 1.1, 10);
+    } else {
+        zoomLevel = max(zoomLevel * 0.9, 0.4);
+    }
+    console.log(zoomLevel);
 }
 
 function loadItemRecursive(treeItem, parentItem) {
@@ -69,7 +121,7 @@ function loadItemRecursive(treeItem, parentItem) {
 function reset() {
     treeItems = [];
 
-    firstItem = new Item(width / 2, height / 2, inGameItems[38], 1, null);
+    firstItem = new Item(0, 0, inGameItems[38], 1, null);
     treeItems.push(firstItem);
     loadItemRecursive(inGameItems[38], firstItem);
 
@@ -111,9 +163,6 @@ function placeChildrenRadially(parentItem, originItem, treeItems) {
             newItemPosition.rotate(childAngle / 2 + runningTotal);
             newItemPosition.add(originItem.position);
             runningTotal += childAngle;
-            console.log(child.inGameItem.name);
-            console.log(degrees(childAngle));
-            console.log(newItemPosition);
             child.position.set(newItemPosition);
         }
     } else {

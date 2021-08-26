@@ -13,13 +13,9 @@ class Item {
         }
     }
 
-    display() {
-        if (dist(mouseX, mouseY, this.position.x, this.position.y) < this.socialDistance / 2) {
+    display(mousePos) {
+        if (dist(mousePos.x, mousePos.y, this.position.x, this.position.y) < this.socialDistance / 2) {
             fill(0, 255, 0, 50);
-            if (mouseIsPressed) {
-                this.position.x = mouseX;
-                this.position.y = mouseY;
-            }
         } else {
             fill(255, 0, 0, 50);
         }
@@ -28,7 +24,7 @@ class Item {
     }
 
     update(treeItems) {
-        this.socialDistance = max(this.inGameItem.sprite.width, this.inGameItem.sprite.height) * 1.4 + 40;
+        this.socialDistance = max(this.inGameItem.sprite.width, this.inGameItem.sprite.height) * 1.4 + 10;
 
         if (this.parent != null) {
             stroke(1);

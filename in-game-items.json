@@ -276,7 +276,7 @@
 			"name": "terra-blade",
 			"displayName": "Terra Blade",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[36, 1],[37, 1]],
+			"ingredients": [[36, 1],[37, 1],[4, 1]],
 			"acquisition": "",
 			"mod": "terraria"
 		},
