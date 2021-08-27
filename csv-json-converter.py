@@ -16,6 +16,7 @@ for item_list in ["terraria"]:
     file.write("\t\"{}\": [\n".format(item_list))
     for item in csv_list:
         file.write("\t\t{\n")
+        file.write("\t\t\t\"id\": {},\n".format(item["id"]))
         file.write("\t\t\t\"name\": \"{}\",\n".format(item["name"]))
         file.write("\t\t\t\"displayName\": \"{}\",\n".format(item["displayName"]))
         file.write("\t\t\t\"craftingStation\": \"{}\",\n".format(item["craftingStation"]))

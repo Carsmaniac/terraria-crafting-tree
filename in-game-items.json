@@ -1,6 +1,7 @@
 {
-	"terraria": [
+	"inGameItems": [
 		{
+			"id": 0,
 			"name": "adhesive-bandage",
 			"displayName": "Adhesive Bandage",
 			"craftingStation": "",
@@ -9,6 +10,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Adhesive_Bandage"
 		},
 		{
+			"id": 1,
 			"name": "aglet",
 			"displayName": "Aglet",
 			"craftingStation": "",
@@ -17,6 +19,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Aglet"
 		},
 		{
+			"id": 2,
 			"name": "ankh-charm",
 			"displayName": "Ankh Charm",
 			"craftingStation": "tinkerers-workshop",
@@ -25,6 +28,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Ankh_Charm"
 		},
 		{
+			"id": 3,
 			"name": "ankh-shield",
 			"displayName": "Ankh Shield",
 			"craftingStation": "tinkerers-workshop",
@@ -33,6 +37,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Ankh_Shield"
 		},
 		{
+			"id": 4,
 			"name": "anklet-of-the-wind",
 			"displayName": "Anklet of the Wind",
 			"craftingStation": "",
@@ -41,6 +46,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Anklet_of_the_Wind"
 		},
 		{
+			"id": 5,
 			"name": "any-evil-sword",
 			"displayName": "Any Evil Sword",
 			"craftingStation": "",
@@ -49,6 +55,7 @@
 			"wikiLink": ""
 		},
 		{
+			"id": 6,
 			"name": "any-fast-boots",
 			"displayName": "Any Fast Boots",
 			"craftingStation": "tinkerers-workshop",
@@ -57,6 +64,7 @@
 			"wikiLink": ""
 		},
 		{
+			"id": 7,
 			"name": "any-gold-watch",
 			"displayName": "Any Gold Watch",
 			"craftingStation": "",
@@ -65,6 +73,7 @@
 			"wikiLink": ""
 		},
 		{
+			"id": 8,
 			"name": "any-iron-bar",
 			"displayName": "Any Iron Bar",
 			"craftingStation": "",
@@ -73,6 +82,7 @@
 			"wikiLink": ""
 		},
 		{
+			"id": 9,
 			"name": "any-mirror",
 			"displayName": "Any Mirror",
 			"craftingStation": "",
@@ -81,6 +91,7 @@
 			"wikiLink": ""
 		},
 		{
+			"id": 10,
 			"name": "armor-bracing",
 			"displayName": "Armor Bracing",
 			"craftingStation": "tinkerers-workshop",
@@ -89,6 +100,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Armor_Bracing"
 		},
 		{
+			"id": 11,
 			"name": "armor-polish",
 			"displayName": "Armor Polish",
 			"craftingStation": "",
@@ -97,6 +109,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Armor_Polish"
 		},
 		{
+			"id": 12,
 			"name": "bee-keeper",
 			"displayName": "Bee Keeper",
 			"craftingStation": "",
@@ -105,6 +118,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Bee_Keeper"
 		},
 		{
+			"id": 13,
 			"name": "bezoar",
 			"displayName": "Bezoar",
 			"craftingStation": "",
@@ -113,6 +127,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Bezoar"
 		},
 		{
+			"id": 14,
 			"name": "blade-of-grass",
 			"displayName": "Blade of Grass",
 			"craftingStation": "anvil",
@@ -121,6 +136,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Blade_of_Grass"
 		},
 		{
+			"id": 15,
 			"name": "blindfold",
 			"displayName": "Blindfold",
 			"craftingStation": "",
@@ -129,6 +145,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Blindfold"
 		},
 		{
+			"id": 16,
 			"name": "blood-butcherer",
 			"displayName": "Blood Butcherer",
 			"craftingStation": "anvil",
@@ -137,6 +154,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Blood_Butcherer"
 		},
 		{
+			"id": 17,
 			"name": "broken-hero-sword",
 			"displayName": "Broken Hero Sword",
 			"craftingStation": "",
@@ -145,6 +163,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Broken_Hero_Sword"
 		},
 		{
+			"id": 18,
 			"name": "cell-phone",
 			"displayName": "Cell Phone",
 			"craftingStation": "tinkerers-workshop",
@@ -153,6 +172,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Cell_Phone"
 		},
 		{
+			"id": 19,
 			"name": "chain",
 			"displayName": "Chain",
 			"craftingStation": "anvil",
@@ -161,6 +181,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Chain"
 		},
 		{
+			"id": 20,
 			"name": "chlorophyte-bar",
 			"displayName": "Chlorophyte Bar",
 			"craftingStation": "hardmode-forge",
@@ -169,6 +190,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Chlorophyte_Bar"
 		},
 		{
+			"id": 21,
 			"name": "chlorophyte-ore",
 			"displayName": "Chlorophyte Ore",
 			"craftingStation": "",
@@ -177,6 +199,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Chlorophyte_Ore"
 		},
 		{
+			"id": 22,
 			"name": "cobalt-shield",
 			"displayName": "Cobalt Shield",
 			"craftingStation": "",
@@ -185,6 +208,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Cobalt_Shield"
 		},
 		{
+			"id": 23,
 			"name": "compass",
 			"displayName": "Compass",
 			"craftingStation": "",
@@ -193,6 +217,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Compass"
 		},
 		{
+			"id": 24,
 			"name": "copper-bar",
 			"displayName": "Copper Bar",
 			"craftingStation": "furnace",
@@ -201,6 +226,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Copper_Bar"
 		},
 		{
+			"id": 25,
 			"name": "copper-ore",
 			"displayName": "Copper Ore",
 			"craftingStation": "",
@@ -209,6 +235,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Copper_Ore"
 		},
 		{
+			"id": 26,
 			"name": "copper-shortsword",
 			"displayName": "Copper Shortsword",
 			"craftingStation": "anvil",
@@ -217,6 +244,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Copper_Shortsword"
 		},
 		{
+			"id": 27,
 			"name": "countercurse-mantra",
 			"displayName": "Countercurse Mantra",
 			"craftingStation": "tinkerers-workshop",
@@ -225,6 +253,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Countercurse_Mantra"
 		},
 		{
+			"id": 28,
 			"name": "crimtane-bar",
 			"displayName": "Crimtane Bar",
 			"craftingStation": "furnace",
@@ -233,6 +262,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Crimtane_Bar"
 		},
 		{
+			"id": 29,
 			"name": "crimtane-ore",
 			"displayName": "Crimtane Ore",
 			"craftingStation": "",
@@ -241,6 +271,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Crimtane_Ore"
 		},
 		{
+			"id": 30,
 			"name": "demonite-bar",
 			"displayName": "Demonite Bar",
 			"craftingStation": "furnace",
@@ -249,6 +280,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Demonite_Bar"
 		},
 		{
+			"id": 31,
 			"name": "demonite-ore",
 			"displayName": "Demonite Ore",
 			"craftingStation": "",
@@ -257,6 +289,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Demonite_Ore"
 		},
 		{
+			"id": 32,
 			"name": "depth-meter",
 			"displayName": "Depth Meter",
 			"craftingStation": "",
@@ -265,6 +298,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Depth_Meter"
 		},
 		{
+			"id": 33,
 			"name": "dps-meter",
 			"displayName": "DPS Meter",
 			"craftingStation": "",
@@ -273,6 +307,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/DPS_Meter"
 		},
 		{
+			"id": 34,
 			"name": "dunerider-boots",
 			"displayName": "Dunerider Boots",
 			"craftingStation": "",
@@ -281,6 +316,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Dunerider_Boots"
 		},
 		{
+			"id": 35,
 			"name": "enchanted-sword",
 			"displayName": "Enchanted Sword",
 			"craftingStation": "",
@@ -289,6 +325,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Enchanted_Sword_(item)"
 		},
 		{
+			"id": 36,
 			"name": "excalibur",
 			"displayName": "Excalibur",
 			"craftingStation": "hardmode-anvil",
@@ -297,6 +334,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Excalibur"
 		},
 		{
+			"id": 37,
 			"name": "fast-clock",
 			"displayName": "Fast Clock",
 			"craftingStation": "",
@@ -305,6 +343,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Fast_Clock"
 		},
 		{
+			"id": 38,
 			"name": "fiery-greatsword",
 			"displayName": "Fiery Greatsword",
 			"craftingStation": "anvil",
@@ -313,6 +352,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Fiery_Greatsword"
 		},
 		{
+			"id": 39,
 			"name": "fish-finder",
 			"displayName": "Fish Finder",
 			"craftingStation": "tinkerers-workshop",
@@ -321,6 +361,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Fish_Finder"
 		},
 		{
+			"id": 40,
 			"name": "fishermans-pocket-guide",
 			"displayName": "Fisherman's Pocket Guide",
 			"craftingStation": "",
@@ -329,6 +370,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Fisherman%27s_Pocket_Guide"
 		},
 		{
+			"id": 41,
 			"name": "flurry-boots",
 			"displayName": "Flurry Boots",
 			"craftingStation": "",
@@ -337,6 +379,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Flurry_Boots"
 		},
 		{
+			"id": 42,
 			"name": "frostspark-boots",
 			"displayName": "Frostspark Boots",
 			"craftingStation": "tinkerers-workshop",
@@ -345,6 +388,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Frostspark_Boots"
 		},
 		{
+			"id": 43,
 			"name": "goblin-tech",
 			"displayName": "Goblin Tech",
 			"craftingStation": "tinkerers-workshop",
@@ -353,6 +397,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Goblin_Tech"
 		},
 		{
+			"id": 44,
 			"name": "gold-bar",
 			"displayName": "Gold Bar",
 			"craftingStation": "furnace",
@@ -361,6 +406,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Gold_Bar"
 		},
 		{
+			"id": 45,
 			"name": "gold-ore",
 			"displayName": "Gold Ore",
 			"craftingStation": "",
@@ -369,6 +415,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Gold_Ore"
 		},
 		{
+			"id": 46,
 			"name": "gold-watch",
 			"displayName": "Gold Watch",
 			"craftingStation": "table-and-chair",
@@ -377,6 +424,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Gold_Watch"
 		},
 		{
+			"id": 47,
 			"name": "gps",
 			"displayName": "GPS",
 			"craftingStation": "tinkerers-workshop",
@@ -385,6 +433,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/GPS"
 		},
 		{
+			"id": 48,
 			"name": "hallowed-bar",
 			"displayName": "Hallowed Bar",
 			"craftingStation": "",
@@ -393,6 +442,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Hallowed_Bar"
 		},
 		{
+			"id": 49,
 			"name": "hellstone",
 			"displayName": "Hellstone",
 			"craftingStation": "",
@@ -401,6 +451,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Hellstone"
 		},
 		{
+			"id": 50,
 			"name": "hellstone-bar",
 			"displayName": "Hellstone Bar",
 			"craftingStation": "hellforge",
@@ -409,6 +460,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Hellstone_Bar"
 		},
 		{
+			"id": 51,
 			"name": "hermes-boots",
 			"displayName": "Hermes Boots",
 			"craftingStation": "",
@@ -417,6 +469,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Hermes_Boots"
 		},
 		{
+			"id": 52,
 			"name": "ice-mirror",
 			"displayName": "Ice Mirror",
 			"craftingStation": "",
@@ -425,6 +478,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Ice_Mirror"
 		},
 		{
+			"id": 53,
 			"name": "ice-skates",
 			"displayName": "Ice Skates",
 			"craftingStation": "",
@@ -433,6 +487,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Ice_Skates"
 		},
 		{
+			"id": 54,
 			"name": "influx-waver",
 			"displayName": "Influx Waver",
 			"craftingStation": "",
@@ -441,6 +496,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Influx_Waver"
 		},
 		{
+			"id": 55,
 			"name": "iron-bar",
 			"displayName": "Iron Bar",
 			"craftingStation": "furnace",
@@ -449,6 +505,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Iron_Bar"
 		},
 		{
+			"id": 56,
 			"name": "iron-ore",
 			"displayName": "Iron Ore",
 			"craftingStation": "",
@@ -457,6 +514,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Iron_Ore"
 		},
 		{
+			"id": 57,
 			"name": "jungle-spores",
 			"displayName": "Jungle Spores",
 			"craftingStation": "",
@@ -465,6 +523,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Jungle_Spores"
 		},
 		{
+			"id": 58,
 			"name": "lava-charm",
 			"displayName": "Lava Charm",
 			"craftingStation": "",
@@ -473,6 +532,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Lava_Charm"
 		},
 		{
+			"id": 59,
 			"name": "lava-waders",
 			"displayName": "Lava Waders",
 			"craftingStation": "tinkerers-workshop",
@@ -481,6 +541,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Lava_Waders"
 		},
 		{
+			"id": 60,
 			"name": "lead-bar",
 			"displayName": "Lead Bar",
 			"craftingStation": "furnace",
@@ -489,6 +550,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Lead_Bar"
 		},
 		{
+			"id": 61,
 			"name": "lead-ore",
 			"displayName": "Lead Ore",
 			"craftingStation": "",
@@ -497,6 +559,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Lead_Ore"
 		},
 		{
+			"id": 62,
 			"name": "lifeform-analyser",
 			"displayName": "Lifeform Analyser",
 			"craftingStation": "",
@@ -505,6 +568,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Lifeform_Analyzer"
 		},
 		{
+			"id": 63,
 			"name": "lightning-boots",
 			"displayName": "Lightning Boots",
 			"craftingStation": "tinkerers-workshop",
@@ -513,6 +577,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Lightning_Boots"
 		},
 		{
+			"id": 64,
 			"name": "lights-bane",
 			"displayName": "Light's Bane",
 			"craftingStation": "anvil",
@@ -521,6 +586,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Light%27s_Bane"
 		},
 		{
+			"id": 65,
 			"name": "magic-mirror",
 			"displayName": "Magic Mirror",
 			"craftingStation": "",
@@ -529,6 +595,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Magic_Mirror"
 		},
 		{
+			"id": 66,
 			"name": "medicated-bandage",
 			"displayName": "Medicated Bandage",
 			"craftingStation": "tinkerers-workshop",
@@ -537,6 +604,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Medicated_Bandage"
 		},
 		{
+			"id": 67,
 			"name": "megaphone",
 			"displayName": "Megaphone",
 			"craftingStation": "",
@@ -545,6 +613,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Megaphone"
 		},
 		{
+			"id": 68,
 			"name": "meowmere",
 			"displayName": "Meowmere",
 			"craftingStation": "",
@@ -553,6 +622,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Meowmere"
 		},
 		{
+			"id": 69,
 			"name": "metal-detector",
 			"displayName": "Metal Detector",
 			"craftingStation": "",
@@ -561,6 +631,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Metal_Detector"
 		},
 		{
+			"id": 70,
 			"name": "muramasa",
 			"displayName": "Muramasa",
 			"craftingStation": "",
@@ -569,6 +640,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Muramasa"
 		},
 		{
+			"id": 71,
 			"name": "nazar",
 			"displayName": "Nazar",
 			"craftingStation": "",
@@ -577,6 +649,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Nazar"
 		},
 		{
+			"id": 72,
 			"name": "nights-edge",
 			"displayName": "Night's Edge",
 			"craftingStation": "altar",
@@ -585,6 +658,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Night%27s_Edge"
 		},
 		{
+			"id": 73,
 			"name": "obsidian",
 			"displayName": "Obsidian",
 			"craftingStation": "",
@@ -593,6 +667,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian"
 		},
 		{
+			"id": 74,
 			"name": "obsidian-rose",
 			"displayName": "Obsidian Rose",
 			"craftingStation": "",
@@ -601,6 +676,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian_Rose"
 		},
 		{
+			"id": 75,
 			"name": "obsidian-shield",
 			"displayName": "Obsidian Shield",
 			"craftingStation": "tinkerers-workshop",
@@ -609,6 +685,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian_Shield"
 		},
 		{
+			"id": 76,
 			"name": "obsidian-skull",
 			"displayName": "Obsidian Skull",
 			"craftingStation": "furnace",
@@ -617,6 +694,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian_Skull"
 		},
 		{
+			"id": 77,
 			"name": "obsidian-water-walking-boots",
 			"displayName": "Obsidian Water Walking Boots",
 			"craftingStation": "tinkerers-workshop",
@@ -625,6 +703,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian_Water_Walking_Boots"
 		},
 		{
+			"id": 78,
 			"name": "pda",
 			"displayName": "PDA",
 			"craftingStation": "tinkerers-workshop",
@@ -633,6 +712,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/PDA"
 		},
 		{
+			"id": 79,
 			"name": "platinum-bar",
 			"displayName": "Platinum Bar",
 			"craftingStation": "furnace",
@@ -641,6 +721,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Platinum_Bar"
 		},
 		{
+			"id": 80,
 			"name": "platinum-ore",
 			"displayName": "Platinum Ore",
 			"craftingStation": "",
@@ -649,6 +730,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Platinum_Ore"
 		},
 		{
+			"id": 81,
 			"name": "platinum-watch",
 			"displayName": "Platinum Watch",
 			"craftingStation": "table-and-chair",
@@ -657,6 +739,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Platinum_Watch"
 		},
 		{
+			"id": 82,
 			"name": "radar",
 			"displayName": "Radar",
 			"craftingStation": "",
@@ -665,6 +748,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Radar"
 		},
 		{
+			"id": 83,
 			"name": "rek-3000",
 			"displayName": "R.E.K. 3000",
 			"craftingStation": "tinkerers-workshop",
@@ -673,6 +757,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/R.E.K._3000"
 		},
 		{
+			"id": 84,
 			"name": "rocket-boots",
 			"displayName": "Rocket Boots",
 			"craftingStation": "",
@@ -681,6 +766,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Rocket_Boots"
 		},
 		{
+			"id": 85,
 			"name": "sailfish-boots",
 			"displayName": "Sailfish Boots",
 			"craftingStation": "",
@@ -689,6 +775,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Sailfish_Boots"
 		},
 		{
+			"id": 86,
 			"name": "seedler",
 			"displayName": "Seedler",
 			"craftingStation": "",
@@ -697,6 +784,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Seedler"
 		},
 		{
+			"id": 87,
 			"name": "sextant",
 			"displayName": "Sextant",
 			"craftingStation": "",
@@ -705,6 +793,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Sextant"
 		},
 		{
+			"id": 88,
 			"name": "soul-of-fright",
 			"displayName": "Soul of Fright",
 			"craftingStation": "",
@@ -713,6 +802,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Fright"
 		},
 		{
+			"id": 89,
 			"name": "soul-of-might",
 			"displayName": "Soul of Might",
 			"craftingStation": "",
@@ -721,6 +811,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Might"
 		},
 		{
+			"id": 90,
 			"name": "soul-of-sight",
 			"displayName": "Soul of Sight",
 			"craftingStation": "",
@@ -729,6 +820,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Sight"
 		},
 		{
+			"id": 91,
 			"name": "spectre-boots",
 			"displayName": "Spectre Boots",
 			"craftingStation": "tinkerers-workshop",
@@ -737,6 +829,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Spectre_Boots"
 		},
 		{
+			"id": 92,
 			"name": "star-wrath",
 			"displayName": "Star Wrath",
 			"craftingStation": "",
@@ -745,6 +838,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Star_Wrath"
 		},
 		{
+			"id": 93,
 			"name": "starfury",
 			"displayName": "Starfury",
 			"craftingStation": "",
@@ -753,6 +847,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Starfury"
 		},
 		{
+			"id": 94,
 			"name": "stinger",
 			"displayName": "Stinger",
 			"craftingStation": "",
@@ -761,6 +856,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Stinger"
 		},
 		{
+			"id": 95,
 			"name": "stopwatch",
 			"displayName": "Stopwatch",
 			"craftingStation": "",
@@ -769,6 +865,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Stopwatch"
 		},
 		{
+			"id": 96,
 			"name": "tally-counter",
 			"displayName": "Tally Counter",
 			"craftingStation": "",
@@ -777,6 +874,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Tally_Counter"
 		},
 		{
+			"id": 97,
 			"name": "terra-blade",
 			"displayName": "Terra Blade",
 			"craftingStation": "hardmode-anvil",
@@ -785,6 +883,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Terra_Blade"
 		},
 		{
+			"id": 98,
 			"name": "terraspark-boots",
 			"displayName": "Terraspark Boots",
 			"craftingStation": "tinkerers-workshop",
@@ -793,6 +892,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Terraspark_Boots"
 		},
 		{
+			"id": 99,
 			"name": "the-horsemans-blade",
 			"displayName": "The Horseman's Blade",
 			"craftingStation": "",
@@ -801,6 +901,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/The_Horseman%27s_Blade"
 		},
 		{
+			"id": 100,
 			"name": "the-plan",
 			"displayName": "The Plan",
 			"craftingStation": "tinkerers-workshop",
@@ -809,6 +910,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/The_Plan"
 		},
 		{
+			"id": 101,
 			"name": "trifold-map",
 			"displayName": "Trifold Map",
 			"craftingStation": "",
@@ -817,6 +919,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Trifold_Map"
 		},
 		{
+			"id": 102,
 			"name": "true-excalibur",
 			"displayName": "True Excalibur",
 			"craftingStation": "hardmode-anvil",
@@ -825,6 +928,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/True_Excalibur"
 		},
 		{
+			"id": 103,
 			"name": "true-nights-edge",
 			"displayName": "True Night's Edge",
 			"craftingStation": "hardmode-anvil",
@@ -833,6 +937,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/True_Night%27s_Edge"
 		},
 		{
+			"id": 104,
 			"name": "vitamins",
 			"displayName": "Vitamins",
 			"craftingStation": "",
@@ -841,6 +946,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Vitamins"
 		},
 		{
+			"id": 105,
 			"name": "water-walking-boots",
 			"displayName": "Water Walking Boots",
 			"craftingStation": "",
@@ -849,6 +955,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Water_Walking_Boots"
 		},
 		{
+			"id": 106,
 			"name": "weather-radio",
 			"displayName": "Weather Radio",
 			"craftingStation": "",
@@ -857,6 +964,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Weather_Radio"
 		},
 		{
+			"id": 107,
 			"name": "zenith",
 			"displayName": "Zenith",
 			"craftingStation": "hardmode-anvil",

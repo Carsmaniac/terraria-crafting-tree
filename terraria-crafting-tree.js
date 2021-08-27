@@ -11,10 +11,9 @@ let selectingItem = true;
 let selectedItem;
 let clickDisabled = false;
 
-let loadedImages = 0;
-let totalImages = 0;
-let loadingImages = false;
-let itemSetsLoaded = [];
+let spritesLoaded = 0;
+let spritesTotal = 0;
+let loadingSprites = false;
 
 let itemSpacing = 150;
 let hoveringOverItem;
@@ -51,32 +50,22 @@ function setup() {
     cam = createCamera();
     cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight);
 
-    inGameItems = inGameItemsData.terraria;
-    // append(inGameItems, inGameItemsData.terrariaExtended);
-    // append(inGameItems, inGameItemsData.abaddon);
-    // append(inGameItems, inGameItemsData.calamity);
-    // append(inGameItems, inGameItemsData.dragonBall);
-    // append(inGameItems, inGameItemsData.fargo);
-    // append(inGameItems, inGameItemsData.thorium);
+    inGameItems = inGameItemsData.inGameItems;
     craftingStations = craftingTreeItemsData.craftingStations;
     selectableItems = craftingTreeItemsData.selectableItems;
-    loadingImages = true;
-    totalImages += selectableItems.length + craftingStations.length + inGameItems.length;
+    loadingSprites = true;
+    spritesTotal += selectableItems.length + craftingStations.length;
     for (let i = 0; i < selectableItems.length; i ++) {
         for (inGameItem of inGameItems) {
             if (inGameItem.name == selectableItems[i].name) {
                 selectableItems[i].inGameItem = inGameItem;
             }
         }
-        selectableItems[i].sprite = loadImage("images/" + selectableItems[i].name + ".png", incrementLoadedImages);
+        selectableItems[i].sprite = loadImage("images/" + selectableItems[i].name + ".png", incrementspritesLoaded);
     }
     for (let i = 0; i < craftingStations.length; i ++) {
-        craftingStations[i].sprite = loadImage("images/" + craftingStations[i].name + ".png", incrementLoadedImages);
+        craftingStations[i].sprite = loadImage("images/" + craftingStations[i].name + ".png", incrementspritesLoaded);
     }
-    for (let i = 0; i < inGameItems.length; i ++) {
-        inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png", incrementLoadedImages)
-    }
-    // loadImages(); TODO
 }
 
 function draw() {
@@ -93,12 +82,12 @@ function draw() {
     mousePos.y = mouseY - (height / 2) + cameraPan.y + (cameraPan.y * (-(zoomLevel - 1) / zoomLevel));
     mousePos.setMag(mousePos.mag() * zoomLevel);
 
-    if (loadingImages) {
+    if (loadingSprites) {
         fill(255);
         circle(0, 0, 30000);
         fill(0);
         textSize(40);
-        text("Loading sprites...", 0, 0);
+        text("Loading sprites (" + spritesLoaded + "/" + spritesTotal + ")", 0, 0);
     } else if (selectingItem) {
         zoomLevel = 1.2;
         fill(255);
@@ -155,7 +144,7 @@ function draw() {
             if (mouseIsPressed) {
                 clickDisabled = true;
                 selectingItem = false;
-                // loadImages(selectedItem); TODO
+                cursor(ARROW);
                 reset();
             }
         }
@@ -223,7 +212,7 @@ function draw() {
         }
     }
 
-    if (firstLoadTime != 0 && frameCount - firstLoadTime < 300 && !displayControls && !loadingImages) {
+    if (firstLoadTime != 0 && frameCount - firstLoadTime < 300 && !displayControls && !loadingSprites) {
         let textOpacity = map(frameCount - firstLoadTime, 0, 300, 2000, 0);
         textSize(25 * zoomLevel);
         textAlign(LEFT);
@@ -266,15 +255,15 @@ function keyPressed() {
         cameraPan.set(0, 0);
         selectingItem = true;
     } else if (keyCode == UP_ARROW) {
-        if (!loadingImages && !selectingItem) {
+        if (!loadingSprites && !selectingItem) {
             zoomLevel = max(zoomLevel * 0.9 * 0.9, 0.4);
         }
     } else if (keyCode == DOWN_ARROW) {
-        if (!loadingImages && !selectingItem) {
+        if (!loadingSprites && !selectingItem) {
             zoomLevel = min(zoomLevel * 1.1 * 1.1, 9.5);
         }
     } else if (keyCode == ENTER) {
-        if (!loadingImages && !selectingItem) {
+        if (!loadingSprites && !selectingItem) {
             displayControls = !displayControls;
             firstLoadTime = -400;
         }
@@ -282,7 +271,7 @@ function keyPressed() {
 }
 
 function mousePressed() {
-    if (!dragging && !hoveringOverItem && !loadingImages && !selectingItem) {
+    if (!dragging && !hoveringOverItem && !loadingSprites && !selectingItem) {
         dragStart.set(mouseX, mouseY);
         panStart.set(cameraPan);
         dragging = true;
@@ -312,7 +301,7 @@ function mouseClicked() {
 }
 
 function mouseWheel(mouseEvent) {
-    if (!loadingImages && !selectingItem) {
+    if (!loadingSprites && !selectingItem) {
         if (mouseEvent.delta > 0) {
             zoomLevel = min(zoomLevel * 1.1, 9.5);
         } else {
@@ -345,20 +334,36 @@ function loadItemRecursive(treeItem, parentItem) {
     }
 }
 
-// function loadImages() { TODO
-//     totalImages += inGameItems.length;
-//     loadingImages = true;
-//     for (let i = 0; i < inGameItems.length; i ++) {
-//         if (inGameItems[i].sprite == null) {
-//             inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png", incrementLoadedImages);
-//         }
-//     }
-// }
+function loadSprites() {
+    let spritesToLoad = [];
+    for (let i = 0; i < treeItems.length; i ++) {
+        if (treeItems[i].inGameItem.sprite == null) {
+            if (!spritesToLoad.includes(treeItems[i].inGameItem.name)) {
+                append(spritesToLoad, treeItems[i].inGameItem.name);
+            }
+        }
+    }
 
-function incrementLoadedImages(image) {
-    loadedImages ++;
-    if (loadedImages >= totalImages) {
-        loadingImages = false;
+    if (spritesToLoad.length > 0) {
+        loadingSprites = true;
+        spritesLoaded = 0;
+        spritesTotal = spritesToLoad.length;
+        for (let i = 0; i < treeItems.length; i ++) {
+            if (treeItems[i].inGameItem.sprite == null) {
+                let newImage = loadImage("images/" + treeItems[i].inGameItem.name + ".png", incrementspritesLoaded);
+                treeItems[i].inGameItem.sprite = newImage;
+                inGameItems[treeItems[i].inGameItem.id].sprite = newImage;
+            }
+        }
+    } else {
+        loadingSprites = false;
+    }
+}
+
+function incrementspritesLoaded(image) {
+    spritesLoaded ++;
+    if (spritesLoaded >= spritesTotal) {
+        loadingSprites = false;
     }
 }
 
@@ -369,6 +374,8 @@ function reset() {
     firstItem = new Item(0, 0, selectedItem.inGameItem, 1, null);
     treeItems.push(firstItem);
     loadItemRecursive(selectedItem.inGameItem, firstItem);
+
+    loadSprites();
 
     for (treeItem of treeItems) {
         countChildrenRecursive(treeItem, treeItem.inGameItem, inGameItems);
