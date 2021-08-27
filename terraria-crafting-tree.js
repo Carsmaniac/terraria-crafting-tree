@@ -3,6 +3,11 @@ let inGameItemsData;
 let inGameItems;
 let craftingStations;
 
+let loadedImages = 0;
+let loadingImages = true;
+let selectingItem = false;
+let itemToLoad = 71;
+
 let itemSpacing = 250;
 let hoveringOverItem;
 let openSansRegular;
@@ -34,12 +39,12 @@ function setup() {
 
     inGameItems = inGameItemsData.inGameItems;
     for (let i = 0; i < inGameItems.length; i ++) {
-        inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png");
+        inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png", incrementLoadedImages);
     }
 
     craftingStations = inGameItemsData.craftingStations;
     for (let i = 0; i < craftingStations.length; i ++) {
-        craftingStations[i].sprite = loadImage("images/" + craftingStations[i].name + ".png");
+        craftingStations[i].sprite = loadImage("images/" + craftingStations[i].name + ".png", incrementLoadedImages);
     }
 
     reset();
@@ -59,70 +64,82 @@ function draw() {
     mousePos.y = mouseY - (height / 2) + cameraPan.y + (cameraPan.y * (-(zoomLevel - 1) / zoomLevel));
     mousePos.setMag(mousePos.mag() * zoomLevel);
 
-    for (item of treeItems) {
-        item.display(mousePos);
-        item.update(treeItems);
-    }
+    if (loadingImages) {
+        fill(255);
+        circle(0, 0, 30000);
+        fill(0);
+        textSize(40);
+        textFont(openSansBold);
+        textAlign(CENTER);
+        text("Loading sprites...", 0, 0);
+    } else if (selectingItem) {
 
-    hoveringOverItem = false;
-    cursor(ARROW);
-    for (item of treeItems) {
-        if (item.hoveredOver) {
-            hoveringOverItem = true;
-            push();
-            translate(item.position.x, item.position.y);
-            cursor("pointer");
+    } else {
+        for (item of treeItems) {
+            item.display(mousePos);
+            item.update(treeItems);
+        }
 
-            fill(255, 255, 255, 70);
-            circle(0, 0, 30000);
-            fill(255);
-            textSize(25);
-            textFont(openSansBold);
-            textAlign(CENTER);
-            let rectWidth = max(160, textWidth(item.inGameItem.displayName) + 55);
-            let rectHeight = 300;
-            textSize(15);
-            rectWidth = max(rectWidth, textWidth("(Click to open wiki page)") + 55);
+        hoveringOverItem = false;
+        cursor(ARROW);
+        for (item of treeItems) {
+            if (item.hoveredOver) {
+                hoveringOverItem = true;
+                push();
+                translate(item.position.x, item.position.y);
+                cursor("pointer");
 
-            let craftingStation = null;
-            for (station of craftingStations) {
-                if (station.name == item.inGameItem.craftingStation) {
-                    craftingStation = station;
+                fill(255, 255, 255, 70);
+                circle(0, 0, 30000);
+                fill(255);
+                textSize(25);
+                textFont(openSansBold);
+                textAlign(CENTER);
+                let rectWidth = max(160, textWidth(item.inGameItem.displayName) + 55);
+                let rectHeight = 300;
+                textSize(15);
+                rectWidth = max(rectWidth, textWidth("(Click to open wiki page)") + 55);
+
+                let craftingStation = null;
+                for (station of craftingStations) {
+                    if (station.name == item.inGameItem.craftingStation) {
+                        craftingStation = station;
+                    }
                 }
+
+                if (craftingStation != null) {
+                    rectWidth = max(rectWidth, textWidth("Crafted at " + craftingStation.displayName) + 55);
+                    rectHeight = (item.inGameItem.sprite.height + craftingStation.sprite.height + 245);
+                } else if (item.inGameItem.acquisition != "") {
+                    rectWidth = max(rectWidth, textWidth(item.inGameItem.acquisition) + 55);
+                    rectHeight = (item.inGameItem.sprite.height + 240);
+                } else {
+                    rectHeight = (item.inGameItem.sprite.height + 132);
+                    cursor(ARROW);
+                }
+
+                rect(-rectWidth / 2, -(item.inGameItem.sprite.height / 2) - 45, rectWidth, rectHeight);
+                image(item.inGameItem.sprite, -(item.inGameItem.sprite.width / 1.1), -(item.inGameItem.sprite.height / 1.1),
+                      item.inGameItem.sprite.width * 1.8, item.inGameItem.sprite.height * 1.8)
+                fill(0);
+                textSize(25);
+                text(item.inGameItem.displayName, 0, (item.inGameItem.sprite.height / 2) + 60);
+                textSize(15);
+
+                if (craftingStation != null) {
+                    text("Crafted at " + craftingStation.displayName, 0, (item.inGameItem.sprite.height / 2) + 110);
+                    image(craftingStation.sprite, -(craftingStation.sprite.width / 2), (item.inGameItem.sprite.height / 2) + 125,
+                          craftingStation.sprite.width, craftingStation.sprite.height);
+                    text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + craftingStation.sprite.height + 170)
+                } else if (item.inGameItem.acquisition != "") {
+                    text(item.inGameItem.acquisition, 0, (item.inGameItem.sprite.height / 2) + 110);
+                    text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + 170)
+                }
+                pop();
+
+                // image(item.inGameItem.sprite, item.position.x-(item.inGameItem.sprite.width / 1.4), item.position.y-(item.inGameItem.sprite.height / 1.4),
+                      // item.inGameItem.sprite.width * 1.4, item.inGameItem.sprite.height * 1.4)
             }
-
-            if (craftingStation != null) {
-                rectWidth = max(rectWidth, textWidth("Crafted at " + craftingStation.displayName) + 55);
-                rectHeight = (item.inGameItem.sprite.height + craftingStation.sprite.height + 220);
-            } else if (item.inGameItem.acquisition != "") {
-                rectWidth = max(rectWidth, textWidth(item.inGameItem.acquisition) + 55);
-                rectHeight = (item.inGameItem.sprite.height + 220);
-            } else {
-                rectHeight = (item.inGameItem.sprite.height + 110);
-                cursor(ARROW);
-            }
-
-            rect(-rectWidth / 2, -(item.inGameItem.sprite.height / 2) - 35, rectWidth, rectHeight);
-            image(item.inGameItem.sprite, -(item.inGameItem.sprite.width / 1.4), -(item.inGameItem.sprite.height / 1.4),
-                  item.inGameItem.sprite.width * 1.4, item.inGameItem.sprite.height * 1.4)
-            fill(0);
-            textSize(25);
-            text(item.inGameItem.displayName, 0, (item.inGameItem.sprite.height / 2) + 50);
-            textSize(15);
-
-            if (craftingStation != null) {
-                text("Crafted at " + craftingStation.displayName, 0, (item.inGameItem.sprite.height / 2) + 100);
-                image(craftingStation.sprite, -(craftingStation.sprite.width / 2), (item.inGameItem.sprite.height / 2) + 115,
-                      craftingStation.sprite.width, craftingStation.sprite.height);
-                text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + craftingStation.sprite.height + 160)
-            } else if (item.inGameItem.acquisition != "") {
-                text(item.inGameItem.acquisition, 0, (item.inGameItem.sprite.height / 2) + 100);
-                text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + 160)
-            }
-            pop();
-
-            // image(item.inGameItem.sprite, item.position.x-(item.inGameItem.sprite.width / 1.4), item.position.y-(item.inGameItem.sprite.height / 1.4),
-                  // item.inGameItem.sprite.width * 1.4, item.inGameItem.sprite.height * 1.4)
         }
     }
 }
@@ -197,12 +214,20 @@ function loadItemRecursive(treeItem, parentItem) {
     }
 }
 
+function incrementLoadedImages(image) {
+    loadedImages ++;
+    if (loadedImages >= inGameItems.length + craftingStations.length) {
+        loadingImages = false;
+        selectingItem = false;
+    }
+}
+
 function reset() {
     treeItems = [];
 
-    firstItem = new Item(0, 0, inGameItems[38], 1, null);
+    firstItem = new Item(0, 0, inGameItems[itemToLoad], 1, null);
     treeItems.push(firstItem);
-    loadItemRecursive(inGameItems[38], firstItem);
+    loadItemRecursive(inGameItems[itemToLoad], firstItem);
 
     for (treeItem of treeItems) {
         countChildrenRecursive(treeItem, treeItem.inGameItem, inGameItems);

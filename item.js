@@ -24,7 +24,7 @@ class Item {
         } else {
             this.hoveredOver = false;
         }
-        image(this.inGameItem.sprite, this.position.x-(this.inGameItem.sprite.width / 2) + 1, this.position.y-(this.inGameItem.sprite.height / 2) + 1, this.inGameItem.sprite.width * 0.9, this.inGameItem.sprite.height * 0.9);
+        image(this.inGameItem.sprite, this.position.x-(this.inGameItem.sprite.width / 2) - 3, this.position.y-(this.inGameItem.sprite.height / 2) - 3, this.inGameItem.sprite.width * 1.1, this.inGameItem.sprite.height * 1.1);
         if (this.parent != null) {
             fill(0);
             noStroke();
@@ -39,19 +39,19 @@ class Item {
             push();
             translate(arrowStart.x, arrowStart.y);
             rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() - HALF_PI);
-            rect(-1, 5, 2, dist(arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y) - 5);
+            rect(-0.75, 5, 1.5, dist(arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y) - 5);
             pop();
             push();
             translate(arrowEnd.x, arrowEnd.y);
             rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() + HALF_PI);
             rotate(PI);
-            triangle(-4.5, -5, 4.5, -5, 0, 10);
+            triangle(-4, -5, 4, -5, 0, 10);
             pop();
         }
     }
 
     update(treeItems) {
-        this.socialDistance = max(this.inGameItem.sprite.width, this.inGameItem.sprite.height) * 1.4 + 10;
+        this.socialDistance = max(this.inGameItem.sprite.width, this.inGameItem.sprite.height) * 1.6 + 10;
 
         if (this.parent != null) {
             let nearbyItems = [];

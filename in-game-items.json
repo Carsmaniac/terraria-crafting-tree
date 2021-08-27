@@ -4,7 +4,31 @@
 			"name": "any-evil-sword",
 			"displayName": "Any Evil Sword",
 			"craftingStation": "",
-			"ingredients": [[22, 1],[3, 1]],
+			"ingredients": [[43, 1],[6, 1]],
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"name": "any-gold-watch",
+			"displayName": "Any Gold Watch",
+			"craftingStation": "",
+			"ingredients": [[30, 1],[53, 1]],
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"name": "any-iron-bar",
+			"displayName": "Any Iron Bar",
+			"craftingStation": "",
+			"ingredients": [[37, 1],[40, 1]],
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"name": "any-mirror",
+			"displayName": "Any Mirror",
+			"craftingStation": "",
+			"ingredients": [[44, 1],[35, 1]],
 			"acquisition": "",
 			"wikiLink": ""
 		},
@@ -20,7 +44,7 @@
 			"name": "blade-of-grass",
 			"displayName": "Blade of Grass",
 			"craftingStation": "anvil",
-			"ingredients": [[33, 12],[21, 12]],
+			"ingredients": [[63, 12],[39, 12]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Blade_of_Grass"
 		},
@@ -28,7 +52,7 @@
 			"name": "blood-butcherer",
 			"displayName": "Blood Butcherer",
 			"craftingStation": "anvil",
-			"ingredients": [[10, 10]],
+			"ingredients": [[16, 10]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Blood_Butcherer"
 		},
@@ -41,10 +65,26 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Broken_Hero_Sword"
 		},
 		{
+			"name": "cell-phone",
+			"displayName": "Cell Phone",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[50, 1],[3, 1]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Cell_Phone"
+		},
+		{
+			"name": "chain",
+			"displayName": "Chain",
+			"craftingStation": "anvil",
+			"ingredients": [[2, 1]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Chain"
+		},
+		{
 			"name": "chlorophyte-bar",
 			"displayName": "Chlorophyte Bar",
 			"craftingStation": "hardmode-forge",
-			"ingredients": [[6, 5]],
+			"ingredients": [[11, 5]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Chlorophyte_Bar"
 		},
@@ -55,6 +95,14 @@
 			"ingredients": [],
 			"acquisition": "Mined in the Underground Jungle",
 			"wikiLink": "https://terraria.fandom.com/wiki/Chlorophyte_Ore"
+		},
+		{
+			"name": "compass",
+			"displayName": "Compass",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by many enemies",
+			"wikiLink": "https://terraria.fandom.com/wiki/Compass"
 		},
 		{
 			"name": "copper-bar",
@@ -76,7 +124,7 @@
 			"name": "copper-shortsword",
 			"displayName": "Copper Shortsword",
 			"craftingStation": "anvil",
-			"ingredients": [[7, 5],[8, 15]],
+			"ingredients": [[13, 5],[14, 15]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Copper_Shortsword"
 		},
@@ -84,7 +132,7 @@
 			"name": "crimtane-bar",
 			"displayName": "Crimtane Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[11, 3]],
+			"ingredients": [[17, 3]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Crimtane_Bar"
 		},
@@ -100,7 +148,7 @@
 			"name": "demonite-bar",
 			"displayName": "Demonite Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[13, 3]],
+			"ingredients": [[19, 3]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Demonite_Bar"
 		},
@@ -111,6 +159,22 @@
 			"ingredients": [],
 			"acquisition": "Mined in The Corruption",
 			"wikiLink": "https://terraria.fandom.com/wiki/Demonite_Ore"
+		},
+		{
+			"name": "depth-meter",
+			"displayName": "Depth Meter",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Sold by the Travelling Merchant",
+			"wikiLink": "https://terraria.fandom.com/wiki/Depth_Meter"
+		},
+		{
+			"name": "dps-meter",
+			"displayName": "DPS Meter",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Sold by the Travelling Merchant",
+			"wikiLink": "https://terraria.fandom.com/wiki/DPS_Meter"
 		},
 		{
 			"name": "enchanted-sword",
@@ -124,7 +188,7 @@
 			"name": "excalibur",
 			"displayName": "Excalibur",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[17, 12]],
+			"ingredients": [[32, 12]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Excalibur"
 		},
@@ -132,9 +196,65 @@
 			"name": "fiery-greatsword",
 			"displayName": "Fiery Greatsword",
 			"craftingStation": "anvil",
-			"ingredients": [[19, 20]],
+			"ingredients": [[34, 20]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Fiery_Greatsword"
+		},
+		{
+			"name": "fish-finder",
+			"displayName": "Fish Finder",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[70, 1],[57, 1]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Fish_Finder"
+		},
+		{
+			"name": "fishermans-pocket-guide",
+			"displayName": "Fisherman's Pocket Guide",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Reward from the Angler",
+			"wikiLink": "https://terraria.fandom.com/wiki/Fisherman%27s_Pocket_Guide"
+		},
+		{
+			"name": "goblin-tech",
+			"displayName": "Goblin Tech",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[21, 1],[64, 1],[46, 1]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Goblin_Tech"
+		},
+		{
+			"name": "gold-bar",
+			"displayName": "Gold Bar",
+			"craftingStation": "furnace",
+			"ingredients": [[29, 4]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Gold_Bar"
+		},
+		{
+			"name": "gold-ore",
+			"displayName": "Gold Ore",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Mined underground",
+			"wikiLink": "https://terraria.fandom.com/wiki/Gold_Ore"
+		},
+		{
+			"name": "gold-watch",
+			"displayName": "Gold Watch",
+			"craftingStation": "table-and-chair",
+			"ingredients": [[28, 10],[9, 1]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Gold_Watch"
+		},
+		{
+			"name": "gps",
+			"displayName": "GPS",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[20, 1],[1, 1],[12, 1]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/GPS"
 		},
 		{
 			"name": "hallowed-bar",
@@ -156,9 +276,17 @@
 			"name": "hellstone-bar",
 			"displayName": "Hellstone Bar",
 			"craftingStation": "hellforge",
-			"ingredients": [[18, 3],[26, 1]],
+			"ingredients": [[33, 3],[49, 1]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Hellstone_Bar"
+		},
+		{
+			"name": "ice-mirror",
+			"displayName": "Ice Mirror",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Found in Frozen Chests",
+			"wikiLink": "https://terraria.fandom.com/wiki/Ice_Mirror"
 		},
 		{
 			"name": "influx-waver",
@@ -169,6 +297,22 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Influx_Waver"
 		},
 		{
+			"name": "iron-bar",
+			"displayName": "Iron Bar",
+			"craftingStation": "furnace",
+			"ingredients": [[38, 3]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Iron_Bar"
+		},
+		{
+			"name": "iron-ore",
+			"displayName": "Iron Ore",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Mined underground",
+			"wikiLink": "https://terraria.fandom.com/wiki/Iron_Ore"
+		},
+		{
 			"name": "jungle-spores",
 			"displayName": "Jungle Spores",
 			"craftingStation": "",
@@ -177,12 +321,44 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Jungle_Spores"
 		},
 		{
+			"name": "lead-bar",
+			"displayName": "Lead Bar",
+			"craftingStation": "furnace",
+			"ingredients": [[41, 3]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Lead_Bar"
+		},
+		{
+			"name": "lead-ore",
+			"displayName": "Lead Ore",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Mined underground",
+			"wikiLink": "https://terraria.fandom.com/wiki/Lead_Ore"
+		},
+		{
+			"name": "lifeform-analyser",
+			"displayName": "Lifeform Analyser",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Sold by the Travelling Merchant",
+			"wikiLink": "https://terraria.fandom.com/wiki/Lifeform_Analyzer"
+		},
+		{
 			"name": "lights-bane",
 			"displayName": "Light's Bane",
 			"craftingStation": "anvil",
-			"ingredients": [[12, 10]],
+			"ingredients": [[18, 10]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Light%27s_Bane"
+		},
+		{
+			"name": "magic-mirror",
+			"displayName": "Magic Mirror",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Found in underground chests",
+			"wikiLink": "https://terraria.fandom.com/wiki/Magic_Mirror"
 		},
 		{
 			"name": "meowmere",
@@ -191,6 +367,14 @@
 			"ingredients": [],
 			"acquisition": "Dropped by the Moon Lord",
 			"wikiLink": "https://terraria.fandom.com/wiki/Meowmere"
+		},
+		{
+			"name": "metal-detector",
+			"displayName": "Metal Detector",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by Nymphs",
+			"wikiLink": "https://terraria.fandom.com/wiki/Metal_Detector"
 		},
 		{
 			"name": "muramasa",
@@ -204,7 +388,7 @@
 			"name": "nights-edge",
 			"displayName": "Night's Edge",
 			"craftingStation": "altar",
-			"ingredients": [[24, 1],[16, 1],[0, 1],[2, 1]],
+			"ingredients": [[47, 1],[24, 1],[0, 1],[5, 1]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Night%27s_Edge"
 		},
@@ -217,12 +401,68 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian"
 		},
 		{
+			"name": "pda",
+			"displayName": "PDA",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[31, 1],[55, 1],[27, 1],[25, 1]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/PDA"
+		},
+		{
+			"name": "platinum-bar",
+			"displayName": "Platinum Bar",
+			"craftingStation": "furnace",
+			"ingredients": [[52, 4]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Platinum_Bar"
+		},
+		{
+			"name": "platinum-ore",
+			"displayName": "Platinum Ore",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Mined underground",
+			"wikiLink": "https://terraria.fandom.com/wiki/Platinum_Ore"
+		},
+		{
+			"name": "platinum-watch",
+			"displayName": "Platinum Watch",
+			"craftingStation": "table-and-chair",
+			"ingredients": [[51, 10],[9, 1]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Platinum_Watch"
+		},
+		{
+			"name": "radar",
+			"displayName": "Radar",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Found in surace chests or in Wooden Crates",
+			"wikiLink": "https://terraria.fandom.com/wiki/Radar"
+		},
+		{
+			"name": "rek-3000",
+			"displayName": "R.E.K. 3000",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[54, 1],[65, 1],[42, 1]],
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/R.E.K._3000"
+		},
+		{
 			"name": "seedler",
 			"displayName": "Seedler",
 			"craftingStation": "",
 			"ingredients": [],
 			"acquisition": "Dropped by Plantera",
 			"wikiLink": "https://terraria.fandom.com/wiki/Seedler"
+		},
+		{
+			"name": "sextant",
+			"displayName": "Sextant",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Reward from the Angler",
+			"wikiLink": "https://terraria.fandom.com/wiki/Sextant"
 		},
 		{
 			"name": "soul-of-fright",
@@ -273,10 +513,26 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Stinger"
 		},
 		{
+			"name": "stopwatch",
+			"displayName": "Stopwatch",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Sold by the Travelling Merchant",
+			"wikiLink": "https://terraria.fandom.com/wiki/Stopwatch"
+		},
+		{
+			"name": "tally-counter",
+			"displayName": "Tally Counter",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Dropped by Angry Bones, Cursed Skulls and Dark Casters",
+			"wikiLink": "https://terraria.fandom.com/wiki/Tally_Counter"
+		},
+		{
 			"name": "terra-blade",
 			"displayName": "Terra Blade",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[36, 1],[37, 1],[4, 1]],
+			"ingredients": [[68, 1],[69, 1],[7, 1]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Terra_Blade"
 		},
@@ -292,7 +548,7 @@
 			"name": "true-excalibur",
 			"displayName": "True Excalibur",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[15, 1],[5, 24]],
+			"ingredients": [[23, 1],[10, 24]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/True_Excalibur"
 		},
@@ -300,15 +556,23 @@
 			"name": "true-nights-edge",
 			"displayName": "True Night's Edge",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[25, 1],[30, 20],[29, 20],[28, 20]],
+			"ingredients": [[48, 1],[60, 20],[59, 20],[58, 20]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/True_Night%27s_Edge"
+		},
+		{
+			"name": "weather-radio",
+			"displayName": "Weather Radio",
+			"craftingStation": "",
+			"ingredients": [],
+			"acquisition": "Reward from the Angler",
+			"wikiLink": "https://terraria.fandom.com/wiki/Weather_Radio"
 		},
 		{
 			"name": "zenith",
 			"displayName": "Zenith",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[9, 1],[32, 1],[14, 1],[1, 1],[34, 1],[27, 1],[35, 1],[20, 1],[32, 1],[23, 1]],
+			"ingredients": [[15, 1],[62, 1],[22, 1],[4, 1],[66, 1],[56, 1],[67, 1],[36, 1],[62, 1],[45, 1]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Zenith"
 		}
