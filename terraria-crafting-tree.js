@@ -1,3 +1,5 @@
+// I hope you like global variables
+
 let treeItems = [];
 let inGameItemsData;
 let inGameItems;
@@ -21,11 +23,13 @@ let dragStart = new p5.Vector();
 let dragMouse = new p5.Vector();
 let panStart = new p5.Vector();
 let dragging = false;
+let mousePos = new p5.Vector();
 
 let cameraHeight;
 let zoomLevel = 1;
 
-let mousePos = new p5.Vector();
+let firstLoadTime = 0;
+let displayControls = false;
 
 function preload() {
     inGameItemsData = loadJSON("in-game-items.json");
@@ -36,6 +40,9 @@ function preload() {
 function setup() {
     createCanvas(windowWidth - 20, windowHeight - 20, WEBGL);
     frameRate(60);
+
+    textFont(openSansBold);
+    textAlign(CENTER);
 
     cameraHeight = (windowHeight/2) / tan(PI/6);
     cam = createCamera();
@@ -74,8 +81,6 @@ function draw() {
         circle(0, 0, 30000);
         fill(0);
         textSize(40);
-        textFont(openSansBold);
-        textAlign(CENTER);
         text("Loading sprites...", 0, 0);
     } else if (selectingItem) {
         zoomLevel = 1.2;
@@ -84,8 +89,6 @@ function draw() {
         rect(-630, -460, 1260, 920);
         fill(0);
         textSize(40);
-        textFont(openSansBold);
-        textAlign(CENTER);
         text("Choose a crafting tree to display", 0, -360);
 
         for (let i = 0; i < 8; i ++) {
@@ -157,8 +160,6 @@ function draw() {
                 circle(0, 0, 30000);
                 fill(255);
                 textSize(25);
-                textFont(openSansBold);
-                textAlign(CENTER);
                 let rectWidth = max(160, textWidth(item.inGameItem.displayName) + 55);
                 let rectHeight = 300;
                 textSize(15);
@@ -206,6 +207,35 @@ function draw() {
             }
         }
     }
+
+    if (firstLoadTime != 0 && frameCount - firstLoadTime < 300 && !displayControls) {
+        let textOpacity = map(frameCount - firstLoadTime, 0, 300, 2000, 0);
+        textSize(25 * zoomLevel);
+        textAlign(LEFT);
+        fill(255, 255, 255, textOpacity);
+        text("Press enter to toggle controls", (-width / 2 - 5) * zoomLevel + cameraPan.x + 2, (-height / 2 + 25) * zoomLevel + cameraPan.y + 2);
+        fill(0, 0, 0, textOpacity);
+        text("Press enter to toggle controls", (-width / 2 - 5) * zoomLevel + cameraPan.x, (-height / 2 + 25) * zoomLevel + cameraPan.y);
+        textAlign(CENTER);
+    }
+    if (displayControls) {
+        let textPosition = new p5.Vector((-width / 2 - 5) * zoomLevel + cameraPan.x, (-height / 2) * zoomLevel + cameraPan.y);
+        textSize(20 * zoomLevel);
+        textAlign(LEFT);
+        fill(255);
+        text("Click and drag to pan around", textPosition.x + 2, textPosition.y + 25 * zoomLevel + 2);
+        text("Scroll or use arrow keys to zoom in and out", textPosition.x + 2, textPosition.y + 52 * zoomLevel + 2);
+        text("ESC to choose a different item", textPosition.x + 2, textPosition.y + 79 * zoomLevel + 2);
+        text("Click on an item to open its wiki page", textPosition.x + 2, textPosition.y + 106 * zoomLevel + 2);
+        text("Enter to close controls", textPosition.x + 2, textPosition.y + 133 * zoomLevel + 2);
+        fill(0);
+        text("Click and drag to pan around", textPosition.x, textPosition.y + 25 * zoomLevel);
+        text("Scroll or use arrow keys to zoom in and out", textPosition.x, textPosition.y + 52 * zoomLevel);
+        text("ESC to choose a different item", textPosition.x, textPosition.y + 79 * zoomLevel);
+        text("Click on an item to open its wiki page", textPosition.x, textPosition.y + 106 * zoomLevel);
+        text("Enter to close controls", textPosition.x, textPosition.y + 133 * zoomLevel);
+        textAlign(CENTER);
+    }
 }
 
 function windowResized() {
@@ -217,6 +247,7 @@ function windowResized() {
 function keyPressed() {
     if (keyCode == ESCAPE) {
         dragging = false;
+        displayControls = false;
         cameraPan.set(0, 0);
         selectingItem = true;
     } else if (keyCode == UP_ARROW) {
@@ -226,6 +257,11 @@ function keyPressed() {
     } else if (keyCode == DOWN_ARROW) {
         if (!loadingImages && !selectingItem) {
             zoomLevel = min(zoomLevel * 1.1 * 1.1, 9.5);
+        }
+    } else if (keyCode == ENTER) {
+        if (!loadingImages && !selectingItem) {
+            displayControls = !displayControls;
+            firstLoadTime = -400;
         }
     }
 }
@@ -329,6 +365,10 @@ function reset() {
 
     zoomLevel = 1.2;
     cameraPan.set(0, 0);
+
+    if (firstLoadTime == 0) {
+        firstLoadTime = frameCount;
+    }
 }
 
 function countChildrenRecursive(treeItem, inGameItem, inGameItems) {
