@@ -17,14 +17,9 @@ class Item {
     display(mousePos) {
         if (dist(mousePos.x, mousePos.y, this.position.x, this.position.y) < max(this.socialDistance / 2, 25)) {
             this.hoveredOver = true;
-            noStroke();
-            fill(0, 255, 0, 50);
-            fill(255);
-            ellipse(this.position.x, this.position.y, 50);
         } else {
             this.hoveredOver = false;
         }
-        image(this.inGameItem.sprite, this.position.x-(this.inGameItem.sprite.width / 2) - 3, this.position.y-(this.inGameItem.sprite.height / 2) - 3, this.inGameItem.sprite.width * 1.1, this.inGameItem.sprite.height * 1.1);
         if (this.parent != null) {
             fill(0);
             noStroke();
@@ -47,7 +42,15 @@ class Item {
             rotate(PI);
             triangle(-4, -5, 4, -5, 0, 10);
             pop();
+        } else {
+            if (!this.hoveredOver) {
+                noStroke();
+                fill(0, 255, 0, 50);
+                fill(255);
+                ellipse(this.position.x, this.position.y, this.socialDistance + 40);
+            }
         }
+        image(this.inGameItem.sprite, this.position.x-(this.inGameItem.sprite.width / 2) - 3, this.position.y-(this.inGameItem.sprite.height / 2) - 3, this.inGameItem.sprite.width * 1.1, this.inGameItem.sprite.height * 1.1);
     }
 
     update(treeItems) {

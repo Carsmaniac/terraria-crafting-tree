@@ -1,12 +1,15 @@
 let treeItems = [];
 let inGameItemsData;
 let inGameItems;
+let craftingTreeItemsData;
 let craftingStations;
+let selectableItems;
 
 let loadedImages = 0;
 let loadingImages = true;
 let selectingItem = false;
-let itemToLoad = 71;
+let selectedItem;
+let clickDisabled = false;
 
 let itemSpacing = 250;
 let hoveringOverItem;
@@ -20,12 +23,13 @@ let panStart = new p5.Vector();
 let dragging = false;
 
 let cameraHeight;
-let zoomLevel = 1.5;
+let zoomLevel = 1;
 
 let mousePos = new p5.Vector();
 
 function preload() {
     inGameItemsData = loadJSON("in-game-items.json");
+    craftingTreeItemsData = loadJSON("crafting-tree-items.json");
     openSansBold = loadFont("open-sans-bold.ttf");
 }
 
@@ -33,21 +37,22 @@ function setup() {
     createCanvas(windowWidth - 20, windowHeight - 20, WEBGL);
     frameRate(60);
 
-    cameraHeight = (height/2) / tan(PI/6);
+    cameraHeight = (windowHeight/2) / tan(PI/6);
     cam = createCamera();
     cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight);
 
-    inGameItems = inGameItemsData.inGameItems;
-    for (let i = 0; i < inGameItems.length; i ++) {
-        inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png", incrementLoadedImages);
+    inGameItems = inGameItemsData.terraria;
+    craftingStations = craftingTreeItemsData.craftingStations;
+    selectableItems = craftingTreeItemsData.selectableItems;
+    for (let i = 0; i < selectableItems.length; i ++) {
+        for (inGameItem of inGameItems) {
+            if (inGameItem.name == selectableItems[i].name) {
+                selectableItems[i].inGameItem = inGameItem;
+            }
+        }
+        selectableItems[i].sprite = loadImage("images/" + selectableItems[i].name + ".png", incrementLoadedImages);
     }
-
-    craftingStations = inGameItemsData.craftingStations;
-    for (let i = 0; i < craftingStations.length; i ++) {
-        craftingStations[i].sprite = loadImage("images/" + craftingStations[i].name + ".png", incrementLoadedImages);
-    }
-
-    reset();
+    loadSprites();
 }
 
 function draw() {
@@ -73,7 +78,66 @@ function draw() {
         textAlign(CENTER);
         text("Loading sprites...", 0, 0);
     } else if (selectingItem) {
+        zoomLevel = 1.2;
+        fill(255);
+        noStroke();
+        rect(-630, -460, 1260, 920);
+        fill(0);
+        textSize(40);
+        textFont(openSansBold);
+        textAlign(CENTER);
+        text("Choose a crafting tree to display", 0, -360);
 
+        for (let i = 0; i < 8; i ++) {
+            for (let j = 0; j < 5; j ++) {
+                if (selectableItems.length > i + j * 8) {
+                    selectableItems[i + j * 8].position = new p5.Vector(-525 + i * 150, -240 + j * 150);
+                }
+            }
+        }
+        selectedItem = null;
+        for (selectableItem of selectableItems) {
+            let scaleFactor;
+            if (selectableItem.sprite.height > selectableItem.sprite.width) {
+                scaleFactor = min(75 / selectableItem.sprite.height, 1.5);
+            } else {
+                scaleFactor = min(75 / selectableItem.sprite.width, 1.5);
+            }
+            selectableItem.scaledHeight = selectableItem.sprite.height * scaleFactor;
+            selectableItem.scaledWidth = selectableItem.sprite.width * scaleFactor;
+            image(selectableItem.sprite, selectableItem.position.x - selectableItem.scaledWidth * 0.5, selectableItem.position.y - selectableItem.scaledHeight * 0.5,
+                  selectableItem.scaledWidth, selectableItem.scaledHeight);
+            if (dist(mousePos.x, mousePos.y, selectableItem.position.x, selectableItem.position.y) < 45) {
+                selectedItem = selectableItem;
+            }
+        }
+
+        cursor(ARROW);
+        if (selectedItem != null) {
+            cursor("pointer");
+            fill(255);
+            circle(selectedItem.position.x, selectedItem.position.y, 120)
+            image(selectedItem.sprite, selectedItem.position.x - selectedItem.scaledWidth * 0.75, selectedItem.position.y - selectedItem.scaledHeight * 0.75,
+                  selectedItem.scaledWidth * 1.5, selectedItem.scaledHeight * 1.5);
+
+            textSize(30);
+            let rectWidth = textWidth(selectedItem.displayName);
+            textSize(20);
+            rectWidth = max(rectWidth, textWidth(selectedItem.modName));
+            rectWidth += 40;
+            rect(selectedItem.position.x - rectWidth / 2, selectedItem.position.y + selectedItem.scaledHeight * 0.25 + 60, rectWidth, 85);
+
+            fill(0);
+            textSize(30);
+            text(selectedItem.displayName, selectedItem.position.x, selectedItem.position.y + selectedItem.scaledHeight * 0.25 + 100);
+            textSize(20);
+            text(selectedItem.modName, selectedItem.position.x, selectedItem.position.y + selectedItem.scaledHeight * 0.25 + 130);
+            if (mouseIsPressed) {
+                clickDisabled = true;
+                selectingItem = false;
+                reset();
+            }
+        }
     } else {
         for (item of treeItems) {
             item.display(mousePos);
@@ -109,7 +173,7 @@ function draw() {
 
                 if (craftingStation != null) {
                     rectWidth = max(rectWidth, textWidth("Crafted at " + craftingStation.displayName) + 55);
-                    rectHeight = (item.inGameItem.sprite.height + craftingStation.sprite.height + 245);
+                    rectHeight = (item.inGameItem.sprite.height + craftingStation.sprite.height + 240);
                 } else if (item.inGameItem.acquisition != "") {
                     rectWidth = max(rectWidth, textWidth(item.inGameItem.acquisition) + 55);
                     rectHeight = (item.inGameItem.sprite.height + 240);
@@ -146,16 +210,28 @@ function draw() {
 
 function windowResized() {
     resizeCanvas(windowWidth - 20, windowHeight - 20);
+    cameraHeight = (windowHeight/2) / tan(PI/6);
+    cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight);
 }
 
 function keyPressed() {
-    if (keyCode == ENTER) {
-        reset();
+    if (keyCode == ESCAPE) {
+        dragging = false;
+        cameraPan.set(0, 0);
+        selectingItem = true;
+    } else if (keyCode == UP_ARROW) {
+        if (!loadingImages && !selectingItem) {
+            zoomLevel = max(zoomLevel * 0.9 * 0.9, 0.4);
+        }
+    } else if (keyCode == DOWN_ARROW) {
+        if (!loadingImages && !selectingItem) {
+            zoomLevel = min(zoomLevel * 1.1 * 1.1, 9.5);
+        }
     }
 }
 
 function mousePressed() {
-    if (!dragging && !hoveringOverItem) {
+    if (!dragging && !hoveringOverItem && !loadingImages && !selectingItem) {
         dragStart.set(mouseX, mouseY);
         panStart.set(cameraPan);
         dragging = true;
@@ -169,7 +245,9 @@ function mouseReleased() {
 }
 
 function mouseClicked() {
-    if (hoveringOverItem) {
+    if (clickDisabled) {
+        clickDisabled = false;
+    } else if (hoveringOverItem) {
         let hoverItem;
         for (item of treeItems) {
             if (item.hoveredOver) {
@@ -183,10 +261,12 @@ function mouseClicked() {
 }
 
 function mouseWheel(mouseEvent) {
-    if (mouseEvent.delta > 0) {
-        zoomLevel = min(zoomLevel * 1.1, 10);
-    } else {
-        zoomLevel = max(zoomLevel * 0.9, 0.4);
+    if (!loadingImages && !selectingItem) {
+        if (mouseEvent.delta > 0) {
+            zoomLevel = min(zoomLevel * 1.1, 9.5);
+        } else {
+            zoomLevel = max(zoomLevel * 0.9, 0.4);
+        }
     }
 }
 
@@ -214,20 +294,30 @@ function loadItemRecursive(treeItem, parentItem) {
     }
 }
 
+function loadSprites() {
+    for (let i = 0; i < inGameItems.length; i ++) {
+        inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png", incrementLoadedImages);
+    }
+    for (let i = 0; i < craftingStations.length; i ++) {
+        craftingStations[i].sprite = loadImage("images/" + craftingStations[i].name + ".png", incrementLoadedImages);
+    }
+}
+
 function incrementLoadedImages(image) {
     loadedImages ++;
     if (loadedImages >= inGameItems.length + craftingStations.length) {
         loadingImages = false;
-        selectingItem = false;
+        selectingItem = true;
     }
 }
 
 function reset() {
     treeItems = [];
 
-    firstItem = new Item(0, 0, inGameItems[itemToLoad], 1, null);
+    itemSpacing = selectedItem.itemSpacing;
+    firstItem = new Item(0, 0, selectedItem.inGameItem, 1, null);
     treeItems.push(firstItem);
-    loadItemRecursive(inGameItems[itemToLoad], firstItem);
+    loadItemRecursive(selectedItem.inGameItem, firstItem);
 
     for (treeItem of treeItems) {
         countChildrenRecursive(treeItem, treeItem.inGameItem, inGameItems);
@@ -237,7 +327,7 @@ function reset() {
         placeChildrenRadially(treeItem, treeItems[0], treeItems);
     }
 
-    zoomLevel = 1.5;
+    zoomLevel = 1.2;
     cameraPan.set(0, 0);
 }
 

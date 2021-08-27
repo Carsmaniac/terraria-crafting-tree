@@ -1,5 +1,5 @@
 {
-	"inGameItems": [
+	"terraria": [
 		{
 			"name": "any-evil-sword",
 			"displayName": "Any Evil Sword",
@@ -575,60 +575,6 @@
 			"ingredients": [[15, 1],[62, 1],[22, 1],[4, 1],[66, 1],[56, 1],[67, 1],[36, 1],[62, 1],[45, 1]],
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Zenith"
-		}
-	],
-	"craftingStations": [
-		{
-			"name": "work-bench",
-			"displayName": "Work Bench"
-		},
-		{
-			"name": "furnace",
-			"displayName": "Furnace"
-		},
-		{
-			"name": "hellforge",
-			"displayName": "Hellforge"
-		},
-		{
-			"name": "anvil",
-			"displayName": "Iron/Lead Anvil"
-		},
-		{
-			"name": "table-and-chair",
-			"displayName": "Table and Chair"
-		},
-		{
-			"name": "work-bench-and-chair",
-			"displayName": "Work Bench and Chair"
-		},
-		{
-			"name": "tinkerers-workshop",
-			"displayName": "Tinkerer's Workshop"
-		},
-		{
-			"name": "altar",
-			"displayName": "Demon/Crimson Altar"
-		},
-		{
-			"name": "hardmode-anvil",
-			"displayName": "Mythril/Orichalcum Anvil"
-		},
-		{
-			"name": "hardmode-forge",
-			"displayName": "Adamantite/Titanium Forge"
-		},
-		{
-			"name": "crystal-ball",
-			"displayName": "Crystal Ball"
-		},
-		{
-			"name": "autohammer",
-			"displayName": "Autohammer"
-		},
-		{
-			"name": "ancient-manipulator",
-			"displayName": "Ancient Manipulator"
 		}
 	]
 }
