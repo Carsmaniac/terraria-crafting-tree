@@ -59,7 +59,7 @@
             "displayName": "Ankh Shield",
             "modName": "Terraria",
             "itemSets": ["terraria"],
-            "itemSpacing": 250
+            "itemSpacing": 150
         },
         {
             "name": "cell-phone",
@@ -73,7 +73,7 @@
             "displayName": "Terraspark Boots",
             "modName": "Terraria",
             "itemSets": ["terraria"],
-            "itemSpacing": 250
+            "itemSpacing": 150
         },
         {
             "name": "zenith",

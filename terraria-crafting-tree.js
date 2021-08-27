@@ -7,13 +7,16 @@ let craftingTreeItemsData;
 let craftingStations;
 let selectableItems;
 
-let loadedImages = 0;
-let loadingImages = true;
-let selectingItem = false;
+let selectingItem = true;
 let selectedItem;
 let clickDisabled = false;
 
-let itemSpacing = 250;
+let loadedImages = 0;
+let totalImages = 0;
+let loadingImages = false;
+let itemSetsLoaded = [];
+
+let itemSpacing = 150;
 let hoveringOverItem;
 let openSansRegular;
 let openSansBold;
@@ -49,8 +52,16 @@ function setup() {
     cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight);
 
     inGameItems = inGameItemsData.terraria;
+    // append(inGameItems, inGameItemsData.terrariaExtended);
+    // append(inGameItems, inGameItemsData.abaddon);
+    // append(inGameItems, inGameItemsData.calamity);
+    // append(inGameItems, inGameItemsData.dragonBall);
+    // append(inGameItems, inGameItemsData.fargo);
+    // append(inGameItems, inGameItemsData.thorium);
     craftingStations = craftingTreeItemsData.craftingStations;
     selectableItems = craftingTreeItemsData.selectableItems;
+    loadingImages = true;
+    totalImages += selectableItems.length + craftingStations.length + inGameItems.length;
     for (let i = 0; i < selectableItems.length; i ++) {
         for (inGameItem of inGameItems) {
             if (inGameItem.name == selectableItems[i].name) {
@@ -59,7 +70,13 @@ function setup() {
         }
         selectableItems[i].sprite = loadImage("images/" + selectableItems[i].name + ".png", incrementLoadedImages);
     }
-    loadSprites();
+    for (let i = 0; i < craftingStations.length; i ++) {
+        craftingStations[i].sprite = loadImage("images/" + craftingStations[i].name + ".png", incrementLoadedImages);
+    }
+    for (let i = 0; i < inGameItems.length; i ++) {
+        inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png", incrementLoadedImages)
+    }
+    // loadImages(); TODO
 }
 
 function draw() {
@@ -138,6 +155,7 @@ function draw() {
             if (mouseIsPressed) {
                 clickDisabled = true;
                 selectingItem = false;
+                // loadImages(selectedItem); TODO
                 reset();
             }
         }
@@ -201,14 +219,11 @@ function draw() {
                     text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + 170)
                 }
                 pop();
-
-                // image(item.inGameItem.sprite, item.position.x-(item.inGameItem.sprite.width / 1.4), item.position.y-(item.inGameItem.sprite.height / 1.4),
-                      // item.inGameItem.sprite.width * 1.4, item.inGameItem.sprite.height * 1.4)
             }
         }
     }
 
-    if (firstLoadTime != 0 && frameCount - firstLoadTime < 300 && !displayControls) {
+    if (firstLoadTime != 0 && frameCount - firstLoadTime < 300 && !displayControls && !loadingImages) {
         let textOpacity = map(frameCount - firstLoadTime, 0, 300, 2000, 0);
         textSize(25 * zoomLevel);
         textAlign(LEFT);
@@ -330,20 +345,20 @@ function loadItemRecursive(treeItem, parentItem) {
     }
 }
 
-function loadSprites() {
-    for (let i = 0; i < inGameItems.length; i ++) {
-        inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png", incrementLoadedImages);
-    }
-    for (let i = 0; i < craftingStations.length; i ++) {
-        craftingStations[i].sprite = loadImage("images/" + craftingStations[i].name + ".png", incrementLoadedImages);
-    }
-}
+// function loadImages() { TODO
+//     totalImages += inGameItems.length;
+//     loadingImages = true;
+//     for (let i = 0; i < inGameItems.length; i ++) {
+//         if (inGameItems[i].sprite == null) {
+//             inGameItems[i].sprite = loadImage("images/" + inGameItems[i].name + ".png", incrementLoadedImages);
+//         }
+//     }
+// }
 
 function incrementLoadedImages(image) {
     loadedImages ++;
-    if (loadedImages >= inGameItems.length + craftingStations.length) {
+    if (loadedImages >= totalImages) {
         loadingImages = false;
-        selectingItem = true;
     }
 }
 
