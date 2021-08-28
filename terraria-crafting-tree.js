@@ -19,7 +19,7 @@ let selectedItem; // The chosen selectableItem, or the one hovered over while st
 let spritesTotal = 0; // Number of sprites to be loaded during a statusLoadingSprites
 let spritesLoaded = 0; // Sprites loaded so far, for tracking progress
 
-let itemSpacing = 150; // Distance between concentric rings of items
+// let itemSpacing = 150; // Distance between concentric rings of items
 let openSansBold; // Font file used for UI text
 
 let cameraPan = new p5.Vector(0, 0); // Current position of the camera, relative to the centre of the crafting tree
@@ -45,7 +45,7 @@ function setup() {
     textFont(openSansBold);
     textAlign(CENTER);
 
-    cameraHeight = (windowHeight/2) / tan(PI/6);
+    cameraHeight = (height/2) / tan(PI/6);
     cam = createCamera();
     cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight);
 
@@ -169,6 +169,13 @@ function draw() {
                 circle(0, 0, 30000);
                 fill(255);
                 textSize(25);
+                let nameAndQuantity = item.inGameItem.displayName;
+                if (item.quantityNeeded > 1) {
+                    nameAndQuantity = concat(nameAndQuantity, " x" + item.quantityNeeded);
+                }
+                if (item.quantityTotal > 1) {
+                    nameAndQuantity = concat(nameAndQuantity, " (x" + item.quantityTotal + " total)");
+                }
                 let rectWidth = max(160, textWidth(item.inGameItem.displayName) + 55);
                 let rectHeight = 300;
                 textSize(15);
@@ -182,8 +189,13 @@ function draw() {
                 }
 
                 if (craftingStation != null) {
-                    rectWidth = max(rectWidth, textWidth("Crafted at " + craftingStation.displayName) + 55);
-                    rectHeight = (item.inGameItem.sprite.height + craftingStation.sprite.height + 240);
+                    if (craftingStation.name == "by-hand") {
+                        rectWidth = max(rectWidth, textWidth("Crafted by hand") + 55);
+                        rectHeight = (item.inGameItem.sprite.height + 240);
+                    } else {
+                        rectWidth = max(rectWidth, textWidth("Crafted at " + craftingStation.displayName) + 55);
+                        rectHeight = (item.inGameItem.sprite.height + craftingStation.sprite.height + 240);
+                    }
                 } else if (item.inGameItem.acquisition != "") {
                     rectWidth = max(rectWidth, textWidth(item.inGameItem.acquisition) + 55);
                     rectHeight = (item.inGameItem.sprite.height + 240);
@@ -192,6 +204,20 @@ function draw() {
                     cursor(ARROW);
                 }
 
+                let quantityText;
+                let quantityOffset = 0;
+                if (item.quantityNeeded > 1 && item.quantityTotal > item.quantityNeeded) {
+                    quantityText = "(x" + item.quantityNeeded + ", x" + item.quantityTotal + " total)";
+                    quantityOffset = 25;
+                } else if (item.quantityNeeded > 1) {
+                    quantityText = "(x" + item.quantityNeeded + ")";
+                    quantityOffset = 25;
+                } else if (item.quantityTotal > item.quantityNeeded) {
+                    quantityText = "(x" + item.quantityTotal + " total)";
+                    quantityOffset = 25;
+                }
+                rectHeight += quantityOffset;
+
                 rect(-rectWidth / 2, -(item.inGameItem.sprite.height / 2) - 45, rectWidth, rectHeight);
                 image(item.inGameItem.sprite, -(item.inGameItem.sprite.width / 1.1), -(item.inGameItem.sprite.height / 1.1),
                       item.inGameItem.sprite.width * 1.8, item.inGameItem.sprite.height * 1.8)
@@ -199,15 +225,23 @@ function draw() {
                 textSize(25);
                 text(item.inGameItem.displayName, 0, (item.inGameItem.sprite.height / 2) + 60);
                 textSize(15);
+                if (quantityOffset > 0) {
+                    text(quantityText, 0, (item.inGameItem.sprite.height / 2) + 90);
+                }
 
                 if (craftingStation != null) {
-                    text("Crafted at " + craftingStation.displayName, 0, (item.inGameItem.sprite.height / 2) + 110);
-                    image(craftingStation.sprite, -(craftingStation.sprite.width / 2), (item.inGameItem.sprite.height / 2) + 125,
-                          craftingStation.sprite.width, craftingStation.sprite.height);
-                    text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + craftingStation.sprite.height + 170)
+                    if (craftingStation.name == "by-hand") {
+                        text("Crafted by hand", 0, (item.inGameItem.sprite.height / 2) + quantityOffset + 110);
+                        text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + quantityOffset + 170)
+                    } else {
+                        text("Crafted at " + craftingStation.displayName, 0, (item.inGameItem.sprite.height / 2) + quantityOffset + 110);
+                        image(craftingStation.sprite, -(craftingStation.sprite.width / 2), (item.inGameItem.sprite.height / 2) + quantityOffset + 125,
+                              craftingStation.sprite.width, craftingStation.sprite.height);
+                        text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + craftingStation.sprite.height + quantityOffset + 170)
+                    }
                 } else if (item.inGameItem.acquisition != "") {
-                    text(item.inGameItem.acquisition, 0, (item.inGameItem.sprite.height / 2) + 110);
-                    text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + 170)
+                    text(item.inGameItem.acquisition, 0, (item.inGameItem.sprite.height / 2) + quantityOffset + 110);
+                    text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + quantityOffset + 170)
                 }
                 pop();
             }
@@ -220,15 +254,15 @@ function draw() {
         textSize(25 * zoomLevel);
         textAlign(LEFT);
         fill(255, 255, 255, textOpacity);
-        text("Press enter to toggle controls", (-width / 2 - 5) * zoomLevel + cameraPan.x + 2, (-height / 2 + 25) * zoomLevel + cameraPan.y + 2);
+        text("Press enter to toggle controls", (-width / 2 + 10) * zoomLevel + cameraPan.x + 2, (-height / 2 + 30) * zoomLevel + cameraPan.y + 2);
         fill(0, 0, 0, textOpacity);
-        text("Press enter to toggle controls", (-width / 2 - 5) * zoomLevel + cameraPan.x, (-height / 2 + 25) * zoomLevel + cameraPan.y);
+        text("Press enter to toggle controls", (-width / 2 + 10) * zoomLevel + cameraPan.x, (-height / 2 + 30) * zoomLevel + cameraPan.y);
         textAlign(CENTER);
     }
 
     // Display keyboard controls
     if (statusDisplayControls) {
-        let textPosition = new p5.Vector((-width / 2 - 5) * zoomLevel + cameraPan.x, (-height / 2) * zoomLevel + cameraPan.y);
+        let textPosition = new p5.Vector((-width / 2 + 10) * zoomLevel + cameraPan.x, (-height / 2 + 5) * zoomLevel + cameraPan.y);
         textSize(20 * zoomLevel);
         textAlign(LEFT);
         fill(255);
@@ -249,7 +283,7 @@ function draw() {
 
 function windowResized() {
     resizeCanvas(windowWidth - 20, windowHeight - 20);
-    cameraHeight = (windowHeight/2) / tan(PI/6);
+    cameraHeight = (height/2) / tan(PI/6);
     cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight);
 }
 
@@ -332,7 +366,9 @@ function loadItemRecursive(treeItem, parentItem) {
                 newItemPosition.rotate(map(ingredientNumber, 0, 1, -HALF_PI, HALF_PI));
             }
             newItemPosition.add(parentItem.position);
-            newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, itemSpacing);
+            newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, selectedItem.itemSpacing);
+            // let tempSpacing = [210, 405, 600, 750, 900, 1050]; // TODO
+            // newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, tempSpacing);
             treeItems.push(newItem);
             loadItemRecursive(inGameItems[ingredient[0]], newItem);
         }
@@ -376,7 +412,7 @@ function loadCraftingTree() {
     treeItems = [];
 
     itemSpacing = selectedItem.itemSpacing;
-    firstItem = new Item(0, 0, selectedItem.inGameItem, 1, null);
+    firstItem = new Item(0, 0, selectedItem.inGameItem, 1, null, itemSpacing);
     treeItems.push(firstItem);
     loadItemRecursive(selectedItem.inGameItem, firstItem);
 
@@ -423,7 +459,7 @@ function placeChildrenRadially(parentItem, originItem, treeItems) {
         let runningTotal = 0;
         for (child of childList) {
             let childAngle = eachChildAngle * child.children;
-            let newItemPosition = new p5.Vector(0, itemSpacing);
+            let newItemPosition = new p5.Vector(0, child.itemSpacing);
             newItemPosition.rotate(childAngle / 2 + runningTotal);
             newItemPosition.add(originItem.position);
             runningTotal += childAngle;

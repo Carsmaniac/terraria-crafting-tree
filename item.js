@@ -1,16 +1,22 @@
 class Item {
     constructor(x, y, inGameItem, quantity, parent, itemSpacing) {
-        this.position = new p5.Vector(x, y);
+        // this.position = new p5.Vector(x, y);
+        this.position = new p5.Vector();
         this.inGameItem = inGameItem;
-        this.quantity = quantity;
+        this.quantityNeeded = quantity;
         this.parent = parent;
         this.socialDistance = 100;
         this.children = 0;
-        this.itemSpacing = 0;
         this.hoveredOver = false;
 
-        if (parent != null) {
-            this.itemSpacing = parent.itemSpacing + itemSpacing;
+        if (this.parent != null) {
+            this.itemSpacingIndex = parent.itemSpacingIndex + 1;
+            this.itemSpacing = itemSpacing[this.itemSpacingIndex];
+            this.quantityTotal = ceil(this.quantityNeeded * this.parent.quantityTotal / this.parent.inGameItem.quantityMade);
+        } else {
+            this.itemSpacingIndex = -1;
+            this.quantityTotal = 1;
+            this.socialDistance = 0;
         }
     }
 
@@ -67,29 +73,8 @@ class Item {
                 }
             }
             if (nearbyItems.length > 0) {
-                let avgPosition = new p5.Vector();
-
-                for (item of nearbyItems) {
-                    avgPosition.add(item.position);
-
-                    if (item.parent != null) {
-                        let itemIntendedPosition = new p5.Vector();
-                        itemIntendedPosition.x = item.position.x - (this.position.x - item.position.x) / 3;
-                        itemIntendedPosition.y = item.position.y - (this.position.y - item.position.y) / 3;
-                        item.position.x = lerp(item.position.x, itemIntendedPosition.x, 0.05);
-                        item.position.y = lerp(item.position.y, itemIntendedPosition.y, 0.05);
-                    }
-                }
-                avgPosition.div(nearbyItems.length);
-
-                let intendedMovement = new p5.Vector();
-                intendedMovement.x = avgPosition.x - this.position.x;
-                intendedMovement.y = avgPosition.y - this.position.y;
-                intendedMovement.setMag(max(this.socialDistance - dist(this.position.x, this.position.y, avgPosition.x, avgPosition.y), 5))
-
-                let intendedPosition = new p5.Vector(this.position.x - intendedMovement.x, this.position.y - intendedMovement.y);
-                this.position.x = lerp(this.position.x, intendedPosition.x + random(-0.05, 0.05), 0.15);
-                this.position.y = lerp(this.position.y, intendedPosition.y + random(-0.05, 0.05), 0.15);
+                // fill(255, 0, 0);
+                // ellipse(this.position.x, this.position.y, 50);
             }
         }
     }
