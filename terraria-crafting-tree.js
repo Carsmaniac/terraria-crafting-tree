@@ -1,37 +1,36 @@
 // I hope you like global variables
 
-let treeItems = [];
-let inGameItemsData;
-let inGameItems;
-let craftingTreeItemsData;
-let craftingStations;
-let selectableItems;
+let inGameItemsData; // JSON containing inGameItems
+let craftingTreeItemsData; // JSON containing craftingStations and selectableItems
+let treeItems = []; // An item that appears on the crafting tree, with a corresponding inGameItem
+let inGameItems; // An in-game item from the game or one of the supported mods
+let craftingStations; // A crafting station (anvil, furnace etc) and its sprite
+let selectableItems; // An item selectable at load which will serve as the central/top level item in the crafting tree
 
-let selectingItem = true;
-let selectedItem;
-let clickDisabled = false;
+let statusSelectingItem = true; // The item selection screen is displayed
+let statusClickDisabled = false; // Disables opening a wiki page or panning around, to avoid accidental clicks on loading the tree
+let statusLoadingSprites = false; // Sprites are being loaded, and the "Loading sprites" screen is displayed
+let statusDisplayControls = false; // Keyboard controls are displayed in the top left corner
+let statusHoveringOverItem = false; // A treeItem is being hovered over, and its information displayed
+let statusDragging = false; // The mouse is being clicked and dragged, and the view is panning
 
-let spritesLoaded = 0;
-let spritesTotal = 0;
-let loadingSprites = false;
+let selectedItem; // The chosen selectableItem, or the one hovered over while statusSelectingItem
 
-let itemSpacing = 150;
-let hoveringOverItem;
-let openSansRegular;
-let openSansBold;
+let spritesTotal = 0; // Number of sprites to be loaded during a statusLoadingSprites
+let spritesLoaded = 0; // Sprites loaded so far, for tracking progress
 
-let cameraPan = new p5.Vector(0, 0);
-let dragStart = new p5.Vector();
-let dragMouse = new p5.Vector();
-let panStart = new p5.Vector();
-let dragging = false;
-let mousePos = new p5.Vector();
+let itemSpacing = 150; // Distance between concentric rings of items
+let openSansBold; // Font file used for UI text
 
-let cameraHeight;
-let zoomLevel = 1;
+let cameraPan = new p5.Vector(0, 0); // Current position of the camera, relative to the centre of the crafting tree
+let cameraHeight; // Distance from the camera to the canvas, affects visual zoom
+let zoomLevel = 1; // Zoom percent relative to 1x, higher zooms out, affects cameraHeight
+let dragStart = new p5.Vector(); // Mouse position at the beginning of a drag
+let dragMouse = new p5.Vector(); // Mouse position during a drag, relative to dragStart and accounting for zoomLevel
+let panStart = new p5.Vector(); // cameraPan at the beginning of a drag
+let mousePos = new p5.Vector(); // Mouse position on the canvas, accounting for cameraPan and zoomLevel
 
-let firstLoadTime = 0;
-let displayControls = false;
+let firstLoadTime = 0; // frameCount when first loading a tree, determines when to fade out control toggle message
 
 function preload() {
     inGameItemsData = loadJSON("in-game-items.json");
@@ -53,8 +52,8 @@ function setup() {
     inGameItems = inGameItemsData.inGameItems;
     craftingStations = craftingTreeItemsData.craftingStations;
     selectableItems = craftingTreeItemsData.selectableItems;
-    loadingSprites = true;
-    spritesTotal += selectableItems.length + craftingStations.length;
+    statusLoadingSprites = true;
+    spritesTotal = selectableItems.length + craftingStations.length;
     for (let i = 0; i < selectableItems.length; i ++) {
         for (inGameItem of inGameItems) {
             if (inGameItem.name == selectableItems[i].name) {
@@ -73,7 +72,7 @@ function draw() {
 
     cam.setPosition(cameraPan.x, cameraPan.y, cameraHeight * zoomLevel);
 
-    if (dragging) {
+    if (statusDragging) {
         dragMouse.x = (mouseX - dragStart.x) * zoomLevel;
         cameraPan.set(panStart.x - ((mouseX - dragStart.x) * zoomLevel), panStart.y - ((mouseY - dragStart.y) * zoomLevel));
     }
@@ -82,13 +81,15 @@ function draw() {
     mousePos.y = mouseY - (height / 2) + cameraPan.y + (cameraPan.y * (-(zoomLevel - 1) / zoomLevel));
     mousePos.setMag(mousePos.mag() * zoomLevel);
 
-    if (loadingSprites) {
+    // Display "Loading sprites" screen
+    if (statusLoadingSprites) {
         fill(255);
         circle(0, 0, 30000);
         fill(0);
         textSize(40);
         text("Loading sprites (" + spritesLoaded + "/" + spritesTotal + ")", 0, 0);
-    } else if (selectingItem) {
+    // Display item selection screen
+    } else if (statusSelectingItem) {
         zoomLevel = 1.2;
         fill(255);
         noStroke();
@@ -142,23 +143,24 @@ function draw() {
             textSize(20);
             text(selectedItem.modName, selectedItem.position.x, selectedItem.position.y + selectedItem.scaledHeight * 0.25 + 130);
             if (mouseIsPressed) {
-                clickDisabled = true;
-                selectingItem = false;
+                statusClickDisabled = true;
+                statusSelectingItem = false;
                 cursor(ARROW);
-                reset();
+                loadCraftingTree();
             }
         }
+    // Display crafting tree
     } else {
         for (item of treeItems) {
             item.display(mousePos);
             item.update(treeItems);
         }
 
-        hoveringOverItem = false;
+        statusHoveringOverItem = false;
         cursor(ARROW);
         for (item of treeItems) {
             if (item.hoveredOver) {
-                hoveringOverItem = true;
+                statusHoveringOverItem = true;
                 push();
                 translate(item.position.x, item.position.y);
                 cursor("pointer");
@@ -212,7 +214,8 @@ function draw() {
         }
     }
 
-    if (firstLoadTime != 0 && frameCount - firstLoadTime < 300 && !displayControls && !loadingSprites) {
+    // Display control toggle message
+    if (firstLoadTime != 0 && frameCount - firstLoadTime < 300 && !statusDisplayControls && !statusLoadingSprites) {
         let textOpacity = map(frameCount - firstLoadTime, 0, 300, 2000, 0);
         textSize(25 * zoomLevel);
         textAlign(LEFT);
@@ -222,7 +225,9 @@ function draw() {
         text("Press enter to toggle controls", (-width / 2 - 5) * zoomLevel + cameraPan.x, (-height / 2 + 25) * zoomLevel + cameraPan.y);
         textAlign(CENTER);
     }
-    if (displayControls) {
+
+    // Display keyboard controls
+    if (statusDisplayControls) {
         let textPosition = new p5.Vector((-width / 2 - 5) * zoomLevel + cameraPan.x, (-height / 2) * zoomLevel + cameraPan.y);
         textSize(20 * zoomLevel);
         textAlign(LEFT);
@@ -250,44 +255,44 @@ function windowResized() {
 
 function keyPressed() {
     if (keyCode == ESCAPE) {
-        dragging = false;
-        displayControls = false;
+        statusDragging = false;
+        statusDisplayControls = false;
         cameraPan.set(0, 0);
-        selectingItem = true;
+        statusSelectingItem = true;
     } else if (keyCode == UP_ARROW) {
-        if (!loadingSprites && !selectingItem) {
+        if (!statusLoadingSprites && !statusSelectingItem) {
             zoomLevel = max(zoomLevel * 0.9 * 0.9, 0.4);
         }
     } else if (keyCode == DOWN_ARROW) {
-        if (!loadingSprites && !selectingItem) {
+        if (!statusLoadingSprites && !statusSelectingItem) {
             zoomLevel = min(zoomLevel * 1.1 * 1.1, 9.5);
         }
     } else if (keyCode == ENTER) {
-        if (!loadingSprites && !selectingItem) {
-            displayControls = !displayControls;
-            firstLoadTime = -400;
+        if (!statusLoadingSprites && !statusSelectingItem) {
+            statusDisplayControls = !statusDisplayControls;
+            firstLoadTime = -400; // Prevents the toggle controls message from displaying again
         }
     }
 }
 
 function mousePressed() {
-    if (!dragging && !hoveringOverItem && !loadingSprites && !selectingItem) {
+    if (!statusDragging && !statusHoveringOverItem && !statusLoadingSprites && !statusSelectingItem) {
         dragStart.set(mouseX, mouseY);
         panStart.set(cameraPan);
-        dragging = true;
+        statusDragging = true;
     }
 }
 
 function mouseReleased() {
-    if (dragging) {
-        dragging = false;
+    if (statusDragging) {
+        statusDragging = false;
     }
 }
 
 function mouseClicked() {
-    if (clickDisabled) {
-        clickDisabled = false;
-    } else if (hoveringOverItem) {
+    if (statusClickDisabled) {
+        statusClickDisabled = false;
+    } else if (statusHoveringOverItem) {
         let hoverItem;
         for (item of treeItems) {
             if (item.hoveredOver) {
@@ -301,11 +306,11 @@ function mouseClicked() {
 }
 
 function mouseWheel(mouseEvent) {
-    if (!loadingSprites && !selectingItem) {
+    if (!statusLoadingSprites && !statusSelectingItem) {
         if (mouseEvent.delta > 0) {
-            zoomLevel = min(zoomLevel * 1.1, 9.5);
+            zoomLevel = min(zoomLevel * map(mouseEvent.delta, 0, 80, 1, 1.1), 9.5);
         } else {
-            zoomLevel = max(zoomLevel * 0.9, 0.4);
+            zoomLevel = max(zoomLevel * map(mouseEvent.delta, 0, -80, 1, 0.9), 0.4);
         }
     }
 }
@@ -345,7 +350,7 @@ function loadSprites() {
     }
 
     if (spritesToLoad.length > 0) {
-        loadingSprites = true;
+        statusLoadingSprites = true;
         spritesLoaded = 0;
         spritesTotal = spritesToLoad.length;
         for (let i = 0; i < treeItems.length; i ++) {
@@ -356,18 +361,18 @@ function loadSprites() {
             }
         }
     } else {
-        loadingSprites = false;
+        statusLoadingSprites = false;
     }
 }
 
 function incrementspritesLoaded(image) {
     spritesLoaded ++;
     if (spritesLoaded >= spritesTotal) {
-        loadingSprites = false;
+        statusLoadingSprites = false;
     }
 }
 
-function reset() {
+function loadCraftingTree() {
     treeItems = [];
 
     itemSpacing = selectedItem.itemSpacing;

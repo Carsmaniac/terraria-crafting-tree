@@ -34,6 +34,7 @@ class Item {
             push();
             translate(arrowStart.x, arrowStart.y);
             rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() - HALF_PI);
+            // Lines are drawn on top of all other shapes, including the fade-out white overlay when hovering, so a rect is used instead
             rect(-0.75, 5, 1.5, dist(arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y) - 5);
             pop();
             push();
