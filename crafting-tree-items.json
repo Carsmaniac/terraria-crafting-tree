@@ -138,252 +138,210 @@
             "name": "ankh-shield",
             "displayName": "Ankh Shield",
             "modName": "Terraria",
-            "itemSets": ["terraria"],
             "itemSpacing": [150, 300, 450]
         },
         {
             "name": "cell-phone",
             "displayName": "Cell Phone",
             "modName": "Terraria",
-            "itemSets": ["terraria"],
             "itemSpacing": [150, 300, 450, 500, 600, 750, 850, 1000]
         },
         {
             "name": "terraspark-boots",
             "displayName": "Terraspark Boots",
             "modName": "Terraria",
-            "itemSets": ["terraria"],
             "itemSpacing": [150, 300, 450, 580, 670]
         },
         {
             "name": "zenith",
             "displayName": "Zenith",
             "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": [360, 560, 760, 960, 1160, 1360, 1560]
+            "itemSpacing": [380, 575, 760, 960, 1160, 1340, 1520]
+        },
+        {
+            "name": "zenith",
+            "displayName": "Soul of Eternity (no mod add-ons)",
+            "modName": "Fargo's Soul Mod",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Soul of Eternity (all mod add-ons)",
+            "modName": "Fargo's Soul Mod",
+            "itemSpacing": 250
+        },
+        {
+            "name": "auric-tesla-armor",
+            "displayName": "Auric Tesla Armour",
+            "modName": "Calamity",
+            "itemSpacing": [485, 645, 805, 965]
+        },
+        {
+            "name": "zenith",
+            "displayName": "Ark of the Cosmos",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Celestial Tracers",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Celestus",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Cosmic Immaterializer",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Devil's Devastation",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Drataliornus",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Eclipse Mirror",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Eternity",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Ethereal Talisman",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Exo Gladius",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Exoblade",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Magnomaly Cannon",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Nanotech",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Nucleogenesis",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "zenith",
+            "displayName": "Photoviscerator",
+            "modName": "Calamity",
+            "itemSpacing": 250
+        },
+        {
+            "name": "rampart-of-deities",
+            "displayName": "Rampart of Deities",
+            "modName": "Calamity",
+            "itemSpacing": [175, 320, 465]
         },
         {
             "name": "the-sponge",
             "displayName": "The Sponge",
             "modName": "Calamity",
-            "itemSets": ["terraria"],
-            "itemSpacing": [210, 405, 600, 750, 900, 1050]
+            "itemSpacing": [215, 410, 600, 750, 900, 1050]
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "Supernova",
+            "modName": "Calamity",
             "itemSpacing": 250
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "Vivid Clarity",
+            "modName": "Calamity",
             "itemSpacing": 250
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "Celestial Edge Pandolarra",
+            "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "Cosmic Desolation",
+            "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "The Leviathan III",
+            "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "Memento Mori",
+            "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "Moon Edged Cold Front",
+            "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "Shield of Reflections",
+            "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "Warp Tracers",
+            "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "Terrarium Defender",
+            "modName": "Thorium",
             "itemSpacing": 250
         },
         {
             "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
-            "itemSpacing": 250
-        },
-        {
-            "name": "zenith",
-            "displayName": "Zenith",
-            "modName": "Terraria",
-            "itemSets": ["terraria"],
+            "displayName": "Terrarium Particle Sprinters",
+            "modName": "Throium",
             "itemSpacing": 250
         }
     ]

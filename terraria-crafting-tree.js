@@ -367,7 +367,7 @@ function loadItemRecursive(treeItem, parentItem) {
             }
             newItemPosition.add(parentItem.position);
             newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, selectedItem.itemSpacing);
-            // let tempSpacing = [210, 405, 600, 750, 900, 1050]; // TODO
+            // let tempSpacing = [485, 645, 805, 965]; // TODO
             // newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, tempSpacing);
             treeItems.push(newItem);
             loadItemRecursive(inGameItems[ingredient[0]], newItem);
