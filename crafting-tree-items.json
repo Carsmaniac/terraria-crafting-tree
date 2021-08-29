@@ -131,6 +131,10 @@
         {
 			"name": "crucible-of-the-cosmos",
 			"displayName": "Crucible of the Cosmos"
+		},
+        {
+			"name": "sky-mill",
+			"displayName": "Sky Mill"
 		}
 	],
     "selectableItems": [
@@ -177,16 +181,16 @@
             "itemSpacing": [485, 645, 805, 965]
         },
         {
-            "name": "zenith",
+            "name": "ark-of-the-cosmos",
             "displayName": "Ark of the Cosmos",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [450, 800, 1070, 1250, 1450, 1600, 1750, 1900]
         },
         {
-            "name": "zenith",
+            "name": "celestial-tracers",
             "displayName": "Celestial Tracers",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [300, 600, 800, 950, 1100, 1250, 1400, 1550]
         },
         {
             "name": "zenith",

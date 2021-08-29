@@ -161,89 +161,7 @@ function draw() {
         for (item of treeItems) {
             if (item.hoveredOver) {
                 statusHoveringOverItem = true;
-                push();
-                translate(item.position.x, item.position.y);
-                cursor("pointer");
-
-                fill(255, 255, 255, 70);
-                circle(0, 0, 30000);
-                fill(255);
-                textSize(25);
-                let nameAndQuantity = item.inGameItem.displayName;
-                if (item.quantityNeeded > 1) {
-                    nameAndQuantity = concat(nameAndQuantity, " x" + item.quantityNeeded);
-                }
-                if (item.quantityTotal > 1) {
-                    nameAndQuantity = concat(nameAndQuantity, " (x" + item.quantityTotal + " total)");
-                }
-                let rectWidth = max(160, textWidth(item.inGameItem.displayName) + 55);
-                let rectHeight = 300;
-                textSize(15);
-                rectWidth = max(rectWidth, textWidth("(Click to open wiki page)") + 55);
-
-                let craftingStation = null;
-                for (station of craftingStations) {
-                    if (station.name == item.inGameItem.craftingStation) {
-                        craftingStation = station;
-                    }
-                }
-
-                if (craftingStation != null) {
-                    if (craftingStation.name == "by-hand") {
-                        rectWidth = max(rectWidth, textWidth("Crafted by hand") + 55);
-                        rectHeight = (item.inGameItem.sprite.height + 240);
-                    } else {
-                        rectWidth = max(rectWidth, textWidth("Crafted at " + craftingStation.displayName) + 55);
-                        rectHeight = (item.inGameItem.sprite.height + craftingStation.sprite.height + 240);
-                    }
-                } else if (item.inGameItem.acquisition != "") {
-                    rectWidth = max(rectWidth, textWidth(item.inGameItem.acquisition) + 55);
-                    rectHeight = (item.inGameItem.sprite.height + 240);
-                } else {
-                    rectHeight = (item.inGameItem.sprite.height + 132);
-                    cursor(ARROW);
-                }
-
-                let quantityText;
-                let quantityOffset = 0;
-                if (item.quantityNeeded > 1 && item.quantityTotal > item.quantityNeeded) {
-                    quantityText = "(x" + item.quantityNeeded + ", x" + item.quantityTotal + " total)";
-                    quantityOffset = 25;
-                } else if (item.quantityNeeded > 1) {
-                    quantityText = "(x" + item.quantityNeeded + ")";
-                    quantityOffset = 25;
-                } else if (item.quantityTotal > item.quantityNeeded) {
-                    quantityText = "(x" + item.quantityTotal + " total)";
-                    quantityOffset = 25;
-                }
-                rectHeight += quantityOffset;
-
-                rect(-rectWidth / 2, -(item.inGameItem.sprite.height / 2) - 45, rectWidth, rectHeight);
-                image(item.inGameItem.sprite, -(item.inGameItem.sprite.width / 1.1), -(item.inGameItem.sprite.height / 1.1),
-                      item.inGameItem.sprite.width * 1.8, item.inGameItem.sprite.height * 1.8)
-                fill(0);
-                textSize(25);
-                text(item.inGameItem.displayName, 0, (item.inGameItem.sprite.height / 2) + 60);
-                textSize(15);
-                if (quantityOffset > 0) {
-                    text(quantityText, 0, (item.inGameItem.sprite.height / 2) + 90);
-                }
-
-                if (craftingStation != null) {
-                    if (craftingStation.name == "by-hand") {
-                        text("Crafted by hand", 0, (item.inGameItem.sprite.height / 2) + quantityOffset + 110);
-                        text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + quantityOffset + 170)
-                    } else {
-                        text("Crafted at " + craftingStation.displayName, 0, (item.inGameItem.sprite.height / 2) + quantityOffset + 110);
-                        image(craftingStation.sprite, -(craftingStation.sprite.width / 2), (item.inGameItem.sprite.height / 2) + quantityOffset + 125,
-                              craftingStation.sprite.width, craftingStation.sprite.height);
-                        text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + craftingStation.sprite.height + quantityOffset + 170)
-                    }
-                } else if (item.inGameItem.acquisition != "") {
-                    text(item.inGameItem.acquisition, 0, (item.inGameItem.sprite.height / 2) + quantityOffset + 110);
-                    text("(Click to open wiki page)", 0, (item.inGameItem.sprite.height / 2) + quantityOffset + 170)
-                }
-                pop();
+                item.displayHoverInformation(craftingStations);
             }
         }
     }
@@ -366,9 +284,9 @@ function loadItemRecursive(treeItem, parentItem) {
                 newItemPosition.rotate(map(ingredientNumber, 0, 1, -HALF_PI, HALF_PI));
             }
             newItemPosition.add(parentItem.position);
-            newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, selectedItem.itemSpacing);
-            // let tempSpacing = [485, 645, 805, 965]; // TODO
-            // newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, tempSpacing);
+            // newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, selectedItem.itemSpacing);
+            let tempSpacing = [200, 400, 600, 750, 900, 1050, 1200, 1350, 1500]; // TODO
+            newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, tempSpacing);
             treeItems.push(newItem);
             loadItemRecursive(inGameItems[ingredient[0]], newItem);
         }
