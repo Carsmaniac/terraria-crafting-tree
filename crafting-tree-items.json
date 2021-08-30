@@ -135,6 +135,10 @@
         {
 			"name": "sky-mill",
 			"displayName": "Sky Mill"
+		},
+        {
+			"name": "ice-machine",
+			"displayName": "Ice Machine"
 		}
 	],
     "selectableItems": [
@@ -193,46 +197,46 @@
             "itemSpacing": [300, 600, 800, 950, 1100, 1250, 1400, 1550]
         },
         {
-            "name": "zenith",
+            "name": "celestus",
             "displayName": "Celestus",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [530, 1070, 1270, 1420, 1570, 1720]
         },
         {
-            "name": "zenith",
+            "name": "cosmic-immaterializer",
             "displayName": "Cosmic Immaterializer",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [400, 600, 800, 970]
         },
         {
-            "name": "zenith",
+            "name": "devils-devastation",
             "displayName": "Devil's Devastation",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [300, 550, 800, 900]
         },
         {
-            "name": "zenith",
+            "name": "drataliornus",
             "displayName": "Drataliornus",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [900, 1300, 1500, 1700, 1850, 2000, 2150, 2300]
         },
         {
-            "name": "zenith",
+            "name": "eclipse-mirror",
             "displayName": "Eclipse Mirror",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [200, 400, 600, 750, 900, 1050]
         },
         {
-            "name": "zenith",
+            "name": "eternity",
             "displayName": "Eternity",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [550, 900, 1100, 1300, 1500, 1650]
         },
         {
-            "name": "zenith",
+            "name": "ethereal-talisman",
             "displayName": "Ethereal Talisman",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [200, 400, 550, 700, 850, 1000, 1150]
         },
         {
             "name": "zenith",

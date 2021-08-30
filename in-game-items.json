@@ -2,6 +2,26 @@
 	"inGameItems": [
 		{
 			"id": 0,
+			"name": "abyssal-mirror",
+			"displayName": "Abyssal Mirror",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[297, 5],[162, 5],[419, 8],[318, 1],[271, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Abyssal_Mirror"
+		},
+		{
+			"id": 1,
+			"name": "acidwood",
+			"displayName": "Acidwood",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Gathered from trees in the Sulphurous Sea",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Acidwood"
+		},
+		{
+			"id": 2,
 			"name": "adhesive-bandage",
 			"displayName": "Adhesive Bandage",
 			"craftingStation": "",
@@ -11,17 +31,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Adhesive_Bandage"
 		},
 		{
-			"id": 1,
+			"id": 3,
 			"name": "aerialite-bar",
 			"displayName": "Aerialite Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[2, 4]],
+			"ingredients": [[4, 4]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Aerialite_Bar"
 		},
 		{
-			"id": 2,
+			"id": 4,
 			"name": "aerialite-ore",
 			"displayName": "Aerialite Ore",
 			"craftingStation": "",
@@ -31,7 +51,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Aerialite_Ore"
 		},
 		{
-			"id": 3,
+			"id": 5,
 			"name": "aglet",
 			"displayName": "Aglet",
 			"craftingStation": "",
@@ -41,17 +61,37 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Aglet"
 		},
 		{
-			"id": 4,
+			"id": 6,
+			"name": "alluvion",
+			"displayName": "Alluvion",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[45, 1],[132, 5],[321, 1],[162, 10],[297, 20],[454, 5]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Alluvion"
+		},
+		{
+			"id": 7,
+			"name": "alpha-virus",
+			"displayName": "Alpha Virus",
+			"craftingStation": "ancient-manipulator",
+			"ingredients": [[192, 1],[479, 5],[81, 5]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Alpha_Virus"
+		},
+		{
+			"id": 8,
 			"name": "ambrosial-ampoule",
 			"displayName": "Ambrosial Ampoule",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[25, 1],[14, 1],[273, 15],[134, 5],[236, 1],[167, 1]],
+			"ingredients": [[38, 1],[21, 1],[431, 15],[221, 5],[366, 1],[261, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Ambrosial_Ampoule"
 		},
 		{
-			"id": 5,
+			"id": 9,
 			"name": "amidias-spark",
 			"displayName": "Amidias' Spark",
 			"craftingStation": "",
@@ -61,7 +101,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Amidias%27_Spark"
 		},
 		{
-			"id": 6,
+			"id": 10,
 			"name": "ancient-bone-dust",
 			"displayName": "Ancient Bone Dust",
 			"craftingStation": "",
@@ -71,57 +111,67 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Ancient_Bone_Dust"
 		},
 		{
-			"id": 7,
+			"id": 11,
 			"name": "ancient-fossil",
 			"displayName": "Ancient Fossil",
 			"craftingStation": "furnace",
-			"ingredients": [[253, 100]],
+			"ingredients": [[404, 100]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Ancient_Fossil"
 		},
 		{
-			"id": 8,
+			"id": 12,
+			"name": "ancient-ice-chunk",
+			"displayName": "Ancient Ice Chunk",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Ice Claspers",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Ancient_Ice_Chunk"
+		},
+		{
+			"id": 13,
 			"name": "angel-treads",
 			"displayName": "Angel Treads",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[137, 1],[179, 1],[162, 1],[118, 5],[1, 20],[262, 1],[264, 1],[260, 1]],
+			"ingredients": [[227, 1],[280, 1],[253, 1],[196, 5],[3, 20],[416, 1],[418, 1],[414, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Angel_Treads"
 		},
 		{
-			"id": 9,
+			"id": 14,
 			"name": "angel-wings",
 			"displayName": "Angel Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[124, 10],[259, 20],[261, 25]],
+			"ingredients": [[205, 10],[413, 20],[415, 25]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Angel_Wings"
 		},
 		{
-			"id": 10,
+			"id": 15,
 			"name": "ankh-charm",
 			"displayName": "Ankh Charm",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[52, 1],[30, 1],[198, 1],[86, 1],[292, 1]],
+			"ingredients": [[74, 1],[43, 1],[310, 1],[133, 1],[462, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Ankh_Charm"
 		},
 		{
-			"id": 11,
+			"id": 16,
 			"name": "ankh-shield",
 			"displayName": "Ankh Shield",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[217, 1],[10, 1]],
+			"ingredients": [[337, 1],[15, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Ankh_Shield"
 		},
 		{
-			"id": 12,
+			"id": 17,
 			"name": "anklet-of-the-wind",
 			"displayName": "Anklet of the Wind",
 			"craftingStation": "",
@@ -131,117 +181,187 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Anklet_of_the_Wind"
 		},
 		{
-			"id": 13,
-			"name": "any-enchanted-sword-calamity",
-			"displayName": "Any Enchanted Sword",
-			"craftingStation": "",
-			"ingredients": [[114, 1],[29, 1]],
-			"quantityMade": 1,
-			"acquisition": "",
-			"wikiLink": ""
-		},
-		{
-			"id": 14,
-			"name": "any-evil-flask",
-			"displayName": "Any Evil Flask",
-			"craftingStation": "",
-			"ingredients": [[84, 1],[88, 1]],
-			"quantityMade": 1,
-			"acquisition": "",
-			"wikiLink": ""
-		},
-		{
-			"id": 15,
-			"name": "any-evil-stone",
-			"displayName": "Any Evil Stone",
-			"craftingStation": "",
-			"ingredients": [[108, 1],[89, 1]],
-			"quantityMade": 1,
-			"acquisition": "",
-			"wikiLink": ""
-		},
-		{
-			"id": 16,
-			"name": "any-evil-sword",
-			"displayName": "Any Evil Sword",
-			"craftingStation": "",
-			"ingredients": [[189, 1],[53, 1]],
-			"quantityMade": 1,
-			"acquisition": "",
-			"wikiLink": ""
-		},
-		{
-			"id": 17,
-			"name": "any-fast-boots",
-			"displayName": "Any Fast Boots",
-			"craftingStation": "",
-			"ingredients": [[243, 1],[166, 1],[107, 1],[132, 1]],
-			"quantityMade": 1,
-			"acquisition": "",
-			"wikiLink": ""
-		},
-		{
 			"id": 18,
-			"name": "any-gold-bar",
-			"displayName": "Any Gold Bar",
+			"name": "any-copper-bar",
+			"displayName": "Any Copper Bar",
 			"craftingStation": "",
-			"ingredients": [[151, 1],[229, 1]],
+			"ingredients": [[118, 1],[465, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": ""
 		},
 		{
 			"id": 19,
-			"name": "any-gold-broadsword",
-			"displayName": "Any Gold Broadsword",
+			"name": "any-enchanted-sword-calamity",
+			"displayName": "Any Enchanted Sword",
 			"craftingStation": "",
-			"ingredients": [[152, 1],[230, 1]],
+			"ingredients": [[189, 1],[42, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": ""
 		},
 		{
 			"id": 20,
-			"name": "any-gold-watch",
-			"displayName": "Any Gold Watch",
+			"name": "any-evil-bow",
+			"displayName": "Any Evil Bow",
 			"craftingStation": "",
-			"ingredients": [[154, 1],[232, 1]],
+			"ingredients": [[157, 1],[453, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": ""
 		},
 		{
 			"id": 21,
-			"name": "any-iron-bar",
-			"displayName": "Any Iron Bar",
+			"name": "any-evil-flask",
+			"displayName": "Any Evil Flask",
 			"craftingStation": "",
-			"ingredients": [[174, 1],[180, 1]],
+			"ingredients": [[127, 1],[136, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": ""
 		},
 		{
 			"id": 22,
-			"name": "any-mirror",
-			"displayName": "Any Mirror",
+			"name": "any-evil-flesh",
+			"displayName": "Any Evil Flesh",
 			"craftingStation": "",
-			"ingredients": [[195, 1],[171, 1]],
+			"ingredients": [[392, 1],[467, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": ""
 		},
 		{
 			"id": 23,
-			"name": "any-underground-shell",
-			"displayName": "Any Underground Shell",
+			"name": "any-evil-stone",
+			"displayName": "Any Evil Stone",
 			"craftingStation": "",
-			"ingredients": [[87, 1],[145, 1]],
+			"ingredients": [[176, 1],[138, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": ""
 		},
 		{
 			"id": 24,
+			"name": "any-evil-sword",
+			"displayName": "Any Evil Sword",
+			"craftingStation": "",
+			"ingredients": [[293, 1],[76, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 25,
+			"name": "any-evil-water",
+			"displayName": "Any Evil Water",
+			"craftingStation": "",
+			"ingredients": [[78, 1],[483, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 26,
+			"name": "any-fast-boots",
+			"displayName": "Any Fast Boots",
+			"craftingStation": "",
+			"ingredients": [[379, 1],[260, 1],[174, 1],[217, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 27,
+			"name": "any-gold-bar",
+			"displayName": "Any Gold Bar",
+			"craftingStation": "",
+			"ingredients": [[242, 1],[356, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 28,
+			"name": "any-gold-broadsword",
+			"displayName": "Any Gold Broadsword",
+			"craftingStation": "",
+			"ingredients": [[243, 1],[357, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 29,
+			"name": "any-gold-ore",
+			"displayName": "Any Gold Ore",
+			"craftingStation": "",
+			"ingredients": [[244, 1],[358, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 30,
+			"name": "any-gold-watch",
+			"displayName": "Any Gold Watch",
+			"craftingStation": "",
+			"ingredients": [[245, 1],[359, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 31,
+			"name": "any-hardmode-evil-material",
+			"displayName": "Any Hardmode Evil Material",
+			"craftingStation": "",
+			"ingredients": [[268, 1],[145, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 32,
+			"name": "any-iron-bar",
+			"displayName": "Any Iron Bar",
+			"craftingStation": "",
+			"ingredients": [[272, 1],[281, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 33,
+			"name": "any-iron-throwing-axe",
+			"displayName": "Any Iron Throwing Axe",
+			"craftingStation": "",
+			"ingredients": [[273, 1],[284, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 34,
+			"name": "any-mirror",
+			"displayName": "Any Mirror",
+			"craftingStation": "",
+			"ingredients": [[302, 1],[266, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 35,
+			"name": "any-underground-shell",
+			"displayName": "Any Underground Shell",
+			"craftingStation": "",
+			"ingredients": [[134, 1],[236, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 36,
 			"name": "any-wings-calamity",
 			"displayName": "Any Wings",
 			"craftingStation": "",
@@ -251,47 +371,57 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Wings"
 		},
 		{
-			"id": 25,
+			"id": 37,
+			"name": "any-wood",
+			"displayName": "Any Wood",
+			"craftingStation": "",
+			"ingredients": [[502, 1],[373, 1],[177, 1],[391, 1],[347, 1],[344, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": ""
+		},
+		{
+			"id": 38,
 			"name": "archaic-powder",
 			"displayName": "Archaic Powder",
 			"craftingStation": "anvil",
-			"ingredients": [[58, 15],[6, 3],[98, 1],[7, 1]],
+			"ingredients": [[83, 15],[10, 3],[159, 1],[11, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Archaic_Powder"
 		},
 		{
-			"id": 26,
+			"id": 39,
 			"name": "ark-of-the-ancients",
 			"displayName": "Ark of the Ancients",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[117, 3],[118, 3],[277, 1],[119, 1],[13, 1]],
+			"ingredients": [[195, 3],[196, 3],[437, 1],[200, 1],[19, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Ark_of_the_Ancients"
 		},
 		{
-			"id": 27,
+			"id": 40,
 			"name": "ark-of-the-cosmos",
 			"displayName": "Ark of the Cosmos",
 			"craftingStation": "draedons-forge",
-			"ingredients": [[28, 1],[143, 1],[38, 4]],
+			"ingredients": [[41, 1],[233, 1],[54, 4]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Ark_of_the_Cosmos"
 		},
 		{
-			"id": 28,
+			"id": 41,
 			"name": "ark-of-the-elements",
 			"displayName": "Ark of the Elements",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[80, 5],[184, 5],[142, 5],[194, 5],[296, 1]],
+			"ingredients": [[123, 5],[288, 5],[232, 5],[299, 5],[472, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Ark_of_the_Elements"
 		},
 		{
-			"id": 29,
+			"id": 42,
 			"name": "arkhalis-1-3",
 			"displayName": "Arkhalis",
 			"craftingStation": "",
@@ -301,17 +431,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Arkhalis"
 		},
 		{
-			"id": 30,
+			"id": 43,
 			"name": "armor-bracing",
 			"displayName": "Armor Bracing",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[313, 1],[31, 1]],
+			"ingredients": [[494, 1],[44, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Armor_Bracing"
 		},
 		{
-			"id": 31,
+			"id": 44,
 			"name": "armor-polish",
 			"displayName": "Armor Polish",
 			"craftingStation": "",
@@ -321,27 +451,37 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Armor_Polish"
 		},
 		{
-			"id": 32,
+			"id": 45,
 			"name": "ascendant-spirit-essence",
 			"displayName": "Ascendant Spirit Essence",
 			"craftingStation": "draedons-forge",
-			"ingredients": [[226, 5],[213, 5],[115, 5]],
+			"ingredients": [[350, 5],[332, 5],[190, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Ascendant_Spirit_Essence"
 		},
 		{
-			"id": 33,
+			"id": 46,
+			"name": "ashes-of-calamity",
+			"displayName": "Ashes of Calamity",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Calamitas",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Ashes_of_Calamity"
+		},
+		{
+			"id": 47,
 			"name": "astral-bar",
 			"displayName": "Astral Bar",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[34, 2],[273, 3]],
+			"ingredients": [[48, 2],[431, 3]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Astral_Bar"
 		},
 		{
-			"id": 34,
+			"id": 48,
 			"name": "astral-ore",
 			"displayName": "Astral Ore",
 			"craftingStation": "",
@@ -351,17 +491,37 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Astral_Ore"
 		},
 		{
-			"id": 35,
+			"id": 49,
+			"name": "astreal-defeat",
+			"displayName": "Astreal Defeat",
+			"craftingStation": "ancient-manipulator",
+			"ingredients": [[117, 1],[73, 1],[151, 1],[299, 5],[425, 1],[232, 5],[393, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Astreal_Defeat"
+		},
+		{
+			"id": 50,
+			"name": "augur-of-the-elements",
+			"displayName": "Augur of the Elements",
+			"craftingStation": "bookshelf",
+			"ingredients": [[232, 5],[299, 5],[468, 1],[394, 1],[181, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Augur_of_the_Elements"
+		},
+		{
+			"id": 51,
 			"name": "aureate-booster",
 			"displayName": "Aureate Booster",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[224, 5],[118, 1],[259, 20]],
+			"ingredients": [[348, 5],[196, 1],[413, 20]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Aureate_Booster"
 		},
 		{
-			"id": 36,
+			"id": 52,
 			"name": "auric-ore",
 			"displayName": "Auric Ore",
 			"craftingStation": "",
@@ -371,27 +531,27 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Auric_Ore"
 		},
 		{
-			"id": 37,
+			"id": 53,
 			"name": "auric-tesla-armor",
 			"displayName": "Auric Tesla Armor",
 			"craftingStation": "draedons-forge",
-			"ingredients": [[38, 42],[55, 1],[283, 1],[150, 1],[133, 1],[233, 1],[136, 1],[254, 1]],
+			"ingredients": [[54, 42],[79, 1],[448, 1],[241, 1],[218, 1],[363, 1],[224, 1],[405, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Auric_Tesla_armor"
 		},
 		{
-			"id": 38,
+			"id": 54,
 			"name": "auric-tesla-bar",
 			"displayName": "Auric Tesla Bar",
 			"craftingStation": "draedons-forge",
-			"ingredients": [[32, 1],[36, 20],[80, 1],[184, 1],[142, 1],[320, 1],[303, 2],[95, 1]],
+			"ingredients": [[45, 1],[52, 20],[123, 1],[288, 1],[232, 1],[505, 1],[482, 2],[152, 1]],
 			"quantityMade": 2,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Auric_Tesla_Bar"
 		},
 		{
-			"id": 39,
+			"id": 55,
 			"name": "band-of-regeneration",
 			"displayName": "Band of Regeneration",
 			"craftingStation": "",
@@ -401,17 +561,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Band_of_Regeneration"
 		},
 		{
-			"id": 40,
+			"id": 56,
+			"name": "band-of-starpower",
+			"displayName": "Band of Starpower",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Found in Shadow Orbs and Corrupt Crates",
+			"wikiLink": "https://terraria.fandom.com/wiki/Band_of_Starpower"
+		},
+		{
+			"id": 57,
 			"name": "bat-wings",
 			"displayName": "Bat Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[63, 1]],
+			"ingredients": [[413, 20],[91, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Bat_Wings"
 		},
 		{
-			"id": 41,
+			"id": 58,
 			"name": "bee-keeper",
 			"displayName": "Bee Keeper",
 			"craftingStation": "",
@@ -421,7 +591,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Bee_Keeper"
 		},
 		{
-			"id": 42,
+			"id": 59,
 			"name": "bee-wax",
 			"displayName": "Bee Wax",
 			"craftingStation": "",
@@ -431,17 +601,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Bee_Wax"
 		},
 		{
-			"id": 43,
+			"id": 60,
 			"name": "bee-wings",
 			"displayName": "Bee Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[285, 1]],
+			"ingredients": [[413, 20],[450, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Bee_Wings"
 		},
 		{
-			"id": 44,
+			"id": 61,
 			"name": "beetle-husk",
 			"displayName": "Beetle Husk",
 			"craftingStation": "",
@@ -451,7 +621,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Beetle_Husk"
 		},
 		{
-			"id": 45,
+			"id": 62,
 			"name": "beetle-juice",
 			"displayName": "Beetle Juice",
 			"craftingStation": "",
@@ -461,17 +631,27 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Beetle_Juice"
 		},
 		{
-			"id": 46,
+			"id": 63,
 			"name": "beetle-wings",
 			"displayName": "Beetle Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[44, 8]],
+			"ingredients": [[413, 20],[61, 8]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Beetle_Wings"
 		},
 		{
-			"id": 47,
+			"id": 64,
+			"name": "belladonna-spirit-staff",
+			"displayName": "Belladonna Spirit Staff",
+			"craftingStation": "anvil",
+			"ingredients": [[492, 4],[276, 5],[440, 8],[373, 25]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Belladonna_Spirit_Staff"
+		},
+		{
+			"id": 65,
 			"name": "bezoar",
 			"displayName": "Bezoar",
 			"craftingStation": "",
@@ -481,27 +661,37 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Bezoar"
 		},
 		{
-			"id": 48,
+			"id": 66,
 			"name": "bezoar-calamity",
 			"displayName": "Bezoar",
 			"craftingStation": "anvil",
-			"ingredients": [[208, 1],[280, 15]],
+			"ingredients": [[325, 1],[440, 15]],
 			"quantityMade": 1,
 			"acquisition": "Dropped by Hornets, Moss Hornets and Toxic Sludge",
 			"wikiLink": "https://terraria.fandom.com/wiki/Bezoar"
 		},
 		{
-			"id": 49,
+			"id": 67,
+			"name": "biofusillade",
+			"displayName": "Biofusillade",
+			"craftingStation": "bookshelf",
+			"ingredients": [[479, 8],[423, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Biofusillade"
+		},
+		{
+			"id": 68,
 			"name": "biome-blade",
 			"displayName": "Biome Blade",
 			"craftingStation": "anvil",
-			"ingredients": [[103, 20],[244, 20],[169, 20],[15, 20],[148, 20],[319, 1],[197, 20],[157, 20],[164, 20],[79, 20]],
+			"ingredients": [[168, 20],[380, 20],[263, 20],[23, 20],[239, 20],[503, 1],[308, 20],[248, 20],[257, 20],[122, 20]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Biome_Blade"
 		},
 		{
-			"id": 50,
+			"id": 69,
 			"name": "black-fairy-dust",
 			"displayName": "Black Fairy Dust",
 			"craftingStation": "",
@@ -511,17 +701,47 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Black_Fairy_Dust"
 		},
 		{
-			"id": 51,
+			"id": 70,
+			"name": "black-lens",
+			"displayName": "Black Lens",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Rarely dropped by Demon Eyes and Wandering Eyes",
+			"wikiLink": "https://terraria.fandom.com/wiki/Black_Lens"
+		},
+		{
+			"id": 71,
 			"name": "blade-of-grass",
 			"displayName": "Blade of Grass",
 			"craftingStation": "anvil",
-			"ingredients": [[280, 12],[177, 12]],
+			"ingredients": [[440, 12],[276, 12]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Blade_of_Grass"
 		},
 		{
-			"id": 52,
+			"id": 72,
+			"name": "bladecrest-oathsword",
+			"displayName": "Bladecrest Oathsword",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Demons and Voodoo Demons",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Bladecrest_Oathsword"
+		},
+		{
+			"id": 73,
+			"name": "bladege-railbow",
+			"displayName": "Bladege Railbow",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[348, 12]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Bladedge_Railbow"
+		},
+		{
+			"id": 74,
 			"name": "blindfold",
 			"displayName": "Blindfold",
 			"craftingStation": "",
@@ -531,17 +751,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Blindfold"
 		},
 		{
-			"id": 53,
+			"id": 75,
+			"name": "blinkroot",
+			"displayName": "Blinkroot",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Grows on Dirt and Mud Blocks",
+			"wikiLink": "https://terraria.fandom.com/wiki/Blinkroot"
+		},
+		{
+			"id": 76,
 			"name": "blood-butcherer",
 			"displayName": "Blood Butcherer",
 			"craftingStation": "anvil",
-			"ingredients": [[90, 10]],
+			"ingredients": [[139, 10]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Blood_Butcherer"
 		},
 		{
-			"id": 54,
+			"id": 77,
 			"name": "blood-orb",
 			"displayName": "Blood Orb",
 			"craftingStation": "",
@@ -551,17 +781,27 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Blood_Orb"
 		},
 		{
-			"id": 55,
+			"id": 78,
+			"name": "blood-water",
+			"displayName": "Blood Water",
+			"craftingStation": "by-hand",
+			"ingredients": [[89, 10],[135, 1],[137, 1]],
+			"quantityMade": 10,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Blood_Water"
+		},
+		{
+			"id": 79,
 			"name": "bloodflare-armor",
 			"displayName": "Bloodflare Armor",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[57, 40],[242, 9]],
+			"ingredients": [[81, 40],[378, 9]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Bloodflare_armor"
 		},
 		{
-			"id": 56,
+			"id": 80,
 			"name": "bloodstone",
 			"displayName": "Bloodstone",
 			"craftingStation": "",
@@ -571,17 +811,27 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Bloodstone"
 		},
 		{
-			"id": 57,
+			"id": 81,
 			"name": "bloodstone-core",
 			"displayName": "Bloodstone Core",
 			"craftingStation": "hardmode-forge",
-			"ingredients": [[56, 5],[54, 2],[226, 1]],
+			"ingredients": [[80, 5],[77, 2],[350, 1]],
 			"quantityMade": 2,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Bloodstone_Core"
 		},
 		{
-			"id": 58,
+			"id": 82,
+			"name": "blossom-flux",
+			"displayName": "Blossom Flux",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Rarely dropped by Plantera in Revengeance Mode",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Blossom_Flux"
+		},
+		{
+			"id": 83,
 			"name": "bone",
 			"displayName": "Bone",
 			"craftingStation": "",
@@ -591,7 +841,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Bone"
 		},
 		{
-			"id": 59,
+			"id": 84,
 			"name": "bone-feather",
 			"displayName": "Bone Feather",
 			"craftingStation": "",
@@ -601,37 +851,67 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Bone_Feather"
 		},
 		{
-			"id": 60,
+			"id": 85,
 			"name": "bone-wings",
 			"displayName": "Bone Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[59, 1]],
+			"ingredients": [[413, 20],[84, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Bone_Wings"
 		},
 		{
-			"id": 61,
+			"id": 86,
+			"name": "boreal-wook",
+			"displayName": "Boreal Wood",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Gathered from trees in the Snow biome",
+			"wikiLink": "https://terraria.fandom.com/wiki/Boreal_Wood"
+		},
+		{
+			"id": 87,
 			"name": "bottle",
 			"displayName": "Bottle",
 			"craftingStation": "furnace",
-			"ingredients": [[147, 1]],
+			"ingredients": [[238, 1]],
 			"quantityMade": 2,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Bottle"
 		},
 		{
-			"id": 62,
+			"id": 88,
 			"name": "bottled-honey",
 			"displayName": "Bottled Honey",
 			"craftingStation": "honey",
-			"ingredients": [[61, 1]],
+			"ingredients": [[87, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Bottled_Honey"
 		},
 		{
-			"id": 63,
+			"id": 89,
+			"name": "bottled-water",
+			"displayName": "Bottled Water",
+			"craftingStation": "water",
+			"ingredients": [[87, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Bottled_Water"
+		},
+		{
+			"id": 90,
+			"name": "bowl",
+			"displayName": "Bowl",
+			"craftingStation": "furnace",
+			"ingredients": [[110, 2]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Bowl"
+		},
+		{
+			"id": 91,
 			"name": "broken-bat-wing",
 			"displayName": "Broken Bat Wing",
 			"craftingStation": "",
@@ -641,7 +921,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Broken_Bat_Wing"
 		},
 		{
-			"id": 64,
+			"id": 92,
 			"name": "broken-hero-sword",
 			"displayName": "Broken Hero Sword",
 			"craftingStation": "",
@@ -651,7 +931,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Broken_Hero_Sword"
 		},
 		{
-			"id": 65,
+			"id": 93,
 			"name": "butterfly-dust",
 			"displayName": "Butterfly Dust",
 			"craftingStation": "",
@@ -661,77 +941,157 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Butterfly_Dust"
 		},
 		{
-			"id": 66,
+			"id": 94,
 			"name": "butterfly-wings",
 			"displayName": "Butterfly Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[65, 1]],
+			"ingredients": [[413, 20],[93, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Butterfly_Wings"
 		},
 		{
-			"id": 67,
+			"id": 95,
+			"name": "calamitous-essence",
+			"displayName": "Calamitous Essence",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Supreme Calamitas",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Calamitous_Essence"
+		},
+		{
+			"id": 96,
+			"name": "catastrophe-claymore",
+			"displayName": "Catastrophe Claymore",
+			"craftingStation": "hardmove-anvil",
+			"ingredients": [[252, 20],[144, 15],[417, 5],[31, 5],[418, 3],[416, 3],[414, 3]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Catastrophe_Claymore"
+		},
+		{
+			"id": 97,
+			"name": "celestial-cuffs",
+			"displayName": "Celestial Cuffs",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[301, 1],[98, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Celestial_Cuffs"
+		},
+		{
+			"id": 98,
+			"name": "celestial-magnet",
+			"displayName": "Celestial Magnet",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Sold by the Traveling Merchant",
+			"wikiLink": "https://terraria.fandom.com/wiki/Celestial_Magnet"
+		},
+		{
+			"id": 99,
 			"name": "celestial-tracers",
 			"displayName": "Celestial Tracers",
 			"craftingStation": "draedons-forge",
-			"ingredients": [[111, 1],[106, 1],[38, 4]],
+			"ingredients": [[184, 1],[173, 1],[54, 4]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Celestial_Tracers"
 		},
 		{
-			"id": 68,
+			"id": 100,
+			"name": "celestus",
+			"displayName": "Celestus",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[319, 1],[226, 1],[183, 1],[54, 4],[7, 1],[186, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Celestus"
+		},
+		{
+			"id": 101,
 			"name": "cell-phone",
 			"displayName": "Cell Phone",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[223, 1],[22, 1]],
+			"ingredients": [[346, 1],[34, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Cell_Phone"
 		},
 		{
-			"id": 69,
+			"id": 102,
 			"name": "chain",
 			"displayName": "Chain",
 			"craftingStation": "anvil",
-			"ingredients": [[21, 1]],
+			"ingredients": [[32, 1]],
 			"quantityMade": 10,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Chain"
 		},
 		{
-			"id": 70,
+			"id": 103,
+			"name": "chaos-amulet",
+			"displayName": "Chaos Amulet",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[194, 7],[424, 7]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Chaos_Amulet"
+		},
+		{
+			"id": 104,
 			"name": "charm-of-myths",
 			"displayName": "Charm of Myths",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[227, 1],[39, 1]],
+			"ingredients": [[351, 1],[55, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Charm_of_Myths"
 		},
 		{
-			"id": 71,
+			"id": 105,
+			"name": "charred-ore",
+			"displayName": "Charred Ore",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Mined in the Brimstone Crag",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Charred_Ore"
+		},
+		{
+			"id": 106,
+			"name": "chicken-cannon",
+			"displayName": "Chicken Cannon",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Jungle Dragon, Yharon",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Chicken_Cannon"
+		},
+		{
+			"id": 107,
 			"name": "chlorophyte-bar",
 			"displayName": "Chlorophyte Bar",
 			"craftingStation": "hardmode-forge",
-			"ingredients": [[73, 5]],
+			"ingredients": [[109, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Chlorophyte_Bar"
 		},
 		{
-			"id": 72,
+			"id": 108,
 			"name": "chlorophyte-bar-1-3",
 			"displayName": "Chlorophyte Bar",
 			"craftingStation": "hardmode-forge",
-			"ingredients": [[73, 6]],
+			"ingredients": [[109, 6]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Chlorophyte_Bar"
 		},
 		{
-			"id": 73,
+			"id": 109,
 			"name": "chlorophyte-ore",
 			"displayName": "Chlorophyte Ore",
 			"craftingStation": "",
@@ -741,7 +1101,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Chlorophyte_Ore"
 		},
 		{
-			"id": 74,
+			"id": 110,
+			"name": "clay-block",
+			"displayName": "Clay Block",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Mined on the surface and underground",
+			"wikiLink": "https://terraria.fandom.com/wiki/Clay_Block"
+		},
+		{
+			"id": 111,
+			"name": "clockwork-bow",
+			"displayName": "Clockwork Bow",
+			"craftingStation": "ancient-manipulator",
+			"ingredients": [[114, 50],[299, 5]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Clockwork_Bow"
+		},
+		{
+			"id": 112,
 			"name": "cobalt-shield",
 			"displayName": "Cobalt Shield",
 			"craftingStation": "",
@@ -751,7 +1131,37 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Cobalt_Shield"
 		},
 		{
-			"id": 75,
+			"id": 113,
+			"name": "cobweb",
+			"displayName": "Cobweb",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Found underground or in Spider Caves",
+			"wikiLink": "https://terraria.fandom.com/wiki/Cobweb"
+		},
+		{
+			"id": 114,
+			"name": "cog",
+			"displayName": "Cog",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Sold by the Steampunker",
+			"wikiLink": "https://terraria.fandom.com/wiki/Cog"
+		},
+		{
+			"id": 115,
+			"name": "coin-of-deceit",
+			"displayName": "Coin of Deceit",
+			"craftingStation": "anvil",
+			"ingredients": [[27, 4],[18, 8],[1, 5]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Coin_of_Deceit"
+		},
+		{
+			"id": 116,
 			"name": "compass",
 			"displayName": "Compass",
 			"craftingStation": "",
@@ -761,17 +1171,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Compass"
 		},
 		{
-			"id": 76,
+			"id": 117,
+			"name": "continental-greatbow",
+			"displayName": "Continental Greatbow",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[381, 10]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Continental_Greatbow"
+		},
+		{
+			"id": 118,
 			"name": "copper-bar",
 			"displayName": "Copper Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[77, 3]],
+			"ingredients": [[119, 3]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Copper_Bar"
 		},
 		{
-			"id": 77,
+			"id": 119,
 			"name": "copper-ore",
 			"displayName": "Copper Ore",
 			"craftingStation": "",
@@ -781,17 +1201,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Copper_Ore"
 		},
 		{
-			"id": 78,
+			"id": 120,
 			"name": "copper-shortsword",
 			"displayName": "Copper Shortsword",
 			"craftingStation": "anvil",
-			"ingredients": [[76, 5]],
+			"ingredients": [[118, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Copper_Shortsword"
 		},
 		{
-			"id": 79,
+			"id": 121,
 			"name": "coral",
 			"displayName": "Coral",
 			"craftingStation": "",
@@ -801,57 +1221,107 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Coral"
 		},
 		{
-			"id": 80,
+			"id": 122,
+			"name": "coral-calamity",
+			"displayName": "Coral",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Grows in the Ocean, and dropped by Cnidrions, the Desert Scourge and the Aquatic Scourge",
+			"wikiLink": "https://terraria.fandom.com/wiki/Coral"
+		},
+		{
+			"id": 123,
 			"name": "core-of-calamity",
 			"displayName": "Core of Calamity",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[83, 3],[82, 3],[81, 3]],
+			"ingredients": [[126, 3],[125, 3],[124, 3]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Core_of_Calamity"
 		},
 		{
-			"id": 81,
+			"id": 124,
 			"name": "core-of-chaos",
 			"displayName": "Core of Chaos",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[109, 1],[116, 1]],
+			"ingredients": [[179, 1],[194, 1]],
 			"quantityMade": 3,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Core_of_Chaos"
 		},
 		{
-			"id": 82,
+			"id": 125,
 			"name": "core-of-eleum",
 			"displayName": "Core of Eleum",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[109, 1],[117, 1]],
+			"ingredients": [[179, 1],[195, 1]],
 			"quantityMade": 3,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Core_of_Eleum"
 		},
 		{
-			"id": 83,
+			"id": 126,
 			"name": "core-of-sunlight",
 			"displayName": "Core of Sunlight",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[109, 1],[118, 1]],
+			"ingredients": [[179, 1],[196, 1]],
 			"quantityMade": 3,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Core_of_Sunlight"
 		},
 		{
-			"id": 84,
+			"id": 127,
 			"name": "corrupt-flask",
 			"displayName": "Corrupt Flask",
 			"craftingStation": "anvil",
-			"ingredients": [[310, 15],[240, 10]],
+			"ingredients": [[491, 15],[375, 10]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Corrupt_Flask"
 		},
 		{
-			"id": 85,
+			"id": 128,
+			"name": "corrupt-seeds",
+			"displayName": "Corrupt Seeds",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Sold by the Dryad during a Blood Moon",
+			"wikiLink": "https://terraria.fandom.com/wiki/Corrupt_Seeds"
+		},
+		{
+			"id": 129,
+			"name": "corvid-harbinger-staff",
+			"displayName": "Corvid Harbinger Staff",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[332, 15],[368, 1],[132, 5]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Corvid_Harbinger_Staff"
+		},
+		{
+			"id": 130,
+			"name": "cosmic-bolter",
+			"displayName": "Cosmic Bolter",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[300, 1],[296, 5],[252, 5],[418, 5]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Cosmic_Bolter"
+		},
+		{
+			"id": 131,
+			"name": "cosmic-immaterializer",
+			"displayName": "Cosmic Immaterializer",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[54, 4],[191, 1],[182, 1],[12, 1],[129, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Cosmic_Immaterializer"
+		},
+		{
+			"id": 132,
 			"name": "cosmilite-bar",
 			"displayName": "Cosmilite Bar",
 			"craftingStation": "",
@@ -861,17 +1331,17 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Cosmilite_Bar"
 		},
 		{
-			"id": 86,
+			"id": 133,
 			"name": "countercurse-mantra",
 			"displayName": "Countercurse Mantra",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[210, 1],[199, 1]],
+			"ingredients": [[329, 1],[311, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Countercurse_Mantra"
 		},
 		{
-			"id": 87,
+			"id": 134,
 			"name": "craw-carapace",
 			"displayName": "Craw Carapace",
 			"craftingStation": "",
@@ -881,17 +1351,37 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Craw_Carapace"
 		},
 		{
-			"id": 88,
+			"id": 135,
+			"name": "crimsand-block",
+			"displayName": "Crimsand Block",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Found in the Crimson Desert",
+			"wikiLink": "https://terraria.fandom.com/wiki/Crimsand_Block"
+		},
+		{
+			"id": 136,
 			"name": "crimson-flask",
 			"displayName": "Crimson Flask",
 			"craftingStation": "anvil",
-			"ingredients": [[307, 15],[305, 10]],
+			"ingredients": [[487, 15],[485, 10]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Crimson_Flask"
 		},
 		{
-			"id": 89,
+			"id": 137,
+			"name": "crimson-seeds",
+			"displayName": "Crimson Seeds",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Sold by the Dryad during a Blood Moon",
+			"wikiLink": "https://terraria.fandom.com/wiki/Crimson_Seeds"
+		},
+		{
+			"id": 138,
 			"name": "crimstone-block",
 			"displayName": "Crimstone Block",
 			"craftingStation": "",
@@ -901,17 +1391,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Crimstone_Block"
 		},
 		{
-			"id": 90,
+			"id": 139,
 			"name": "crimtane-bar",
 			"displayName": "Crimtane Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[91, 3]],
+			"ingredients": [[140, 3]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Crimtane_Bar"
 		},
 		{
-			"id": 91,
+			"id": 140,
 			"name": "crimtane-ore",
 			"displayName": "Crimtane Ore",
 			"craftingStation": "",
@@ -921,7 +1411,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Crimtane_Ore"
 		},
 		{
-			"id": 92,
+			"id": 141,
 			"name": "cross-necklace",
 			"displayName": "Cross Necklace",
 			"craftingStation": "",
@@ -931,17 +1421,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Cross_Necklace"
 		},
 		{
-			"id": 93,
+			"id": 142,
 			"name": "cryonic-bar",
 			"displayName": "Cryonic Bar",
 			"craftingStation": "hardmode-forge",
-			"ingredients": [[94, 5]],
+			"ingredients": [[143, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Cryonic_Bar"
 		},
 		{
-			"id": 94,
+			"id": 143,
 			"name": "cryonic-ore",
 			"displayName": "Crynoic Ore",
 			"craftingStation": "",
@@ -951,7 +1441,87 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Cryonic_Ore"
 		},
 		{
-			"id": 95,
+			"id": 144,
+			"name": "crystal-shard",
+			"displayName": "Crystal Shard",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Mined in the Underground Hallow",
+			"wikiLink": "https://terraria.fandom.com/wiki/Crystal_Shard"
+		},
+		{
+			"id": 145,
+			"name": "cursed-flame",
+			"displayName": "Cursed Flame",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Corruption enemies in Hardmode",
+			"wikiLink": "https://terraria.fandom.com/wiki/Cursed_Flame"
+		},
+		{
+			"id": 146,
+			"name": "daedalus-stormbow",
+			"displayName": "Daedalus Stormbow",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Hallowed Mimics",
+			"wikiLink": "https://terraria.fandom.com/wiki/Daedalus_Stormbow"
+		},
+		{
+			"id": 147,
+			"name": "daemons-flame",
+			"displayName": "Daemon's Flame",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by the Polterghast",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Daemon%27s_Flame"
+		},
+		{
+			"id": 148,
+			"name": "dark-gods-sheath",
+			"displayName": "Dark God's Sheath",
+			"craftingStation": "ancient-manipulator",
+			"ingredients": [[313, 5],[377, 1],[402, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Dark_God%27s_Sheath"
+		},
+		{
+			"id": 149,
+			"name": "dark-plasma",
+			"displayName": "Dark Plasma",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by the Ceaseless Void",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Dark_Plasma"
+		},
+		{
+			"id": 150,
+			"name": "dark-shard",
+			"displayName": "Dark Shard",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Dark Mummies",
+			"wikiLink": "https://terraria.fandom.com/wiki/Dark_Shard"
+		},
+		{
+			"id": 151,
+			"name": "darkecho-greatbow",
+			"displayName": "Darkecho Greatbow",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[142, 8]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Darkecho_Greatbow"
+		},
+		{
+			"id": 152,
 			"name": "darksun-fragment",
 			"displayName": "Darksun Fragment",
 			"craftingStation": "",
@@ -961,27 +1531,67 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Darksun_Fragment"
 		},
 		{
-			"id": 96,
+			"id": 153,
+			"name": "death-valley-duster",
+			"displayName": "Death Valley Duster",
+			"craftingStation": "bookshelf",
+			"ingredients": [[469, 1],[219, 1],[443, 25],[164, 5]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Death_Valley_Duster"
+		},
+		{
+			"id": 154,
+			"name": "deathwind",
+			"displayName": "Deathwind",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by The Devourer of Gods",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Deathwind"
+		},
+		{
+			"id": 155,
+			"name": "deepsea-staff",
+			"displayName": "Deepsea Staff",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by the Aquatic Scourge",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Deepsea_Staff"
+		},
+		{
+			"id": 156,
 			"name": "deific-amulet",
 			"displayName": "Deific Amulet",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[70, 1],[176, 1],[222, 1],[251, 1],[271, 1],[273, 25],[205, 25]],
+			"ingredients": [[104, 1],[275, 1],[345, 1],[397, 1],[429, 1],[431, 25],[317, 25]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Deific_Amulet"
 		},
 		{
-			"id": 97,
+			"id": 157,
+			"name": "demon-bow",
+			"displayName": "Demon Bow",
+			"craftingStation": "anvil",
+			"ingredients": [[160, 8]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Demon_Bow"
+		},
+		{
+			"id": 158,
 			"name": "demon-wings",
 			"displayName": "Demon Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[124, 10],[259, 20],[263, 25]],
+			"ingredients": [[205, 10],[413, 20],[417, 25]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Demon_Wings"
 		},
 		{
-			"id": 98,
+			"id": 159,
 			"name": "demonic-bone-ash",
 			"displayName": "Demonic Bone Ash",
 			"craftingStation": "",
@@ -991,17 +1601,17 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Demonic_Bone_Ash"
 		},
 		{
-			"id": 99,
+			"id": 160,
 			"name": "demonite-bar",
 			"displayName": "Demonite Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[100, 3]],
+			"ingredients": [[161, 3]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Demonite_Bar"
 		},
 		{
-			"id": 100,
+			"id": 161,
 			"name": "demonite-ore",
 			"displayName": "Demonite Ore",
 			"craftingStation": "",
@@ -1011,7 +1621,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Demonite_Ore"
 		},
 		{
-			"id": 101,
+			"id": 162,
 			"name": "depth-cells",
 			"displayName": "Depth Cells",
 			"craftingStation": "",
@@ -1021,7 +1631,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Depth_Cells"
 		},
 		{
-			"id": 102,
+			"id": 163,
 			"name": "depth-meter",
 			"displayName": "Depth Meter",
 			"craftingStation": "",
@@ -1031,7 +1641,47 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Depth_Meter"
 		},
 		{
-			"id": 103,
+			"id": 164,
+			"name": "desert-feather",
+			"displayName": "Desert Feather",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Vultures",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Desert_Feather"
+		},
+		{
+			"id": 165,
+			"name": "desert-spirit-lamp",
+			"displayName": "Desert Spirit Lamp",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Rarely dropped by Desert Spirits",
+			"wikiLink": "https://terraria.fandom.com/wiki/Desert_Spirit_Lamp"
+		},
+		{
+			"id": 166,
+			"name": "devastation",
+			"displayName": "Devastation",
+			"craftingStation": "ancient-manipulator",
+			"ingredients": [[96, 1],[299, 5],[317, 10],[47, 10]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Devastation"
+		},
+		{
+			"id": 167,
+			"name": "devils-devastation",
+			"displayName": "Devil's Devastation",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[166, 1],[45, 1],[132, 5],[475, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Devil%27s_Devastation"
+		},
+		{
+			"id": 168,
 			"name": "dirt-block",
 			"displayName": "Dirt Block",
 			"craftingStation": "",
@@ -1041,7 +1691,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Dirt_Block"
 		},
 		{
-			"id": 104,
+			"id": 169,
 			"name": "divine-geode",
 			"displayName": "Divine Geode",
 			"craftingStation": "",
@@ -1051,7 +1701,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Divine_Geode"
 		},
 		{
-			"id": 105,
+			"id": 170,
 			"name": "dps-meter",
 			"displayName": "DPS Meter",
 			"craftingStation": "",
@@ -1061,7 +1711,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/DPS_Meter"
 		},
 		{
-			"id": 106,
+			"id": 171,
+			"name": "dragons-breath",
+			"displayName": "Dragon's Breath",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Jungle Dragon, Yharon",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Dragon%27s_Breath"
+		},
+		{
+			"id": 172,
+			"name": "drataliornus",
+			"displayName": "Drataliornus",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[180, 60],[154, 1],[147, 1],[82, 1],[256, 1],[106, 2],[171, 2],[506, 2],[504, 3],[54, 12]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Drataliornus"
+		},
+		{
+			"id": 173,
 			"name": "drews-wings",
 			"displayName": "Drew's Wings",
 			"craftingStation": "",
@@ -1071,7 +1741,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Drew%27s_Wings"
 		},
 		{
-			"id": 107,
+			"id": 174,
 			"name": "dunerider-boots",
 			"displayName": "Dunerider Boots",
 			"craftingStation": "",
@@ -1081,7 +1751,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Dunerider_Boots"
 		},
 		{
-			"id": 108,
+			"id": 175,
+			"name": "ebonsand-block",
+			"displayName": "Ebonsand Block",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Found in the Corrupt Desert",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Ebonsand_Block"
+		},
+		{
+			"id": 176,
 			"name": "ebonstone-block",
 			"displayName": "Ebonstone Block",
 			"craftingStation": "",
@@ -1091,7 +1771,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Ebonstone_Block"
 		},
 		{
-			"id": 109,
+			"id": 177,
+			"name": "ebonwood",
+			"displayName": "Ebonwood",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Gathered from trees in the Corruption",
+			"wikiLink": "https://terraria.fandom.com/wiki/Ebonwood"
+		},
+		{
+			"id": 178,
+			"name": "eclipse-mirror",
+			"displayName": "Eclipse-Mirror",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[45, 1],[148, 1],[0, 1],[152, 10]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Eclipse_Mirror"
+		},
+		{
+			"id": 179,
 			"name": "ectoplasm",
 			"displayName": "Ectoplasm",
 			"craftingStation": "",
@@ -1101,7 +1801,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Ectoplasm"
 		},
 		{
-			"id": 110,
+			"id": 180,
 			"name": "effulgent-feather",
 			"displayName": "Effulgent Feather",
 			"craftingStation": "",
@@ -1111,17 +1811,47 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Effulgent_Feather"
 		},
 		{
-			"id": 111,
+			"id": 181,
+			"name": "eldritch-tome",
+			"displayName": "Eldritch Tome",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by The Slime God",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Eldritch_Tome"
+		},
+		{
+			"id": 182,
+			"name": "elemental-axe",
+			"displayName": "Elemental Axe",
+			"craftingStation": "ancient-manipulator",
+			"ingredients": [[288, 5],[232, 5],[299, 5],[355, 1],[255, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Elemental_Axe"
+		},
+		{
+			"id": 183,
+			"name": "elemental-disk",
+			"displayName": "Elemental Disk",
+			"craftingStation": "ancient-manipulator",
+			"ingredients": [[307, 1],[444, 1],[456, 1],[288, 5],[232, 5],[299, 5]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Elemental_Disk"
+		},
+		{
+			"id": 184,
 			"name": "elysian-tracers",
 			"displayName": "Elysian Tracers",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[249, 1],[112, 1],[85, 5]],
+			"ingredients": [[388, 1],[185, 1],[132, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Elysian_Tracers"
 		},
 		{
-			"id": 112,
+			"id": 185,
 			"name": "elysian-wings",
 			"displayName": "Elysian Wings",
 			"craftingStation": "",
@@ -1131,7 +1861,27 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Elysian_Wings"
 		},
 		{
-			"id": 113,
+			"id": 186,
+			"name": "enchanted-axe",
+			"displayName": "Enchanted Axe",
+			"craftingStation": "anvil",
+			"ingredients": [[83, 30],[33, 100],[203, 5],[489, 10]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Enchanted_Axe"
+		},
+		{
+			"id": 187,
+			"name": "enchanted-boomerang",
+			"displayName": "Enchanted Boomerang",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Found in chests underground",
+			"wikiLink": "https://terraria.fandom.com/wiki/Enchanted_Boomerang"
+		},
+		{
+			"id": 188,
 			"name": "enchanted-sword",
 			"displayName": "Enchanted Sword",
 			"craftingStation": "",
@@ -1141,17 +1891,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Enchanted_Sword_(item)"
 		},
 		{
-			"id": 114,
+			"id": 189,
 			"name": "enchanted-sword-calamity",
 			"displayName": "Enchanted Sword",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[187, 1],[304, 3],[261, 15],[308, 10]],
+			"ingredients": [[291, 1],[484, 3],[415, 15],[489, 10]],
 			"quantityMade": 1,
 			"acquisition": "Found in shrines underground, or in Gold/Titanium Crates",
 			"wikiLink": "https://terraria.fandom.com/wiki/Enchanted_Sword_(item)"
 		},
 		{
-			"id": 115,
+			"id": 190,
 			"name": "endothermic-energy",
 			"displayName": "Endothermic Energy",
 			"craftingStation": "",
@@ -1161,7 +1911,37 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Endothermic_Energy"
 		},
 		{
-			"id": 116,
+			"id": 191,
+			"name": "energy-staff",
+			"displayName": "Energy Staff",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Impious Immolators",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Energy_Staff"
+		},
+		{
+			"id": 192,
+			"name": "epidemic-shredder",
+			"displayName": "Epidemic Shredder",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[327, 150],[353, 15],[108, 20]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Epidemic_Shredder"
+		},
+		{
+			"id": 193,
+			"name": "equanimity",
+			"displayName": "Equanimity",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[291, 1],[150, 1],[213, 1],[264, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Equanimity"
+		},
+		{
+			"id": 194,
 			"name": "essence-of-chaos",
 			"displayName": "Essence of Chaos",
 			"craftingStation": "",
@@ -1171,7 +1951,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Essence_of_Chaos"
 		},
 		{
-			"id": 117,
+			"id": 195,
 			"name": "essence-of-eleum",
 			"displayName": "Essence of Eleum",
 			"craftingStation": "",
@@ -1181,7 +1961,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Essence_of_Eleum"
 		},
 		{
-			"id": 118,
+			"id": 196,
 			"name": "essence-of-sunlight",
 			"displayName": "Essence of Sunlight",
 			"craftingStation": "",
@@ -1191,37 +1971,67 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Essence_of_Sunlight"
 		},
 		{
-			"id": 119,
+			"id": 197,
+			"name": "eternity",
+			"displayName": "Eternity",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[395, 10],[484, 5],[149, 20],[387, 1],[408, 1],[445, 1],[67, 1],[361, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Eternity"
+		},
+		{
+			"id": 198,
+			"name": "ethereal-talisman",
+			"displayName": "Ethereal Talisman",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[401, 1],[45, 4],[303, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Ethereal_Talisman"
+		},
+		{
+			"id": 199,
+			"name": "event-horizon",
+			"displayName": "Event Horizon",
+			"craftingStation": "bookshelf",
+			"ingredients": [[152, 15],[434, 1],[372, 1],[334, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Event_Horizon"
+		},
+		{
+			"id": 200,
 			"name": "excalibur",
 			"displayName": "Excalibur",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[161, 12]],
+			"ingredients": [[252, 12]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Excalibur"
 		},
 		{
-			"id": 120,
+			"id": 201,
 			"name": "exodus-wings",
 			"displayName": "Exodus Wings",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[201, 5],[80, 1],[259, 20]],
+			"ingredients": [[313, 5],[123, 1],[413, 20]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Exodus_Wings"
 		},
 		{
-			"id": 121,
+			"id": 202,
 			"name": "fairy-wings",
 			"displayName": "Fairy Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[228, 100]],
+			"ingredients": [[413, 20],[352, 100]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Fairy_Wings"
 		},
 		{
-			"id": 122,
+			"id": 203,
 			"name": "fallen-star",
 			"displayName": "Fallen Star",
 			"craftingStation": "",
@@ -1231,7 +2041,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Fallen_Star"
 		},
 		{
-			"id": 123,
+			"id": 204,
 			"name": "fast-clock",
 			"displayName": "Fast Clock",
 			"craftingStation": "",
@@ -1241,7 +2051,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Fast_Clock"
 		},
 		{
-			"id": 124,
+			"id": 205,
 			"name": "feather",
 			"displayName": "Feather",
 			"craftingStation": "",
@@ -1251,7 +2061,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Feather"
 		},
 		{
-			"id": 125,
+			"id": 206,
 			"name": "festive-wings",
 			"displayName": "Festive Wings",
 			"craftingStation": "",
@@ -1261,17 +2071,17 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Festive_Wings"
 		},
 		{
-			"id": 126,
+			"id": 207,
 			"name": "fiery-greatsword",
 			"displayName": "Fiery Greatsword",
 			"craftingStation": "anvil",
-			"ingredients": [[165, 20]],
+			"ingredients": [[258, 20]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Fiery_Greatsword"
 		},
 		{
-			"id": 127,
+			"id": 208,
 			"name": "fin-wings",
 			"displayName": "Fin Wings",
 			"craftingStation": "",
@@ -1281,7 +2091,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Fin_Wings"
 		},
 		{
-			"id": 128,
+			"id": 209,
 			"name": "fire-feather",
 			"displayName": "Fire Feather",
 			"craftingStation": "",
@@ -1291,17 +2101,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Fire_Feather"
 		},
 		{
-			"id": 129,
+			"id": 210,
+			"name": "fireblossom",
+			"displayName": "Fireblossom",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Grows in The Underworld",
+			"wikiLink": "https://terraria.fandom.com/wiki/Fireblossom"
+		},
+		{
+			"id": 211,
 			"name": "fish-finder",
 			"displayName": "Fish Finder",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[130, 1],[317, 1],[250, 1]],
+			"ingredients": [[212, 1],[501, 1],[389, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Fish_Finder"
 		},
 		{
-			"id": 130,
+			"id": 212,
 			"name": "fishermans-pocket-guide",
 			"displayName": "Fisherman's Pocket Guide",
 			"craftingStation": "",
@@ -1311,17 +2131,47 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Fisherman%27s_Pocket_Guide"
 		},
 		{
-			"id": 131,
+			"id": 213,
+			"name": "flamarang",
+			"displayName": "Flamarang",
+			"craftingStation": "anvil",
+			"ingredients": [[258, 10],[187, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Flamarang"
+		},
+		{
+			"id": 214,
 			"name": "flame-wings",
 			"displayName": "Flame Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[128, 1]],
+			"ingredients": [[413, 20],[209, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Flame_Wings"
 		},
 		{
-			"id": 132,
+			"id": 215,
+			"name": "flare-bolt",
+			"displayName": "Flare Bolt",
+			"craftingStation": "bookshelf",
+			"ingredients": [[258, 6],[335, 9],[210, 2],[278, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Flare_Bolt"
+		},
+		{
+			"id": 216,
+			"name": "flarewing-bow",
+			"displayName": "Flarewing Bow",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[295, 50],[196, 5],[259, 1],[335, 10]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Flarewing_Bow"
+		},
+		{
+			"id": 217,
 			"name": "flurry-boots",
 			"displayName": "Flurry Boots",
 			"craftingStation": "",
@@ -1331,7 +2181,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Flurry_Boots"
 		},
 		{
-			"id": 133,
+			"id": 218,
 			"name": "flying-carpet",
 			"displayName": "Flying Carpet",
 			"craftingStation": "",
@@ -1341,7 +2191,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Flying_Carpet"
 		},
 		{
-			"id": 134,
+			"id": 219,
+			"name": "forbidden-fragment",
+			"displayName": "Forbidden Fragment",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Sand Elementals",
+			"wikiLink": "https://terraria.fandom.com/wiki/Forbidden_Fragment"
+		},
+		{
+			"id": 220,
+			"name": "forbidden-oathblade",
+			"displayName": "Forbidden Oathblade",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[414, 5],[340, 1],[72, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Forbidden_Oathblade"
+		},
+		{
+			"id": 221,
 			"name": "frigid-bar",
 			"displayName": "Frigid Bar",
 			"craftingStation": "",
@@ -1351,17 +2221,27 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Frigid_Bar"
 		},
 		{
-			"id": 135,
+			"id": 222,
 			"name": "frigid-bulwark",
 			"displayName": "Frigid Bulwark",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[221, 1],[139, 1],[82, 5]],
+			"ingredients": [[343, 1],[229, 1],[125, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Frigid_Bulwark"
 		},
 		{
-			"id": 136,
+			"id": 223,
+			"name": "frigidflash-bolt",
+			"displayName": "Frigidflash Bolt",
+			"craftingStation": "bookshelf",
+			"ingredients": [[225, 1],[215, 1],[195, 2],[194, 2]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Frigidflash_Bolt"
+		},
+		{
+			"id": 224,
 			"name": "frost-barrier",
 			"displayName": "Frost Barrier",
 			"craftingStation": "",
@@ -1371,17 +2251,37 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Frost_Barrier"
 		},
 		{
-			"id": 137,
+			"id": 225,
+			"name": "frost-bolt",
+			"displayName": "Frost Bolt",
+			"craftingStation": "bookshelf",
+			"ingredients": [[499, 1],[398, 2],[409, 10],[263, 20]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Frost_Bolt"
+		},
+		{
+			"id": 226,
+			"name": "frostcrush-valari",
+			"displayName": "Frostcrush Valari",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[495, 40],[125, 5],[277, 1],[221, 6]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Frostcrush_Valari"
+		},
+		{
+			"id": 227,
 			"name": "frostspark-boots",
 			"displayName": "Frostspark Boots",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[172, 1],[188, 1]],
+			"ingredients": [[267, 1],[292, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Frostspark_Boots"
 		},
 		{
-			"id": 138,
+			"id": 228,
 			"name": "frozen-turtle-shell",
 			"displayName": "Frozen Turtle Shell",
 			"craftingStation": "",
@@ -1391,27 +2291,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Frozen_Turtle_Shell"
 		},
 		{
-			"id": 139,
+			"id": 229,
 			"name": "frozen-turtle-shell-calamity",
 			"displayName": "Frozen Turtle Shell",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[300, 3],[117, 9]],
+			"ingredients": [[478, 3],[195, 9]],
 			"quantityMade": 1,
 			"acquisition": "Dropped by Ice Tortoises",
 			"wikiLink": "https://terraria.fandom.com/wiki/Frozen_Turtle_Shell"
 		},
 		{
-			"id": 140,
+			"id": 230,
 			"name": "frozen-wings",
 			"displayName": "Frozen Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[170, 1]],
+			"ingredients": [[413, 20],[265, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Frozen_Wings"
 		},
 		{
-			"id": 141,
+			"id": 231,
 			"name": "fungal-carapace",
 			"displayName": "Fungal Carapace",
 			"craftingStation": "",
@@ -1421,27 +2321,37 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Fungal_Carapace"
 		},
 		{
-			"id": 142,
+			"id": 232,
 			"name": "galactica-singularity",
 			"displayName": "Galactica Singularity",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[257, 1],[315, 1],[211, 1],[274, 1]],
+			"ingredients": [[410, 1],[497, 1],[330, 1],[432, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Galactica_Singularity"
 		},
 		{
-			"id": 143,
+			"id": 233,
 			"name": "galaxia",
 			"displayName": "Galaxia",
 			"craftingStation": "draedons-forge",
-			"ingredients": [[85, 10],[220, 1],[32, 1]],
+			"ingredients": [[132, 10],[341, 1],[45, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Galaxia"
 		},
 		{
-			"id": 144,
+			"id": 234,
+			"name": "galeforce",
+			"displayName": "Galeforce",
+			"craftingStation": "sky-mill",
+			"ingredients": [[3, 8],[446, 3]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Galeforce"
+		},
+		{
+			"id": 235,
 			"name": "giant-harpy-feather",
 			"displayName": "Giant Harpy Feather",
 			"craftingStation": "",
@@ -1451,7 +2361,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Giant_Harpy_Feather"
 		},
 		{
-			"id": 145,
+			"id": 236,
 			"name": "giant-shell",
 			"displayName": "Giant Shell",
 			"craftingStation": "",
@@ -1461,7 +2371,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Giant_Shell"
 		},
 		{
-			"id": 146,
+			"id": 237,
 			"name": "giant-tortoise-shell",
 			"displayName": "Giant Tortoise Shell",
 			"craftingStation": "",
@@ -1471,17 +2381,17 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Giant_Tortoise_Shell"
 		},
 		{
-			"id": 147,
+			"id": 238,
 			"name": "glass",
 			"displayName": "Glass",
 			"craftingStation": "furnace",
-			"ingredients": [[244, 2]],
+			"ingredients": [[380, 2]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Glass"
 		},
 		{
-			"id": 148,
+			"id": 239,
 			"name": "glowing-mushroom",
 			"displayName": "Glowing Mushroom",
 			"craftingStation": "",
@@ -1491,47 +2401,47 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Glowing_Mushroom"
 		},
 		{
-			"id": 149,
+			"id": 240,
 			"name": "goblin-tech",
 			"displayName": "Goblin Tech",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[105, 1],[281, 1],[203, 1]],
+			"ingredients": [[170, 1],[442, 1],[315, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Goblin_Tech"
 		},
 		{
-			"id": 150,
+			"id": 241,
 			"name": "god-slayer-armor",
 			"displayName": "God Slayer Armor",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[85, 55],[32, 5]],
+			"ingredients": [[132, 55],[45, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/God_Slayer_armor"
 		},
 		{
-			"id": 151,
+			"id": 242,
 			"name": "gold-bar",
 			"displayName": "Gold Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[153, 4]],
+			"ingredients": [[244, 4]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Gold_Bar"
 		},
 		{
-			"id": 152,
+			"id": 243,
 			"name": "gold-broadsword",
 			"displayName": "Gold Broadsword",
 			"craftingStation": "anvil",
-			"ingredients": [[151, 8]],
+			"ingredients": [[242, 8]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Gold_Broadsword"
 		},
 		{
-			"id": 153,
+			"id": 244,
 			"name": "gold-ore",
 			"displayName": "Gold Ore",
 			"craftingStation": "",
@@ -1541,37 +2451,37 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Gold_Ore"
 		},
 		{
-			"id": 154,
+			"id": 245,
 			"name": "gold-watch",
 			"displayName": "Gold Watch",
 			"craftingStation": "table-and-chair",
-			"ingredients": [[151, 10],[69, 1]],
+			"ingredients": [[242, 10],[102, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Gold_Watch"
 		},
 		{
-			"id": 155,
+			"id": 246,
 			"name": "gps",
 			"displayName": "GPS",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[102, 1],[20, 1],[75, 1]],
+			"ingredients": [[163, 1],[30, 1],[116, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/GPS"
 		},
 		{
-			"id": 156,
+			"id": 247,
 			"name": "grand-gelatin",
 			"displayName": "Grand Gelatin",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[185, 1],[196, 1],[312, 1]],
+			"ingredients": [[289, 1],[304, 1],[493, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Grand_Gelatin"
 		},
 		{
-			"id": 157,
+			"id": 248,
 			"name": "granite-block",
 			"displayName": "Granite Block",
 			"craftingStation": "",
@@ -1581,27 +2491,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Granite_Cave"
 		},
 		{
-			"id": 158,
+			"id": 249,
 			"name": "hadal-mantle",
 			"displayName": "Hadal Mantle",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[245, 5],[116, 1],[259, 20]],
+			"ingredients": [[381, 5],[194, 1],[413, 20]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Hadal_Mantle"
 		},
 		{
-			"id": 159,
+			"id": 250,
 			"name": "hadarian-wings",
 			"displayName": "Hadrian Wings",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[33, 8],[160, 10],[259, 20]],
+			"ingredients": [[47, 8],[251, 10],[413, 20]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Hadarian_Wings"
 		},
 		{
-			"id": 160,
+			"id": 251,
 			"name": "hadrian-membrane",
 			"displayName": "Hadrian Membrane",
 			"craftingStation": "",
@@ -1611,7 +2521,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Hadarian_Membrane"
 		},
 		{
-			"id": 161,
+			"id": 252,
 			"name": "hallowed-bar",
 			"displayName": "Hallowed Bar",
 			"craftingStation": "",
@@ -1621,27 +2531,47 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Hallowed_Bar"
 		},
 		{
-			"id": 162,
+			"id": 253,
 			"name": "harpy-ring",
 			"displayName": "Harpy Ring",
 			"craftingStation": "sky-mill",
-			"ingredients": [[1, 2],[124, 5],[122, 1]],
+			"ingredients": [[3, 2],[205, 5],[203, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Harpy_Ring"
 		},
 		{
-			"id": 163,
+			"id": 254,
 			"name": "harpy-wings",
 			"displayName": "Harpy Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[144, 1]],
+			"ingredients": [[413, 20],[235, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Harpy_Wings"
 		},
 		{
-			"id": 164,
+			"id": 255,
+			"name": "haunted-scroll",
+			"displayName": "Haunted Scroll",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[417, 5],[415, 5],[90, 1],[37, 10]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Haunted_Scroll"
+		},
+		{
+			"id": 256,
+			"name": "heavenly-gale",
+			"displayName": "Heavenly Gale",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[111, 1],[459, 1],[49, 1],[6, 1],[354, 1],[234, 1],[54, 4]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Heavenly_Gale"
+		},
+		{
+			"id": 257,
 			"name": "hellstone",
 			"displayName": "Hellstone",
 			"craftingStation": "",
@@ -1651,17 +2581,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Hellstone"
 		},
 		{
-			"id": 165,
+			"id": 258,
 			"name": "hellstone-bar",
 			"displayName": "Hellstone Bar",
 			"craftingStation": "hellforge",
-			"ingredients": [[164, 3],[215, 1]],
+			"ingredients": [[257, 3],[335, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Hellstone_Bar"
 		},
 		{
-			"id": 166,
+			"id": 259,
+			"name": "hellwing-bow",
+			"displayName": "Hellwing Bow",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Found in Shadow Chests",
+			"wikiLink": "https://terraria.fandom.com/wiki/Hellwing_Bow"
+		},
+		{
+			"id": 260,
 			"name": "hermes-boots",
 			"displayName": "Hermes Boots",
 			"craftingStation": "",
@@ -1671,27 +2611,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Hermes_Boots"
 		},
 		{
-			"id": 167,
+			"id": 261,
 			"name": "honey-dew",
 			"displayName": "Honey Dew",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[190, 1],[62, 10],[294, 2],[65, 1],[45, 3]],
+			"ingredients": [[294, 1],[88, 10],[470, 2],[93, 1],[62, 3]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Honey_Dew"
 		},
 		{
-			"id": 168,
+			"id": 262,
 			"name": "hoverboard",
 			"displayName": "Hoverboard",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[252, 18]],
+			"ingredients": [[413, 20],[399, 18]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Hoverboard"
 		},
 		{
-			"id": 169,
+			"id": 263,
 			"name": "ice-block",
 			"displayName": "Ice Block",
 			"craftingStation": "",
@@ -1701,7 +2641,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Ice_Block"
 		},
 		{
-			"id": 170,
+			"id": 264,
+			"name": "ice-boomerang-calamity",
+			"displayName": "Ice Boomerang",
+			"craftingStation": "ice-machine",
+			"ingredients": [[263, 20],[409, 10],[398, 1]],
+			"quantityMade": 1,
+			"acquisition": "Found in chests in the Ice biome",
+			"wikiLink": "https://terraria.fandom.com/wiki/Ice_Boomerang"
+		},
+		{
+			"id": 265,
 			"name": "ice-feather",
 			"displayName": "Ice Feather",
 			"craftingStation": "",
@@ -1711,7 +2661,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Ice_Feather"
 		},
 		{
-			"id": 171,
+			"id": 266,
 			"name": "ice-mirror",
 			"displayName": "Ice Mirror",
 			"craftingStation": "",
@@ -1721,7 +2671,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Ice_Mirror"
 		},
 		{
-			"id": 172,
+			"id": 267,
 			"name": "ice-skates",
 			"displayName": "Ice Skates",
 			"craftingStation": "",
@@ -1731,7 +2681,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Ice_Skates"
 		},
 		{
-			"id": 173,
+			"id": 268,
+			"name": "ichor",
+			"displayName": "Ichor",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Crimson enemies in Hardmode",
+			"wikiLink": "https://terraria.fandom.com/wiki/Ichor"
+		},
+		{
+			"id": 269,
+			"name": "infected-armor-plating",
+			"displayName": "Infected Armor Plating",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by The Plaguebringer Goliath",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Infected_Armor_Plating"
+		},
+		{
+			"id": 270,
 			"name": "influx-waver",
 			"displayName": "Influx Waver",
 			"craftingStation": "",
@@ -1741,17 +2711,37 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Influx_Waver"
 		},
 		{
-			"id": 174,
+			"id": 271,
+			"name": "ink-bomb",
+			"displayName": "Ink Bomb",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Cuttlefish, Colossal Squid and Giant Squid",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Ink_Bomb"
+		},
+		{
+			"id": 272,
 			"name": "iron-bar",
 			"displayName": "Iron Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[175, 3]],
+			"ingredients": [[274, 3]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Iron_Bar"
 		},
 		{
-			"id": 175,
+			"id": 273,
+			"name": "iron-francisca",
+			"displayName": "Iron Francisca",
+			"craftingStation": "anvil",
+			"ingredients": [[272, 1],[37, 1]],
+			"quantityMade": 50,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Iron_Francisca"
+		},
+		{
+			"id": 274,
 			"name": "iron-ore",
 			"displayName": "Iron Ore",
 			"craftingStation": "",
@@ -1761,7 +2751,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Iron_Ore"
 		},
 		{
-			"id": 176,
+			"id": 275,
 			"name": "jellyfish-necklace",
 			"displayName": "Jellyfish Necklace",
 			"craftingStation": "",
@@ -1771,7 +2761,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Jellyfish_Necklace"
 		},
 		{
-			"id": 177,
+			"id": 276,
 			"name": "jungle-spores",
 			"displayName": "Jungle Spores",
 			"craftingStation": "",
@@ -1781,7 +2771,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Jungle_Spores"
 		},
 		{
-			"id": 178,
+			"id": 277,
+			"name": "kylie",
+			"displayName": "Kylie",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Sold by the Bandit",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Kylie"
+		},
+		{
+			"id": 278,
+			"name": "lava-bucket",
+			"displayName": "Lava Bucket",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Gather lava using a Bucket",
+			"wikiLink": "https://terraria.fandom.com/wiki/Lava_Bucket"
+		},
+		{
+			"id": 279,
 			"name": "lava-charm",
 			"displayName": "Lava Charm",
 			"craftingStation": "",
@@ -1791,27 +2801,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Lava_Charm"
 		},
 		{
-			"id": 179,
+			"id": 280,
 			"name": "lava-waders",
 			"displayName": "Lava Waders",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[216, 1],[178, 1],[219, 1]],
+			"ingredients": [[336, 1],[279, 1],[339, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Lava_Waders"
 		},
 		{
-			"id": 180,
+			"id": 281,
 			"name": "lead-bar",
 			"displayName": "Lead Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[182, 3]],
+			"ingredients": [[283, 3]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Lead_Bar"
 		},
 		{
-			"id": 181,
+			"id": 282,
 			"name": "lead-core",
 			"displayName": "Lead Core",
 			"craftingStation": "",
@@ -1821,7 +2831,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Lead_Core"
 		},
 		{
-			"id": 182,
+			"id": 283,
 			"name": "lead-ore",
 			"displayName": "Lead Ore",
 			"craftingStation": "",
@@ -1831,7 +2841,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Lead_Ore"
 		},
 		{
-			"id": 183,
+			"id": 284,
+			"name": "lead-tomahawk",
+			"displayName": "Lead Tomahawk",
+			"craftingStation": "anvil",
+			"ingredients": [[281, 1],[37, 1]],
+			"quantityMade": 50,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Lead_Tomahawk"
+		},
+		{
+			"id": 285,
 			"name": "leaf-wings",
 			"displayName": "Leaf Wings",
 			"craftingStation": "",
@@ -1841,17 +2861,37 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Leaf_Wings"
 		},
 		{
-			"id": 184,
+			"id": 286,
+			"name": "lens",
+			"displayName": "Lens",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Demon Eyes and Wandering Eyes",
+			"wikiLink": "https://terraria.fandom.com/wiki/Lens"
+		},
+		{
+			"id": 287,
+			"name": "lesser-mana-potion",
+			"displayName": "Lesser Mana Potion",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Sold by the Merchant",
+			"wikiLink": "https://terraria.fandom.com/wiki/Lesser_Mana_Potion"
+		},
+		{
+			"id": 288,
 			"name": "life-alloy",
 			"displayName": "Life Alloy",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[245, 1],[93, 1],[224, 1]],
+			"ingredients": [[381, 1],[142, 1],[348, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Life_Alloy"
 		},
 		{
-			"id": 185,
+			"id": 289,
 			"name": "life-jelly",
 			"displayName": "Life Jelly",
 			"craftingStation": "",
@@ -1861,7 +2901,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Life_Jelly"
 		},
 		{
-			"id": 186,
+			"id": 290,
 			"name": "lifeform-analyser",
 			"displayName": "Lifeform Analyser",
 			"craftingStation": "",
@@ -1871,7 +2911,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Lifeform_Analyzer"
 		},
 		{
-			"id": 187,
+			"id": 291,
 			"name": "light-shard",
 			"displayName": "Light Shard",
 			"craftingStation": "",
@@ -1881,37 +2921,47 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Light_Shard"
 		},
 		{
-			"id": 188,
+			"id": 292,
 			"name": "lightning-boots",
 			"displayName": "Lightning Boots",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[266, 1],[3, 1],[12, 1]],
+			"ingredients": [[421, 1],[5, 1],[17, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Lightning_Boots"
 		},
 		{
-			"id": 189,
+			"id": 293,
 			"name": "lights-bane",
 			"displayName": "Light's Bane",
 			"craftingStation": "anvil",
-			"ingredients": [[99, 10]],
+			"ingredients": [[160, 10]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Light%27s_Bane"
 		},
 		{
-			"id": 190,
+			"id": 294,
 			"name": "living-dew",
 			"displayName": "Living Dew",
 			"craftingStation": "anvil",
-			"ingredients": [[311, 2],[42, 10],[208, 5],[48, 1]],
+			"ingredients": [[492, 2],[59, 10],[325, 5],[66, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Living_Dew"
 		},
 		{
-			"id": 191,
+			"id": 295,
+			"name": "living-fire-block",
+			"displayName": "Living Fire Block",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Underworld enemies",
+			"wikiLink": "https://terraria.fandom.com/wiki/Living_Fire_Block"
+		},
+		{
+			"id": 296,
 			"name": "living-shard",
 			"displayName": "Living Shard",
 			"craftingStation": "",
@@ -1921,7 +2971,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Living_Shard"
 		},
 		{
-			"id": 192,
+			"id": 297,
 			"name": "lumenyl",
 			"displayName": "Lumenyl",
 			"craftingStation": "",
@@ -1931,7 +2981,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Lumenyl"
 		},
 		{
-			"id": 193,
+			"id": 298,
 			"name": "luminite",
 			"displayName": "Luminite",
 			"craftingStation": "",
@@ -1941,17 +2991,37 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Luminite"
 		},
 		{
-			"id": 194,
+			"id": 299,
 			"name": "luminite-bar",
 			"displayName": "Luminite Bar",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[193, 4]],
+			"ingredients": [[298, 4]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Luminite_Bar"
 		},
 		{
-			"id": 195,
+			"id": 300,
+			"name": "lunarian-bow",
+			"displayName": "Lunarian Bow",
+			"craftingStation": "altar",
+			"ingredients": [[320, 1],[460, 1],[20, 1],[364, 10]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Lunarian_Bow"
+		},
+		{
+			"id": 301,
+			"name": "magic-cuffs",
+			"displayName": "Magic Cuffs",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[390, 1],[306, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Magic_Cuffs"
+		},
+		{
+			"id": 302,
 			"name": "magic-mirror",
 			"displayName": "Magic Mirror",
 			"craftingStation": "",
@@ -1961,7 +3031,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Magic_Mirror"
 		},
 		{
-			"id": 196,
+			"id": 303,
+			"name": "mana-flower",
+			"displayName": "Mana Flower",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[328, 1],[305, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Mana_Flower"
+		},
+		{
+			"id": 304,
 			"name": "mana-jelly",
 			"displayName": "Mana Jelly",
 			"craftingStation": "",
@@ -1971,7 +3051,37 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Mana_Jelly"
 		},
 		{
-			"id": 197,
+			"id": 305,
+			"name": "mana-potion",
+			"displayName": "Mana Potion",
+			"craftingStation": "placed-bottle",
+			"ingredients": [[287, 2],[239, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Mana_Potion"
+		},
+		{
+			"id": 306,
+			"name": "mana-regeneration-band",
+			"displayName": "Mana Regeneration Band",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[55, 1],[56, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Mana_Regeneration_Band"
+		},
+		{
+			"id": 307,
+			"name": "mangrove-chakram",
+			"displayName": "Mangrove Chakram",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[348, 7]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Mangrove_Chakram"
+		},
+		{
+			"id": 308,
 			"name": "marble-block",
 			"displayName": "Marble Block",
 			"craftingStation": "",
@@ -1981,17 +3091,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Marble_Cave"
 		},
 		{
-			"id": 198,
+			"id": 309,
+			"name": "marrow",
+			"displayName": "Marrow",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Rarely dropped by Skeleton Archers",
+			"wikiLink": "https://terraria.fandom.com/wiki/Marrow"
+		},
+		{
+			"id": 310,
 			"name": "medicated-bandage",
 			"displayName": "Medicated Bandage",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[0, 1],[47, 1]],
+			"ingredients": [[2, 1],[65, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Medicated_Bandage"
 		},
 		{
-			"id": 199,
+			"id": 311,
 			"name": "megaphone",
 			"displayName": "Megaphone",
 			"craftingStation": "",
@@ -2001,7 +3121,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Megaphone"
 		},
 		{
-			"id": 200,
+			"id": 312,
 			"name": "meld-blob",
 			"displayName": "Meld Blob",
 			"craftingStation": "",
@@ -2011,17 +3131,17 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Meld_Blob"
 		},
 		{
-			"id": 201,
+			"id": 313,
 			"name": "meld-construct",
 			"displayName": "Meld Construct",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[273, 3],[200, 6]],
+			"ingredients": [[431, 3],[312, 6]],
 			"quantityMade": 3,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Meld_Construct"
 		},
 		{
-			"id": 202,
+			"id": 314,
 			"name": "meowmere",
 			"displayName": "Meowmere",
 			"craftingStation": "",
@@ -2031,7 +3151,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Meowmere"
 		},
 		{
-			"id": 203,
+			"id": 315,
 			"name": "metal-detector",
 			"displayName": "Metal Detector",
 			"craftingStation": "",
@@ -2041,7 +3161,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Metal_Detector"
 		},
 		{
-			"id": 204,
+			"id": 316,
 			"name": "meteorite",
 			"displayName": "Meteorite",
 			"craftingStation": "",
@@ -2051,17 +3171,67 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Meteorite"
 		},
 		{
-			"id": 205,
+			"id": 317,
 			"name": "meteorite-bar",
 			"displayName": "Meteorite Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[204, 3]],
+			"ingredients": [[316, 3]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Meteorite_Bar"
 		},
 		{
-			"id": 206,
+			"id": 318,
+			"name": "mirage-mirror",
+			"displayName": "Mirage Mirror",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[70, 1],[34, 1],[83, 50]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Mirage_Mirror"
+		},
+		{
+			"id": 319,
+			"name": "molten-amputator",
+			"displayName": "Molten Amputator",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Providence, the Profaned Goddess",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Molten_Amputator"
+		},
+		{
+			"id": 320,
+			"name": "molten-fury",
+			"displayName": "Molten Fury",
+			"craftingStation": "anvil",
+			"ingredients": [[258, 15]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Molten_Fury"
+		},
+		{
+			"id": 321,
+			"name": "monsoon",
+			"displayName": "Monsoon",
+			"craftingStation": "ancient-manipulator",
+			"ingredients": [[477, 1],[216, 1],[162, 10],[297, 10],[454, 5],[370, 6],[396, 2]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Monsoon"
+		},
+		{
+			"id": 322,
+			"name": "moonglow",
+			"displayName": "Moonglow",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Grows on Jungle grass",
+			"wikiLink": "https://terraria.fandom.com/wiki/Moonglow"
+		},
+		{
+			"id": 323,
 			"name": "mothron-wings",
 			"displayName": "Mothron Wings",
 			"craftingStation": "",
@@ -2071,7 +3241,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Mothron_Wings"
 		},
 		{
-			"id": 207,
+			"id": 324,
 			"name": "muramasa",
 			"displayName": "Muramasa",
 			"craftingStation": "",
@@ -2081,7 +3251,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Muramasa"
 		},
 		{
-			"id": 208,
+			"id": 325,
 			"name": "murky-paste",
 			"displayName": "Murky Paste",
 			"craftingStation": "",
@@ -2091,7 +3261,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Murky_Paste"
 		},
 		{
-			"id": 209,
+			"id": 326,
 			"name": "murky-sludge",
 			"displayName": "Murky Sludge",
 			"craftingStation": "",
@@ -2101,7 +3271,27 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Murky_Sludge"
 		},
 		{
-			"id": 210,
+			"id": 327,
+			"name": "nanites",
+			"displayName": "Nanites",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Sold by the Cyborg",
+			"wikiLink": "https://terraria.fandom.com/wiki/Nanites"
+		},
+		{
+			"id": 328,
+			"name": "natures-gift",
+			"displayName": "Nature's Gift",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Grows in the Underground Jungle",
+			"wikiLink": "https://terraria.fandom.com/wiki/Nature%27s_Gift"
+		},
+		{
+			"id": 329,
 			"name": "nazar",
 			"displayName": "Nazar",
 			"craftingStation": "",
@@ -2111,7 +3301,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Nazar"
 		},
 		{
-			"id": 211,
+			"id": 330,
 			"name": "nebula-fragment",
 			"displayName": "Nebula Fragment",
 			"craftingStation": "",
@@ -2121,17 +3311,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Nebula_Fragment"
 		},
 		{
-			"id": 212,
+			"id": 331,
 			"name": "nebula-mantle",
 			"displayName": "Nebula Mantle",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[211, 14],[194, 10]],
+			"ingredients": [[330, 14],[299, 10]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Nebula_Mantle"
 		},
 		{
-			"id": 213,
+			"id": 332,
 			"name": "nightmare-fuel",
 			"displayName": "Nightmare Fuel",
 			"craftingStation": "",
@@ -2141,17 +3331,27 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Nightmare_Fuel"
 		},
 		{
-			"id": 214,
+			"id": 333,
 			"name": "nights-edge",
 			"displayName": "Night's Edge",
 			"craftingStation": "altar",
-			"ingredients": [[207, 1],[126, 1],[16, 1],[51, 1]],
+			"ingredients": [[324, 1],[207, 1],[24, 1],[71, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Night%27s_Edge"
 		},
 		{
-			"id": 215,
+			"id": 334,
+			"name": "nuclear-fury",
+			"displayName": "Nuclear Fury",
+			"craftingStation": "bookshelf",
+			"ingredients": [[369, 1],[360, 1],[299, 5],[484, 5],[418, 10]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Nuclear_Fury"
+		},
+		{
+			"id": 335,
 			"name": "obsidian",
 			"displayName": "Obsidian",
 			"craftingStation": "",
@@ -2161,7 +3361,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian"
 		},
 		{
-			"id": 216,
+			"id": 336,
 			"name": "obsidian-rose",
 			"displayName": "Obsidian Rose",
 			"craftingStation": "",
@@ -2171,47 +3371,67 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian_Rose"
 		},
 		{
-			"id": 217,
+			"id": 337,
 			"name": "obsidian-shield",
 			"displayName": "Obsidian Shield",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[218, 1],[74, 1]],
+			"ingredients": [[338, 1],[112, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian_Shield"
 		},
 		{
-			"id": 218,
+			"id": 338,
 			"name": "obsidian-skull",
 			"displayName": "Obsidian Skull",
 			"craftingStation": "furnace",
-			"ingredients": [[215, 20]],
+			"ingredients": [[335, 20]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian_Skull"
 		},
 		{
-			"id": 219,
+			"id": 339,
 			"name": "obsidian-water-walking-boots",
 			"displayName": "Obsidian Water Walking Boots",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[316, 1]],
+			"ingredients": [[500, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian_Water_Walking_Boots"
 		},
 		{
-			"id": 220,
+			"id": 340,
+			"name": "old-lord-oathsword",
+			"displayName": "Old Lord Oathsword",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Bone Serpents",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Old_Lord_Oathsword"
+		},
+		{
+			"id": 341,
 			"name": "omega-biome-blade",
 			"displayName": "Omega Biome Blade",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[80, 1],[184, 3],[142, 3],[194, 5],[297, 1]],
+			"ingredients": [[123, 1],[288, 3],[232, 3],[299, 5],[473, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Omega_Biome_Blade"
 		},
 		{
-			"id": 221,
+			"id": 342,
+			"name": "optic-staff",
+			"displayName": "Optic Staff",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[252, 12],[286, 2],[70, 1],[418, 20]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Optic_Staff"
+		},
+		{
+			"id": 343,
 			"name": "paladins-shield",
 			"displayName": "Paladin's Shield",
 			"craftingStation": "",
@@ -2221,7 +3441,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Paladin%27s_Shield"
 		},
 		{
-			"id": 222,
+			"id": 344,
+			"name": "palm-wood",
+			"displayName": "Palm Wood",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Gathered from trees in the Ocean",
+			"wikiLink": "https://terraria.fandom.com/wiki/Palm_Wood"
+		},
+		{
+			"id": 345,
 			"name": "panic-necklace",
 			"displayName": "Panic Necklace",
 			"craftingStation": "",
@@ -2231,27 +3461,37 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Panic_Necklace"
 		},
 		{
-			"id": 223,
+			"id": 346,
 			"name": "pda",
 			"displayName": "PDA",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[155, 1],[238, 1],[149, 1],[129, 1]],
+			"ingredients": [[246, 1],[371, 1],[240, 1],[211, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/PDA"
 		},
 		{
-			"id": 224,
+			"id": 347,
+			"name": "pearlwood",
+			"displayName": "Pearlwood",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Gathered from trees in the Hallow",
+			"wikiLink": "https://terraria.fandom.com/wiki/Pearlwood"
+		},
+		{
+			"id": 348,
 			"name": "perennial-bar",
 			"displayName": "Perennial Bar",
 			"craftingStation": "hardmode-forge",
-			"ingredients": [[225, 5]],
+			"ingredients": [[349, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Perennial_Bar"
 		},
 		{
-			"id": 225,
+			"id": 349,
 			"name": "perennial-ore",
 			"displayName": "Perennial Ore",
 			"craftingStation": "",
@@ -2261,7 +3501,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Perennial_Ore"
 		},
 		{
-			"id": 226,
+			"id": 350,
 			"name": "phantoplasm",
 			"displayName": "Phantoplasm",
 			"craftingStation": "",
@@ -2271,7 +3511,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Phantoplasm"
 		},
 		{
-			"id": 227,
+			"id": 351,
 			"name": "philosophers-stone",
 			"displayName": "Philosopher's Stone",
 			"craftingStation": "",
@@ -2281,7 +3521,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Philosopher%27s_Stone"
 		},
 		{
-			"id": 228,
+			"id": 352,
 			"name": "pixie-dust",
 			"displayName": "Pixie Dust",
 			"craftingStation": "",
@@ -2291,27 +3531,57 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Pixie_Dust"
 		},
 		{
-			"id": 229,
+			"id": 353,
+			"name": "plague-cell-canister",
+			"displayName": "Plague Cell Canister",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by plague-related Jungle enemies after Golem is defeated",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Plague_Cell_Canister"
+		},
+		{
+			"id": 354,
+			"name": "planetary-annihilation",
+			"displayName": "Planetary Annihilation",
+			"craftingStation": "ancient-manipulator",
+			"ingredients": [[130, 1],[299, 5],[232, 5],[146, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Planetary_Annihilation"
+		},
+		{
+			"id": 355,
+			"name": "plantation-staff",
+			"displayName": "Plantation Staff",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[64, 1],[155, 1],[342, 1],[296, 10]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Plantation_Staff"
+		},
+		{
+			"id": 356,
 			"name": "platinum-bar",
 			"displayName": "Platinum Bar",
 			"craftingStation": "furnace",
-			"ingredients": [[231, 4]],
+			"ingredients": [[358, 4]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Platinum_Bar"
 		},
 		{
-			"id": 230,
+			"id": 357,
 			"name": "platinum-broadsword",
 			"displayName": "Platinum Broadsword",
 			"craftingStation": "anvil",
-			"ingredients": [[229, 8]],
+			"ingredients": [[356, 8]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Platinum_Broadsword"
 		},
 		{
-			"id": 231,
+			"id": 358,
 			"name": "platinum-ore",
 			"displayName": "Platinum Ore",
 			"craftingStation": "",
@@ -2321,17 +3591,47 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Platinum_Ore"
 		},
 		{
-			"id": 232,
+			"id": 359,
 			"name": "platinum-watch",
 			"displayName": "Platinum Watch",
 			"craftingStation": "table-and-chair",
-			"ingredients": [[229, 10],[69, 1]],
+			"ingredients": [[356, 10],[102, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Platinum_Watch"
 		},
 		{
-			"id": 233,
+			"id": 360,
+			"name": "poseidon",
+			"displayName": "Poseidon",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by the Giant Clam",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Poseidon"
+		},
+		{
+			"id": 361,
+			"name": "primordial-ancient",
+			"displayName": "Primordial Ancient",
+			"craftingStation": "bookshelf",
+			"ingredients": [[362, 1],[219, 5],[132, 5],[45, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Primordial_Ancient"
+		},
+		{
+			"id": 362,
+			"name": "primordial-earth",
+			"displayName": "Primordial Earth",
+			"craftingStation": "bookshelf",
+			"ingredients": [[317, 5],[153, 1],[219, 3],[179, 5]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Primordial_Earth"
+		},
+		{
+			"id": 363,
 			"name": "psychotic-amulet",
 			"displayName": "Psychotic Amulet",
 			"craftingStation": "",
@@ -2341,7 +3641,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Psychotic_Amulet"
 		},
 		{
-			"id": 234,
+			"id": 364,
 			"name": "purified-gel",
 			"displayName": "Purified Gel",
 			"craftingStation": "",
@@ -2351,7 +3651,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Purified_Gel"
 		},
 		{
-			"id": 235,
+			"id": 365,
 			"name": "radar",
 			"displayName": "Radar",
 			"craftingStation": "",
@@ -2361,37 +3661,87 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Radar"
 		},
 		{
-			"id": 236,
+			"id": 366,
 			"name": "radiant-ooze",
 			"displayName": "Radiant Ooze",
 			"craftingStation": "anvil",
-			"ingredients": [[209, 5],[234, 15]],
+			"ingredients": [[326, 5],[364, 15]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Radiant_Ooze"
 		},
 		{
-			"id": 237,
+			"id": 367,
 			"name": "rampart-of-deities",
 			"displayName": "Rampart of Deities",
 			"craftingStation": "draedons-forge",
-			"ingredients": [[135, 1],[142, 5],[85, 20],[104, 10],[96, 1]],
+			"ingredients": [[222, 1],[232, 5],[132, 20],[169, 10],[156, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Rampart_of_Deities"
 		},
 		{
-			"id": 238,
+			"id": 368,
+			"name": "raven-staff",
+			"displayName": "Raven Staff",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Pumpking",
+			"wikiLink": "https://terraria.fandom.com/wiki/Raven_Staff"
+		},
+		{
+			"id": 369,
+			"name": "razorblade-typhoon",
+			"displayName": "Razorblade Typhoon",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Duke Fishron",
+			"wikiLink": "https://terraria.fandom.com/wiki/Razorblade_Typhoon"
+		},
+		{
+			"id": 370,
+			"name": "reaper-tooth",
+			"displayName": "Reaper Tooth",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Reaper Sharks after the Polterghast is defeated",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Reaper_Tooth"
+		},
+		{
+			"id": 371,
 			"name": "rek-3000",
 			"displayName": "R.E.K. 3000",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[235, 1],[282, 1],[186, 1]],
+			"ingredients": [[365, 1],[447, 1],[290, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/R.E.K._3000"
 		},
 		{
-			"id": 239,
+			"id": 372,
+			"name": "relic-of-ruin",
+			"displayName": "Relic of Ruin",
+			"craftingStation": "bookshelf",
+			"ingredients": [[219, 2],[423, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Relic_of_Ruin"
+		},
+		{
+			"id": 373,
+			"name": "rich-mahogany",
+			"displayName": "Rich Mahogany",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Gathered from trees in the Jungle",
+			"wikiLink": "https://terraria.fandom.com/wiki/Rich_Mahogany"
+		},
+		{
+			"id": 374,
 			"name": "rocket-boots",
 			"displayName": "Rocket Boots",
 			"craftingStation": "",
@@ -2401,7 +3751,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Rocket_Boots"
 		},
 		{
-			"id": 240,
+			"id": 375,
 			"name": "rotten-chunk",
 			"displayName": "Rotten Chunk",
 			"craftingStation": "",
@@ -2411,7 +3761,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Rotten_Chunk"
 		},
 		{
-			"id": 241,
+			"id": 376,
 			"name": "rover-drive",
 			"displayName": "Rover Drive",
 			"craftingStation": "",
@@ -2421,7 +3771,17 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Rover_Drive"
 		},
 		{
-			"id": 242,
+			"id": 377,
+			"name": "ruin-medallion",
+			"displayName": "Ruin Medallion",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[481, 4],[115, 1],[194, 2]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Ruin_Medallion"
+		},
+		{
+			"id": 378,
 			"name": "ruinous-soul",
 			"displayName": "Ruinous Soul",
 			"craftingStation": "",
@@ -2431,7 +3791,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Ruinous_Soul"
 		},
 		{
-			"id": 243,
+			"id": 379,
 			"name": "sailfish-boots",
 			"displayName": "Sailfish Boots",
 			"craftingStation": "",
@@ -2441,7 +3801,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Sailfish_Boots"
 		},
 		{
-			"id": 244,
+			"id": 380,
 			"name": "sand-block",
 			"displayName": "Sand Block",
 			"craftingStation": "",
@@ -2451,17 +3811,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Sand_Blocks"
 		},
 		{
-			"id": 245,
+			"id": 381,
 			"name": "scoria-bar",
 			"displayName": "Scoria Bar",
 			"craftingStation": "hardmode-forge",
-			"ingredients": [[246, 5]],
+			"ingredients": [[382, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Scoria_Bar"
 		},
 		{
-			"id": 246,
+			"id": 382,
 			"name": "scoria-ore",
 			"displayName": "Scoria Ore",
 			"craftingStation": "",
@@ -2471,7 +3831,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Scoria_Ore"
 		},
 		{
-			"id": 247,
+			"id": 383,
 			"name": "sea-shell",
 			"displayName": "Sea Shell",
 			"craftingStation": "",
@@ -2481,7 +3841,27 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Sea_Shell"
 		},
 		{
-			"id": 248,
+			"id": 384,
+			"name": "seashell-boomerang",
+			"displayName": "seashell-boomerang",
+			"craftingStation": "anvil",
+			"ingredients": [[488, 2]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Seashell_Boomerang"
+		},
+		{
+			"id": 385,
+			"name": "seashell-calamity",
+			"displayName": "Seashell",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Grows in the Ocean, and dropped by Cnidrions, the Desert Scourge and the Aquatic Scourge",
+			"wikiLink": "https://terraria.fandom.com/wiki/Seashell"
+		},
+		{
+			"id": 386,
 			"name": "seedler",
 			"displayName": "Seedler",
 			"craftingStation": "",
@@ -2491,17 +3871,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Seedler"
 		},
 		{
-			"id": 249,
+			"id": 387,
+			"name": "seething-discharge",
+			"displayName": "Seething Discharge",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by the Brimstone Elemental",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Seething_Discharge"
+		},
+		{
+			"id": 388,
 			"name": "seraph-tracers",
 			"displayName": "Seraph Tracers",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[24, 1],[8, 1],[80, 3],[184, 5],[194, 5]],
+			"ingredients": [[36, 1],[13, 1],[123, 3],[288, 5],[299, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Seraph_Tracers"
 		},
 		{
-			"id": 250,
+			"id": 389,
 			"name": "sextant",
 			"displayName": "Sextant",
 			"craftingStation": "",
@@ -2511,7 +3901,77 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Sextant"
 		},
 		{
-			"id": 251,
+			"id": 390,
+			"name": "shackle",
+			"displayName": "Shackle",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Rarely dropped by Zombies",
+			"wikiLink": "https://terraria.fandom.com/wiki/Shackle"
+		},
+		{
+			"id": 391,
+			"name": "shadewood",
+			"displayName": "Shadewood",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Gathered from trees in The Crimson",
+			"wikiLink": "https://terraria.fandom.com/wiki/Shadewood"
+		},
+		{
+			"id": 392,
+			"name": "shadow-scale",
+			"displayName": "Shadow Scale",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by the Eater of Worlds",
+			"wikiLink": "https://terraria.fandom.com/wiki/Shadow_Scale"
+		},
+		{
+			"id": 393,
+			"name": "shadowflame-bow",
+			"displayName": "Shadowflame Bow",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Goblin Summoners",
+			"wikiLink": "https://terraria.fandom.com/wiki/Shadowflame_Bow"
+		},
+		{
+			"id": 394,
+			"name": "shadowflame-hex-doll",
+			"displayName": "Shadowflame Hex Doll",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Goblin Summoners",
+			"wikiLink": "https://terraria.fandom.com/wiki/Shadowflame_Hex_Doll"
+		},
+		{
+			"id": 395,
+			"name": "shadowspec-bar",
+			"displayName": "Shadowspec Bar",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[54, 1],[95, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Shadowspec_Bar"
+		},
+		{
+			"id": 396,
+			"name": "shark-fin",
+			"displayName": "Shark Fin",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Sharks",
+			"wikiLink": "https://terraria.fandom.com/wiki/Shark_Fin"
+		},
+		{
+			"id": 397,
 			"name": "shark-tooth-necklace",
 			"displayName": "Shark Tooth Necklace",
 			"craftingStation": "",
@@ -2521,17 +3981,67 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Shark_Tooth_Necklace"
 		},
 		{
-			"id": 252,
+			"id": 398,
+			"name": "shiverthorn",
+			"displayName": "Shiverthorn",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Grows in the Snow biome",
+			"wikiLink": "https://terraria.fandom.com/wiki/Shiverthorn"
+		},
+		{
+			"id": 399,
 			"name": "shroomite-bar",
 			"displayName": "Shroomite Bar",
 			"craftingStation": "autohammer",
-			"ingredients": [[71, 1],[148, 15]],
+			"ingredients": [[107, 1],[239, 15]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Shroomite_Bar"
 		},
 		{
-			"id": 253,
+			"id": 400,
+			"name": "shroomite-bar-1-3",
+			"displayName": "Shroomite Bar",
+			"craftingStation": "autohammer",
+			"ingredients": [[108, 1],[239, 15]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Shroomite_Bar"
+		},
+		{
+			"id": 401,
+			"name": "sigil-of-calamitas",
+			"displayName": "Sigil of Calamitas",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[103, 1],[412, 1],[97, 1],[25, 10],[144, 20],[46, 5],[124, 5],[381, 2]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Sigil_of_Calamitas"
+		},
+		{
+			"id": 402,
+			"name": "silencing-sheath",
+			"displayName": "Silencing Sheath",
+			"craftingStation": "tinkerers-workshop",
+			"ingredients": [[403, 10],[22, 3]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Silencing_Sheath"
+		},
+		{
+			"id": 403,
+			"name": "silk",
+			"displayName": "Silk",
+			"craftingStation": "loom",
+			"ingredients": [[113, 7]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Silk"
+		},
+		{
+			"id": 404,
 			"name": "silt-block",
 			"displayName": "Silt Block",
 			"craftingStation": "",
@@ -2541,37 +4051,57 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Silt_Block"
 		},
 		{
-			"id": 254,
+			"id": 405,
 			"name": "silva-armor",
 			"displayName": "Silva Armor",
 			"craftingStation": "draedons-forge",
-			"ingredients": [[95, 22],[287, 27],[110, 22],[181, 1],[32, 7],[18, 22]],
+			"ingredients": [[152, 22],[454, 27],[180, 22],[282, 1],[45, 7],[27, 22]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Silva_armor"
 		},
 		{
-			"id": 255,
+			"id": 406,
 			"name": "silva-wings",
 			"displayName": "Silva Wings",
 			"craftingStation": "draedons-forge",
-			"ingredients": [[95, 5],[110, 15],[18, 3],[287, 3],[32, 2]],
+			"ingredients": [[152, 5],[180, 15],[27, 3],[454, 3],[45, 2]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Silva_Wings"
 		},
 		{
-			"id": 256,
+			"id": 407,
 			"name": "skyline-wings",
 			"displayName": "Skyline Wings",
 			"craftingStation": "anvil",
-			"ingredients": [[1, 5],[124, 5],[122, 5],[58, 15]],
+			"ingredients": [[3, 5],[205, 5],[203, 5],[83, 15]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Skyline_Wings"
 		},
 		{
-			"id": 257,
+			"id": 408,
+			"name": "slithering-eels",
+			"displayName": "Slithering Eels",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Acid Eels after the Aquatic Scourge is defeated",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Slithering_Eels"
+		},
+		{
+			"id": 409,
+			"name": "snow-block",
+			"displayName": "Snow Block",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Found in the Snow biome",
+			"wikiLink": "https://terraria.fandom.com/wiki/Snow_Block"
+		},
+		{
+			"id": 410,
 			"name": "solar-fragment",
 			"displayName": "Solar Fragment",
 			"craftingStation": "",
@@ -2581,17 +4111,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Solar_Fragment"
 		},
 		{
-			"id": 258,
+			"id": 411,
 			"name": "solar-wings",
 			"displayName": "Solar Wings",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[257, 14],[194, 10]],
+			"ingredients": [[410, 14],[299, 10]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Solar_Wings"
 		},
 		{
-			"id": 259,
+			"id": 412,
+			"name": "sorcerer-emblem",
+			"displayName": "Sorcerer Emblem",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by the Wall of Flesh",
+			"wikiLink": "https://terraria.fandom.com/wiki/Sorcerer_Emblem"
+		},
+		{
+			"id": 413,
 			"name": "soul-of-flight",
 			"displayName": "Soul of Flight",
 			"craftingStation": "",
@@ -2601,7 +4141,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Flight"
 		},
 		{
-			"id": 260,
+			"id": 414,
 			"name": "soul-of-fright",
 			"displayName": "Soul of Fright",
 			"craftingStation": "",
@@ -2611,7 +4151,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Fright"
 		},
 		{
-			"id": 261,
+			"id": 415,
 			"name": "soul-of-light",
 			"displayName": "Soul of Light",
 			"craftingStation": "",
@@ -2621,7 +4161,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Light"
 		},
 		{
-			"id": 262,
+			"id": 416,
 			"name": "soul-of-might",
 			"displayName": "Soul of Might",
 			"craftingStation": "",
@@ -2631,7 +4171,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Might"
 		},
 		{
-			"id": 263,
+			"id": 417,
 			"name": "soul-of-night",
 			"displayName": "Soul of Night",
 			"craftingStation": "",
@@ -2641,7 +4181,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Night"
 		},
 		{
-			"id": 264,
+			"id": 418,
 			"name": "soul-of-sight",
 			"displayName": "Soul of Sight",
 			"craftingStation": "",
@@ -2651,37 +4191,77 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Soul_of_Sight"
 		},
 		{
-			"id": 265,
+			"id": 419,
 			"name": "spectre-bar",
 			"displayName": "Spectre Bar",
 			"craftingStation": "hardmode-forge",
-			"ingredients": [[71, 2],[109, 1]],
+			"ingredients": [[107, 2],[179, 1]],
 			"quantityMade": 2,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Spectre_Bar"
 		},
 		{
-			"id": 266,
+			"id": 420,
+			"name": "spectre-bar-1-3",
+			"displayName": "Spectre Bar",
+			"craftingStation": "hardmode-forge",
+			"ingredients": [[108, 2],[179, 1]],
+			"quantityMade": 2,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Spectre_Bar"
+		},
+		{
+			"id": 421,
 			"name": "spectre-boots",
 			"displayName": "Spectre Boots",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[17, 1],[239, 1]],
+			"ingredients": [[26, 1],[374, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Spectre_Boots"
 		},
 		{
-			"id": 267,
+			"id": 422,
 			"name": "spectre-wings",
 			"displayName": "Spectre Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[265, 10]],
+			"ingredients": [[413, 20],[419, 10]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Spectre_Wings"
 		},
 		{
-			"id": 268,
+			"id": 423,
+			"name": "spell-tome",
+			"displayName": "Spell Tome",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Sold by the Wizard",
+			"wikiLink": "https://terraria.fandom.com/wiki/Spell_Tome"
+		},
+		{
+			"id": 424,
+			"name": "spelunker-potion",
+			"displayName": "Spelunker Potion",
+			"craftingStation": "placed-bottle",
+			"ingredients": [[89, 1],[75, 1],[322, 1],[29, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Spelunker_Potion"
+		},
+		{
+			"id": 425,
+			"name": "spirit-flame",
+			"displayName": "Spirit Flame",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[219, 2],[417, 12],[165, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Spirit_Flame"
+		},
+		{
+			"id": 426,
 			"name": "spooky-twig",
 			"displayName": "Spooky Twig",
 			"craftingStation": "",
@@ -2691,17 +4271,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Spooky_Twig"
 		},
 		{
-			"id": 269,
+			"id": 427,
 			"name": "spooky-wings",
 			"displayName": "Spooky Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[268, 1]],
+			"ingredients": [[413, 20],[426, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Spooky_Wings"
 		},
 		{
-			"id": 270,
+			"id": 428,
 			"name": "star-cloak",
 			"displayName": "Star Cloak",
 			"craftingStation": "",
@@ -2711,17 +4291,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Star_Cloak"
 		},
 		{
-			"id": 271,
+			"id": 429,
 			"name": "star-veil",
 			"displayName": "Star Veil",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[270, 1],[92, 1]],
+			"ingredients": [[428, 1],[141, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Star_Veil"
 		},
 		{
-			"id": 272,
+			"id": 430,
 			"name": "star-wrath",
 			"displayName": "Star Wrath",
 			"craftingStation": "",
@@ -2731,7 +4311,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Star_Wrath"
 		},
 		{
-			"id": 273,
+			"id": 431,
 			"name": "stardust",
 			"displayName": "Stardust",
 			"craftingStation": "",
@@ -2741,7 +4321,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Stardust"
 		},
 		{
-			"id": 274,
+			"id": 432,
 			"name": "stardust-fragment",
 			"displayName": "Stardust Fragment",
 			"craftingStation": "",
@@ -2751,17 +4331,37 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Stardust_Fragment"
 		},
 		{
-			"id": 275,
+			"id": 433,
 			"name": "stardust-wings",
 			"displayName": "Stardust Wings",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[274, 14],[194, 10]],
+			"ingredients": [[432, 14],[299, 10]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Stardust_Wings"
 		},
 		{
-			"id": 276,
+			"id": 434,
+			"name": "starfall",
+			"displayName": "Starfall",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Astrum Deus",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Starfall"
+		},
+		{
+			"id": 435,
+			"name": "starfish-calamity",
+			"displayName": "Starfish",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Grows in the Ocean, and dropped by Cnidrions, the Desert Scourge and the Aquatic Scourge",
+			"wikiLink": "https://terraria.fandom.com/wiki/Starfish"
+		},
+		{
+			"id": 436,
 			"name": "starfury",
 			"displayName": "Starfury",
 			"craftingStation": "",
@@ -2771,27 +4371,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Starfury"
 		},
 		{
-			"id": 277,
+			"id": 437,
 			"name": "starfury-calamity",
 			"displayName": "Starfury",
 			"craftingStation": "anvil",
-			"ingredients": [[19, 1],[308, 3],[122, 10]],
+			"ingredients": [[28, 1],[489, 3],[203, 10]],
 			"quantityMade": 1,
 			"acquisition": "Found in Floating Islands, or in Sky Crates",
 			"wikiLink": "https://terraria.fandom.com/wiki/Starfury"
 		},
 		{
-			"id": 278,
+			"id": 438,
 			"name": "starlight-wings",
 			"displayName": "Starlight Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[93, 5],[117, 1],[259, 20]],
+			"ingredients": [[142, 5],[195, 1],[413, 20]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Starlight_Wings"
 		},
 		{
-			"id": 279,
+			"id": 439,
 			"name": "steampunk-wings",
 			"displayName": "Steampunk Wings",
 			"craftingStation": "",
@@ -2801,7 +4401,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Steampunk_Wings"
 		},
 		{
-			"id": 280,
+			"id": 440,
 			"name": "stinger",
 			"displayName": "Stinger",
 			"craftingStation": "",
@@ -2811,7 +4411,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Stinger"
 		},
 		{
-			"id": 281,
+			"id": 441,
+			"name": "stone-block",
+			"displayName": "Stone Block",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Found underground",
+			"wikiLink": "https://terraria.fandom.com/wiki/Stone_Block"
+		},
+		{
+			"id": 442,
 			"name": "stopwatch",
 			"displayName": "Stopwatch",
 			"craftingStation": "",
@@ -2821,7 +4431,47 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Stopwatch"
 		},
 		{
-			"id": 282,
+			"id": 443,
+			"name": "sturdy-fossil",
+			"displayName": "Sturdy Fossil",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Extractinating Desert Fossils, or dropped by Basilisks and Tomb Crawlers",
+			"wikiLink": "https://terraria.fandom.com/wiki/Sturdy_Fossil"
+		},
+		{
+			"id": 444,
+			"name": "subduction-slicer",
+			"displayName": "Subduction Slicer",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[381, 9]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Subduction_Slicer"
+		},
+		{
+			"id": 445,
+			"name": "subsuming-vortex",
+			"displayName": "Subsuming Vortex",
+			"craftingStation": "draedons-forge",
+			"ingredients": [[50, 1],[452, 1],[199, 1],[54, 4]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Subsuming_Vortex"
+		},
+		{
+			"id": 446,
+			"name": "sunplate-block",
+			"displayName": "Sunplate Block",
+			"craftingStation": "sky-mill",
+			"ingredients": [[203, 1],[441, 25]],
+			"quantityMade": 25,
+			"acquisition": "Found on Floating Islands",
+			"wikiLink": "https://terraria.fandom.com/wiki/Sunplate_Block"
+		},
+		{
+			"id": 447,
 			"name": "tally-counter",
 			"displayName": "Tally Counter",
 			"craftingStation": "",
@@ -2831,27 +4481,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Tally_Counter"
 		},
 		{
-			"id": 283,
+			"id": 448,
 			"name": "tarragon-armor",
 			"displayName": "Tarragon Armor",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[301, 33],[104, 36]],
+			"ingredients": [[479, 33],[169, 36]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Tarragon_armor"
 		},
 		{
-			"id": 284,
+			"id": 449,
 			"name": "tarragon-wings",
 			"displayName": "Tarragon Wings",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[301, 5],[259, 30]],
+			"ingredients": [[479, 5],[413, 30]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Tarragon_Wings"
 		},
 		{
-			"id": 285,
+			"id": 450,
 			"name": "tattered-bee-wing",
 			"displayName": "Tattered Bee Wing",
 			"craftingStation": "",
@@ -2861,17 +4511,37 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Tattered_Bee_Wing"
 		},
 		{
-			"id": 286,
+			"id": 451,
 			"name": "tattered-fairy-wings",
 			"displayName": "Tattered Fairy Wings",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[259, 20],[50, 1]],
+			"ingredients": [[413, 20],[69, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Tattered_Fairy_Wings"
 		},
 		{
-			"id": 287,
+			"id": 452,
+			"name": "tears-of-heaven",
+			"displayName": "Tears of Heaven",
+			"craftingStation": "bookshelf",
+			"ingredients": [[126, 5],[223, 1],[498, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Tears_of_Heaven"
+		},
+		{
+			"id": 453,
+			"name": "tendon-bow",
+			"displayName": "Tendon Bow",
+			"craftingStation": "anvil",
+			"ingredients": [[139, 8]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Tendon_Bow"
+		},
+		{
+			"id": 454,
 			"name": "tenebris",
 			"displayName": "Tenebris",
 			"craftingStation": "",
@@ -2881,37 +4551,67 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Tenebris"
 		},
 		{
-			"id": 288,
+			"id": 455,
 			"name": "terra-blade",
 			"displayName": "Terra Blade",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[298, 1],[299, 1],[64, 1]],
+			"ingredients": [[474, 1],[476, 1],[92, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Terra_Blade"
 		},
 		{
-			"id": 289,
+			"id": 456,
+			"name": "terra-disk",
+			"displayName": "Terra Disk",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[193, 1],[296, 8],[384, 1],[464, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Terra_Disk"
+		},
+		{
+			"id": 457,
 			"name": "terraspark-boots",
 			"displayName": "Terraspark Boots",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[137, 1],[179, 1]],
+			"ingredients": [[227, 1],[280, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Terraspark_Boots"
 		},
 		{
-			"id": 290,
+			"id": 458,
 			"name": "the-absorber",
 			"displayName": "The Absorber",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[5, 1],[247, 1],[141, 1],[146, 1],[156, 1],[101, 15],[192, 15],[287, 5],[23, 1],[241, 1]],
+			"ingredients": [[9, 1],[383, 1],[231, 1],[237, 1],[247, 1],[162, 15],[297, 15],[454, 5],[35, 1],[376, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/The_Absorber"
 		},
 		{
-			"id": 291,
+			"id": 459,
+			"name": "the-ballista",
+			"displayName": "The Ballista",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[309, 1],[179, 10],[219, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/The_Ballista"
+		},
+		{
+			"id": 460,
+			"name": "the-bees-knees",
+			"displayName": "The Bee's Knees",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Queen Bee",
+			"wikiLink": "https://terraria.fandom.com/wiki/The_Bee%27s_Knees"
+		},
+		{
+			"id": 461,
 			"name": "the-horsemans-blade",
 			"displayName": "The Horseman's Blade",
 			"craftingStation": "",
@@ -2921,27 +4621,87 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/The_Horseman%27s_Blade"
 		},
 		{
-			"id": 292,
+			"id": 462,
 			"name": "the-plan",
 			"displayName": "The Plan",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[295, 1],[123, 1]],
+			"ingredients": [[471, 1],[204, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/The_Plan"
 		},
 		{
-			"id": 293,
+			"id": 463,
 			"name": "the-sponge",
 			"displayName": "The Sponge",
 			"craftingStation": "draedons-forge",
-			"ingredients": [[32, 1],[4, 1],[290, 1],[85, 5]],
+			"ingredients": [[45, 1],[8, 1],[458, 1],[132, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/The_Sponge"
 		},
 		{
-			"id": 294,
+			"id": 464,
+			"name": "thorn-chakram",
+			"displayName": "Thorn Chakram",
+			"craftingStation": "anvil",
+			"ingredients": [[276, 6],[440, 9]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Thorn_Chakram"
+		},
+		{
+			"id": 465,
+			"name": "tin-bar",
+			"displayName": "Tin Bar",
+			"craftingStation": "furnace",
+			"ingredients": [[466, 3]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Tin_Bar"
+		},
+		{
+			"id": 466,
+			"name": "tin-ore",
+			"displayName": "Tin Ore",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Mined underground",
+			"wikiLink": "https://terraria.fandom.com/wiki/Tin_Ore"
+		},
+		{
+			"id": 467,
+			"name": "tissue-sample",
+			"displayName": "Tissue Sample",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Creepers and the Brain of Cthulhu",
+			"wikiLink": "https://terraria.fandom.com/wiki/Tissue_Sample"
+		},
+		{
+			"id": 468,
+			"name": "tome-of-fates",
+			"displayName": "Tome of Fates",
+			"craftingStation": "bookshelf",
+			"ingredients": [[313, 9],[423, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Tome_of_Fates"
+		},
+		{
+			"id": 469,
+			"name": "tradewinds",
+			"displayName": "Tradewinds",
+			"craftingStation": "bookshelf",
+			"ingredients": [[3, 6],[205, 3],[446, 5]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Tradewinds"
+		},
+		{
+			"id": 470,
 			"name": "trapper-bulb",
 			"displayName": "Trapper Bulb",
 			"craftingStation": "",
@@ -2951,7 +4711,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Trapper_Bulb"
 		},
 		{
-			"id": 295,
+			"id": 471,
 			"name": "trifold-map",
 			"displayName": "Trifold Map",
 			"craftingStation": "",
@@ -2961,47 +4721,67 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Trifold_Map"
 		},
 		{
-			"id": 296,
+			"id": 472,
 			"name": "true-ark-of-the-ancients",
 			"displayName": "True Ark of the Ancients",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[64, 1],[80, 1],[191, 3],[26, 1]],
+			"ingredients": [[92, 1],[123, 1],[296, 3],[39, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/True_Ark_of_the_Ancients"
 		},
 		{
-			"id": 297,
+			"id": 473,
 			"name": "true-biome-blade",
 			"displayName": "True Biome Blade",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[49, 1],[191, 5],[109, 5],[101, 10],[192, 10],[287, 5]],
+			"ingredients": [[68, 1],[296, 5],[179, 5],[162, 10],[297, 10],[454, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/True_Biome_Blade"
 		},
 		{
-			"id": 298,
+			"id": 474,
 			"name": "true-excalibur",
 			"displayName": "True Excalibur",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[119, 1],[71, 24]],
+			"ingredients": [[200, 1],[107, 24]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/True_Excalibur"
 		},
 		{
-			"id": 299,
+			"id": 475,
+			"name": "true-forbidden-oathblade",
+			"displayName": "True Forbidden Oathblade",
+			"craftingStation": "hardmode-anvil",
+			"ingredients": [[92, 1],[220, 1],[46, 3],[269, 3]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/True_Forbidden_Oathblade"
+		},
+		{
+			"id": 476,
 			"name": "true-nights-edge",
 			"displayName": "True Night's Edge",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[214, 1],[264, 20],[262, 20],[260, 20]],
+			"ingredients": [[333, 1],[418, 20],[416, 20],[414, 20]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/True_Night%27s_Edge"
 		},
 		{
-			"id": 300,
+			"id": 477,
+			"name": "tsunami",
+			"displayName": "Tsunami",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Duke Fishron",
+			"wikiLink": "https://terraria.fandom.com/wiki/Tsunami"
+		},
+		{
+			"id": 478,
 			"name": "turtle-shell",
 			"displayName": "Turtle Shell",
 			"craftingStation": "",
@@ -3011,17 +4791,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Turtle_Shell"
 		},
 		{
-			"id": 301,
+			"id": 479,
 			"name": "uelibloom-bar",
 			"displayName": "Uelibloom Bar",
 			"craftingStation": "hardmode-forge",
-			"ingredients": [[302, 5]],
+			"ingredients": [[480, 5]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Uelibloom_Bar"
 		},
 		{
-			"id": 302,
+			"id": 480,
 			"name": "uelibloom-ore",
 			"displayName": "Uelibloom Ore",
 			"craftingStation": "",
@@ -3031,17 +4811,37 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Uelibloom_Ore"
 		},
 		{
-			"id": 303,
+			"id": 481,
+			"name": "unholy-core",
+			"displayName": "Unholy Core",
+			"craftingStation": "hardmode-forge",
+			"ingredients": [[105, 4],[257, 4]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Unholy_Core"
+		},
+		{
+			"id": 482,
 			"name": "unholy-essence",
 			"displayName": "Unholy Essence",
 			"craftingStation": "",
 			"ingredients": [],
 			"quantityMade": 1,
-			"acquisition": "Dropped by Scorn Eaters, Impious Immolaters, Profaned Energies and Providence, the Profaned Goddess",
+			"acquisition": "Dropped by Scorn Eaters, Impious Immolaters, Profaned Energies and Providence, the Profaned Goddess is defeated",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Unholy_Essence"
 		},
 		{
-			"id": 304,
+			"id": 483,
+			"name": "unholy-water",
+			"displayName": "Unholy Water",
+			"craftingStation": "by-hand",
+			"ingredients": [[89, 10],[175, 1],[128, 1]],
+			"quantityMade": 10,
+			"acquisition": "",
+			"wikiLink": "https://terraria.fandom.com/wiki/Unholy_Water"
+		},
+		{
+			"id": 484,
 			"name": "unicorn-horn",
 			"displayName": "Unicorn Horn",
 			"craftingStation": "",
@@ -3051,7 +4851,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Unicorn_Horn"
 		},
 		{
-			"id": 305,
+			"id": 485,
 			"name": "vertebra",
 			"displayName": "Vertebra",
 			"craftingStation": "",
@@ -3061,7 +4861,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Vertebra"
 		},
 		{
-			"id": 306,
+			"id": 486,
 			"name": "vicious-mushroom",
 			"displayName": "Vicious Mushroom",
 			"craftingStation": "",
@@ -3071,17 +4871,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Vicious_Mushroom"
 		},
 		{
-			"id": 307,
+			"id": 487,
 			"name": "vicious-powder",
 			"displayName": "Vicious Powder",
 			"craftingStation": "placed-bottle",
-			"ingredients": [[306, 1]],
+			"ingredients": [[486, 1]],
 			"quantityMade": 5,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Vicious_Powder"
 		},
 		{
-			"id": 308,
+			"id": 488,
+			"name": "victide-bar",
+			"displayName": "Victide Bar",
+			"craftingStation": "furnace",
+			"ingredients": [[489, 1],[435, 1],[122, 1],[385, 1]],
+			"quantityMade": 1,
+			"acquisition": "",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Victide_Bar"
+		},
+		{
+			"id": 489,
 			"name": "victory-shard",
 			"displayName": "Victory Shard",
 			"craftingStation": "",
@@ -3091,7 +4901,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Victory_Shard"
 		},
 		{
-			"id": 309,
+			"id": 490,
 			"name": "vile-mushroom",
 			"displayName": "Vile Mushroom",
 			"craftingStation": "",
@@ -3101,17 +4911,17 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Vile_Mushroom"
 		},
 		{
-			"id": 310,
+			"id": 491,
 			"name": "vile-powder",
 			"displayName": "Vile Powder",
 			"craftingStation": "placed-bottle",
-			"ingredients": [[309, 1]],
+			"ingredients": [[490, 1]],
 			"quantityMade": 5,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Vile_Powder"
 		},
 		{
-			"id": 311,
+			"id": 492,
 			"name": "vine",
 			"displayName": "Vine",
 			"craftingStation": "",
@@ -3121,7 +4931,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Vine"
 		},
 		{
-			"id": 312,
+			"id": 493,
 			"name": "vital-jelly",
 			"displayName": "Vital Jelly",
 			"craftingStation": "",
@@ -3131,7 +4941,7 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Vital_Jelly"
 		},
 		{
-			"id": 313,
+			"id": 494,
 			"name": "vitamins",
 			"displayName": "Vitamins",
 			"craftingStation": "",
@@ -3141,17 +4951,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Vitamins"
 		},
 		{
-			"id": 314,
+			"id": 495,
+			"name": "voidstone",
+			"displayName": "Voidstone",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Mined in the Abyss",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Voidstone"
+		},
+		{
+			"id": 496,
 			"name": "vortex-booster",
 			"displayName": "Vortex Booster",
 			"craftingStation": "ancient-manipulator",
-			"ingredients": [[315, 14],[194, 10]],
+			"ingredients": [[497, 14],[299, 10]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Vortex_Booster"
 		},
 		{
-			"id": 315,
+			"id": 497,
 			"name": "vortex-fragment",
 			"displayName": "Vortex Fragment",
 			"craftingStation": "",
@@ -3161,7 +4981,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Vortex_Fragment"
 		},
 		{
-			"id": 316,
+			"id": 498,
+			"name": "water-bolt",
+			"displayName": "Water Bolt",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Found on shelves in the Dungeon",
+			"wikiLink": "https://terraria.fandom.com/wiki/Water_Bolt"
+		},
+		{
+			"id": 499,
+			"name": "water-bucket",
+			"displayName": "Water Bucket",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Gather water using a Bucket",
+			"wikiLink": "https://terraria.fandom.com/wiki/Water_Bucket"
+		},
+		{
+			"id": 500,
 			"name": "water-walking-boots",
 			"displayName": "Water Walking Boots",
 			"craftingStation": "",
@@ -3171,7 +5011,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Water_Walking_Boots"
 		},
 		{
-			"id": 317,
+			"id": 501,
 			"name": "weather-radio",
 			"displayName": "Weather Radio",
 			"craftingStation": "",
@@ -3181,7 +5021,7 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Weather_Radio"
 		},
 		{
-			"id": 318,
+			"id": 502,
 			"name": "wood",
 			"displayName": "Wood",
 			"craftingStation": "",
@@ -3191,17 +5031,27 @@
 			"wikiLink": "https://terraria.fandom.com/wiki/Wood"
 		},
 		{
-			"id": 319,
+			"id": 503,
 			"name": "wooden-sword",
 			"displayName": "Wooden Sword",
 			"craftingStation": "work-bench",
-			"ingredients": [[318, 7]],
+			"ingredients": [[502, 7]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Wooden_Sword"
 		},
 		{
-			"id": 320,
+			"id": 504,
+			"name": "yharims-gift",
+			"displayName": "Yharim's Gift",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Jungle Dragon, Yharon in Expert Mode",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Yharim%27s_Gift"
+		},
+		{
+			"id": 505,
 			"name": "yharon-soul-fragment",
 			"displayName": "Yharon Soul Fragment",
 			"craftingStation": "",
@@ -3211,11 +5061,21 @@
 			"wikiLink": "https://calamitymod.fandom.com/wiki/Yharon_Soul_Fragment"
 		},
 		{
-			"id": 321,
+			"id": 506,
+			"name": "yharons-kindle-staff",
+			"displayName": "Yharon's Kindle Staff",
+			"craftingStation": "",
+			"ingredients": [],
+			"quantityMade": 1,
+			"acquisition": "Dropped by Jungle Dragon, Yharon",
+			"wikiLink": "https://calamitymod.fandom.com/wiki/Yharon%27s_Kindle_Staff"
+		},
+		{
+			"id": 507,
 			"name": "zenith",
 			"displayName": "Zenith",
 			"craftingStation": "hardmode-anvil",
-			"ingredients": [[78, 1],[276, 1],[113, 1],[41, 1],[288, 1],[248, 1],[291, 1],[173, 1],[276, 1],[202, 1]],
+			"ingredients": [[120, 1],[436, 1],[188, 1],[58, 1],[455, 1],[386, 1],[461, 1],[270, 1],[436, 1],[314, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Zenith"

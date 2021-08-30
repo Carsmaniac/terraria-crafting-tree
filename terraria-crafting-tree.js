@@ -284,9 +284,9 @@ function loadItemRecursive(treeItem, parentItem) {
                 newItemPosition.rotate(map(ingredientNumber, 0, 1, -HALF_PI, HALF_PI));
             }
             newItemPosition.add(parentItem.position);
-            // newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, selectedItem.itemSpacing);
-            let tempSpacing = [200, 400, 600, 750, 900, 1050, 1200, 1350, 1500]; // TODO
-            newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, tempSpacing);
+            // let tempSpacing = [300, 600, 750, 900, 1050, 1200, 1350, 1500];
+            newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, selectedItem.itemSpacing);
+            // newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, tempSpacing);
             treeItems.push(newItem);
             loadItemRecursive(inGameItems[ingredient[0]], newItem);
         }
@@ -309,7 +309,12 @@ function loadSprites() {
         spritesTotal = spritesToLoad.length;
         for (let i = 0; i < treeItems.length; i ++) {
             if (treeItems[i].inGameItem.sprite == null) {
-                let newImage = loadImage("images/" + treeItems[i].inGameItem.name + ".png", incrementspritesLoaded);
+                let newImage;
+                if (treeItems[i].inGameItem.name.substring(0, 4) == "any-") {
+                    newImage = loadImage("images/any.png", incrementspritesLoaded);
+                } else {
+                    newImage = loadImage("images/" + treeItems[i].inGameItem.name + ".png", incrementspritesLoaded);
+                }
                 treeItems[i].inGameItem.sprite = newImage;
                 inGameItems[treeItems[i].inGameItem.id].sprite = newImage;
             }

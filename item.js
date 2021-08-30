@@ -12,7 +12,12 @@ class Item {
         if (this.parent != null) {
             this.itemSpacingIndex = parent.itemSpacingIndex + 1;
             this.itemSpacing = itemSpacing[this.itemSpacingIndex];
-            this.quantityTotal = ceil(this.quantityNeeded * this.parent.quantityTotal / this.parent.inGameItem.quantityMade);
+            if (this.parent.inGameItem.name.substring(0, 4) == "any-") {
+                this.quantityNeeded = parent.quantityNeeded;
+                this.quantityTotal = parent.quantityTotal;
+            } else {
+                this.quantityTotal = ceil(this.quantityNeeded * this.parent.quantityTotal / this.parent.inGameItem.quantityMade);
+            }
         } else {
             this.itemSpacingIndex = -1;
             this.quantityTotal = 1;
@@ -184,8 +189,8 @@ class Item {
                 }
             }
             if (nearbyItems.length > 0) {
-                fill(255, 0, 0);
-                ellipse(this.position.x, this.position.y, 50);
+                // fill(255, 0, 0);
+                // ellipse(this.position.x, this.position.y, 50);
             }
         }
     }
