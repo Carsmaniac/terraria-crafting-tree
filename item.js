@@ -70,10 +70,6 @@ class Item {
         translate(this.position.x, this.position.y);
         cursor("pointer");
 
-        if (this.inGameItem.name == "auric-tesla-armor") {
-            this.inGameItem.acquisition = "Just steal it lol";
-        }
-
         fill(255, 255, 255, 70);
         circle(0, 0, 30000);
         fill(255);

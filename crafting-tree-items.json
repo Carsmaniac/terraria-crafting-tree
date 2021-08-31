@@ -139,7 +139,11 @@
         {
 			"name": "ice-machine",
 			"displayName": "Ice Machine"
-		}
+		},
+        {
+            "name": "keg",
+            "displayName": "Keg"
+        }
 	],
     "selectableItems": [
         {
@@ -167,13 +171,13 @@
             "itemSpacing": [380, 575, 760, 960, 1160, 1340, 1520]
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "Soul of Eternity (no mod add-ons)",
             "modName": "Fargo's Soul Mod",
             "itemSpacing": 250
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "Soul of Eternity (all mod add-ons)",
             "modName": "Fargo's Soul Mod",
             "itemSpacing": 250
@@ -239,40 +243,40 @@
             "itemSpacing": [200, 400, 550, 700, 850, 1000, 1150]
         },
         {
-            "name": "zenith",
+            "name": "exo-gladius",
             "displayName": "Exo Gladius",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [250, 550, 750, 950, 1100, 1250, 1400, 1550]
         },
         {
-            "name": "zenith",
+            "name": "exoblade",
             "displayName": "Exoblade",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [350, 600, 800, 950, 1100, 1250, 1400, 1550]
         },
         {
-            "name": "zenith",
+            "name": "magnomaly-cannon",
             "displayName": "Magnomaly Cannon",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [500, 700, 900, 1050, 1200, 1350]
         },
         {
-            "name": "zenith",
+            "name": "nanotech",
             "displayName": "Nanotech",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [200, 400, 550, 700, 850, 1000]
         },
         {
-            "name": "zenith",
+            "name": "nucleogenesis",
             "displayName": "Nucleogenesis",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [175, 350, 500, 650, 800, 950, 1100]
         },
         {
-            "name": "zenith",
+            "name": "photoviscerator",
             "displayName": "Photoviscerator",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [300, 600, 750, 900, 1050, 1200]
         },
         {
             "name": "rampart-of-deities",
@@ -287,69 +291,69 @@
             "itemSpacing": [215, 410, 600, 750, 900, 1050]
         },
         {
-            "name": "zenith",
+            "name": "supernova",
             "displayName": "Supernova",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [500, 750, 950, 1100, 1250, 1400, 1550, 1700]
         },
         {
-            "name": "zenith",
+            "name": "vivid-clarity",
             "displayName": "Vivid Clarity",
             "modName": "Calamity",
-            "itemSpacing": 250
+            "itemSpacing": [500, 850, 1050, 1200, 1400, 1550]
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "Celestial Edge Pandolarra",
             "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "Cosmic Desolation",
             "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "The Leviathan III",
             "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "Memento Mori",
             "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "Moon Edged Cold Front",
             "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "Shield of Reflections",
             "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "Warp Tracers",
             "modName": "Shadows of Abaddon",
             "itemSpacing": 250
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "Terrarium Defender",
             "modName": "Thorium",
             "itemSpacing": 250
         },
         {
-            "name": "zenith",
+            "name": "aa-placeholder",
             "displayName": "Terrarium Particle Sprinters",
-            "modName": "Throium",
+            "modName": "Thorium",
             "itemSpacing": 250
         }
     ]

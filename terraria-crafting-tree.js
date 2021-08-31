@@ -209,6 +209,7 @@ function keyPressed() {
     if (keyCode == ESCAPE) {
         statusDragging = false;
         statusDisplayControls = false;
+        statusHoveringOverItem = false;
         cameraPan.set(0, 0);
         statusSelectingItem = true;
     } else if (keyCode == UP_ARROW) {
@@ -284,7 +285,7 @@ function loadItemRecursive(treeItem, parentItem) {
                 newItemPosition.rotate(map(ingredientNumber, 0, 1, -HALF_PI, HALF_PI));
             }
             newItemPosition.add(parentItem.position);
-            // let tempSpacing = [300, 600, 750, 900, 1050, 1200, 1350, 1500];
+            // let tempSpacing = [300, 600, 800, 950, 1100, 1250, 1400, 1550];
             newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, selectedItem.itemSpacing);
             // newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, tempSpacing);
             treeItems.push(newItem);
