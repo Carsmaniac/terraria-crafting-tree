@@ -143,6 +143,10 @@
         {
             "name": "keg",
             "displayName": "Keg"
+        },
+        {
+            "name": "lihzahrd-furnace",
+            "displayName": "Lihzahrd Furnace"
         }
 	],
     "selectableItems": [
@@ -171,13 +175,13 @@
             "itemSpacing": [380, 575, 760, 960, 1160, 1340, 1520]
         },
         {
-            "name": "aa-placeholder",
+            "name": "any",
             "displayName": "Soul of Eternity (no mod add-ons)",
             "modName": "Fargo's Soul Mod",
             "itemSpacing": 250
         },
         {
-            "name": "aa-placeholder",
+            "name": "any",
             "displayName": "Soul of Eternity (all mod add-ons)",
             "modName": "Fargo's Soul Mod",
             "itemSpacing": 250
@@ -303,58 +307,58 @@
             "itemSpacing": [500, 850, 1050, 1200, 1400, 1550]
         },
         {
-            "name": "aa-placeholder",
+            "name": "celestial-edge-pandolarra",
             "displayName": "Celestial Edge Pandolarra",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": 250
+            "itemSpacing": [300, 550, 700, 850, 1000, 1150, 1300, 1450]
         },
         {
-            "name": "aa-placeholder",
+            "name": "cosmic-desolation",
             "displayName": "Cosmic Desolation",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": 250
+            "itemSpacing": [300, 500, 700, 900, 1150, 1300]
         },
         {
-            "name": "aa-placeholder",
+            "name": "the-leviathan-iii",
             "displayName": "The Leviathan III",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": 250
+            "itemSpacing": [300, 600, 800, 950, 1100, 1250]
         },
         {
-            "name": "aa-placeholder",
+            "name": "memento-mori",
             "displayName": "Memento Mori",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": 250
+            "itemSpacing": [180, 350]
         },
         {
-            "name": "aa-placeholder",
+            "name": "moon-edged-cold-front",
             "displayName": "Moon Edged Cold Front",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": 250
+            "itemSpacing": [300, 550, 750, 900]
         },
         {
-            "name": "aa-placeholder",
+            "name": "shield-of-reflections",
             "displayName": "Shield of Reflections",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": 250
+            "itemSpacing": [200, 350, 500, 650, 800]
         },
         {
-            "name": "aa-placeholder",
+            "name": "warp-tracers",
             "displayName": "Warp Tracers",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": 250
+            "itemSpacing": [250, 400, 550, 700]
         },
         {
-            "name": "aa-placeholder",
+            "name": "terrarium-defender",
             "displayName": "Terrarium Defender",
             "modName": "Thorium",
-            "itemSpacing": 250
+            "itemSpacing": [200, 350, 500, 650]
         },
         {
-            "name": "aa-placeholder",
+            "name": "terrarium-particle-sprinters",
             "displayName": "Terrarium Particle Sprinters",
             "modName": "Thorium",
-            "itemSpacing": 250
+            "itemSpacing": [200, 350, 500, 650, 800, 950]
         }
     ]
 }
