@@ -42,18 +42,20 @@ class Item {
             arrowEnd.setMag(-this.parent.socialDistance / 2 - 20);
             arrowEnd.add(this.parent.position);
 
-            push();
-            translate(arrowStart.x, arrowStart.y);
-            rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() - HALF_PI);
-            // Lines are drawn on top of all other shapes, including the fade-out white overlay when hovering, so a rect is used instead
-            rect(-0.75, 5, 1.5, dist(arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y) - 5);
-            pop();
-            push();
-            translate(arrowEnd.x, arrowEnd.y);
-            rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() + HALF_PI);
-            rotate(PI);
-            triangle(-4, -5, 4, -5, 0, 10);
-            pop();
+            if (onScreen(arrowStart) || onScreen(arrowEnd)) {
+                push();
+                translate(arrowStart.x, arrowStart.y);
+                rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() - HALF_PI);
+                // Lines are drawn on top of all other shapes, including the fade-out white overlay when hovering, so a rect is used instead
+                rect(-0.75, 5, 1.5, dist(arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y) - 5);
+                pop();
+                push();
+                translate(arrowEnd.x, arrowEnd.y);
+                rotate(p5.Vector.sub(arrowEnd, arrowStart).heading() + HALF_PI);
+                rotate(PI);
+                triangle(-4, -5, 4, -5, 0, 10);
+                pop();
+            }
         } else {
             if (!this.hoveredOver) {
                 noStroke();
@@ -62,7 +64,10 @@ class Item {
                 ellipse(this.position.x, this.position.y, this.socialDistance + 40);
             }
         }
-        image(this.inGameItem.sprite, this.position.x-(this.inGameItem.sprite.width / 2) - 3, this.position.y-(this.inGameItem.sprite.height / 2) - 3, this.inGameItem.sprite.width * 1.1, this.inGameItem.sprite.height * 1.1);
+        if (onScreen(this.position, this.socialDistance / 2)) {
+            image(this.inGameItem.sprite, this.position.x-(this.inGameItem.sprite.width / 2) - 3, this.position.y-(this.inGameItem.sprite.height / 2) - 3, this.inGameItem.sprite.width * 1.1, this.inGameItem.sprite.height * 1.1);
+        }
+
     }
 
     displayHoverInformation(craftingStations) {

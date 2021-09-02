@@ -130,7 +130,7 @@
 		},
         {
 			"name": "crucible-of-the-cosmos",
-			"displayName": "Crucible of the Cosmos"
+			"displayName": "the Crucible of the Cosmos"
 		},
         {
 			"name": "sky-mill",
@@ -147,6 +147,10 @@
         {
             "name": "lihzahrd-furnace",
             "displayName": "Lihzahrd Furnace"
+        },
+        {
+            "name": "crystal-ball-and-water",
+            "displayName": "Crystal Ball and Water/Sink"
         }
 	],
     "selectableItems": [
@@ -175,13 +179,13 @@
             "itemSpacing": [380, 575, 760, 960, 1160, 1340, 1520]
         },
         {
-            "name": "any",
+            "name": "soul-of-the-universe",
             "displayName": "Soul of Eternity (no mod add-ons)",
             "modName": "Fargo's Soul Mod",
             "itemSpacing": 250
         },
         {
-            "name": "any",
+            "name": "soul-of-the-universe-mod-addons",
             "displayName": "Soul of Eternity (all mod add-ons)",
             "modName": "Fargo's Soul Mod",
             "itemSpacing": 250
@@ -256,7 +260,7 @@
             "name": "exoblade",
             "displayName": "Exoblade",
             "modName": "Calamity",
-            "itemSpacing": [350, 600, 800, 950, 1100, 1250, 1400, 1550]
+            "itemSpacing": [350, 600, 800, 950, 1100, 1250, 1400, 1550, 1700]
         },
         {
             "name": "magnomaly-cannon",

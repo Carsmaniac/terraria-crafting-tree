@@ -32,6 +32,9 @@ let mousePos = new p5.Vector(); // Mouse position on the canvas, accounting for 
 
 let firstLoadTime = 0; // frameCount when first loading a tree, determines when to fade out control toggle message
 
+let topCorner = new p5.Vector(); // Top left corner of the screen, accounting for cameraPan and zoomLevel
+let bottomCorner = new p5.Vector(); // Bottom right corner of the screen, accounting for cameraPan and zoomLevel
+
 function preload() {
     inGameItemsData = loadJSON("in-game-items.json");
     craftingTreeItemsData = loadJSON("crafting-tree-items.json");
@@ -77,9 +80,14 @@ function draw() {
         cameraPan.set(panStart.x - ((mouseX - dragStart.x) * zoomLevel), panStart.y - ((mouseY - dragStart.y) * zoomLevel));
     }
 
-    mousePos.x = mouseX - (width / 2) + cameraPan.x + (cameraPan.x * (-(zoomLevel - 1) / zoomLevel));
-    mousePos.y = mouseY - (height / 2) + cameraPan.y + (cameraPan.y * (-(zoomLevel - 1) / zoomLevel));
-    mousePos.setMag(mousePos.mag() * zoomLevel);
+    topCorner.x = 0 - (width / 2) + cameraPan.x + (cameraPan.x * (-(zoomLevel - 1) / zoomLevel));
+    topCorner.y = 0 - (height / 2) + cameraPan.y + (cameraPan.y * (-(zoomLevel - 1) / zoomLevel));
+    topCorner.setMag(topCorner.mag() * zoomLevel);
+    bottomCorner.x = width - (width / 2) + cameraPan.x + (cameraPan.x * (-(zoomLevel - 1) / zoomLevel))
+    bottomCorner.y = height - (height / 2) + cameraPan.y + (cameraPan.y * (-(zoomLevel - 1) / zoomLevel));
+    bottomCorner.setMag(bottomCorner.mag() * zoomLevel);
+    mousePos.x = map(mouseX, 0, width, topCorner.x, bottomCorner.x);
+    mousePos.y = map(mouseY, 0, height, topCorner.y, bottomCorner.y);
 
     // Display "Loading sprites" screen
     if (statusLoadingSprites) {
@@ -402,6 +410,22 @@ function placeChildrenRadially(parentItem, originItem, treeItems) {
             newItemPosition.rotate(childAngle - parentAngle / 2);
             newItemPosition.add(originItem.position);
             childList[i].position.set(newItemPosition);
+        }
+    }
+}
+
+function onScreen(position, margin) {
+    if (margin != null) {
+        if (position.x + margin > topCorner.x && position.x - margin < bottomCorner.x && position.y + margin > topCorner.y && position.y - margin < bottomCorner.y) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        if (position.x > topCorner.x && position.x < bottomCorner.x && position.y > topCorner.y && position.y < bottomCorner.y) {
+            return true;
+        } else {
+            return false;
         }
     }
 }
