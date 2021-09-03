@@ -8,6 +8,7 @@ let craftingStations; // A crafting station (anvil, furnace etc) and its sprite
 let selectableItems; // An item selectable at load which will serve as the central/top level item in the crafting tree
 
 let statusSelectingItem = true; // The item selection screen is displayed
+let statusSelectingLayout = false; // The layout selection screen is displayed
 let statusClickDisabled = false; // Disables opening a wiki page or panning around, to avoid accidental clicks on loading the tree
 let statusLoadingSprites = false; // Sprites are being loaded, and the "Loading sprites" screen is displayed
 let statusDisplayControls = false; // Keyboard controls are displayed in the top left corner
@@ -19,7 +20,6 @@ let selectedItem; // The chosen selectableItem, or the one hovered over while st
 let spritesTotal = 0; // Number of sprites to be loaded during a statusLoadingSprites
 let spritesLoaded = 0; // Sprites loaded so far, for tracking progress
 
-// let itemSpacing = 150; // Distance between concentric rings of items
 let openSansBold; // Font file used for UI text
 
 let cameraPan = new p5.Vector(0, 0); // Current position of the camera, relative to the centre of the crafting tree
@@ -34,6 +34,13 @@ let firstLoadTime = 0; // frameCount when first loading a tree, determines when 
 
 let topCorner = new p5.Vector(); // Top left corner of the screen, accounting for cameraPan and zoomLevel
 let bottomCorner = new p5.Vector(); // Bottom right corner of the screen, accounting for cameraPan and zoomLevel
+
+let layoutImages = {}; // Images to serve as buttons on the layout selection screen
+let layoutImageList = ["treeTop", "treeLeft", "treeBottom", "treeRight", "radial", "disabled"]; // Each layoutImage that needs to be loaded
+let selectedLayout = ""; // The selected crafting tree layout - tree or radial
+let treeBranchSpacing = 75; // Distance between branches when using tree layout
+let treeBranchLength; // Length of each level of branches when using tree layout
+let treeBranchWidth = 5; // Width of the lines connecting items when using tree layout
 
 function preload() {
     inGameItemsData = loadJSON("in-game-items.json");
@@ -56,17 +63,20 @@ function setup() {
     craftingStations = craftingTreeItemsData.craftingStations;
     selectableItems = craftingTreeItemsData.selectableItems;
     statusLoadingSprites = true;
-    spritesTotal = selectableItems.length + craftingStations.length;
+    spritesTotal = selectableItems.length + craftingStations.length + layoutImageList.length;
     for (let i = 0; i < selectableItems.length; i ++) {
         for (inGameItem of inGameItems) {
             if (inGameItem.name == selectableItems[i].name) {
                 selectableItems[i].inGameItem = inGameItem;
             }
         }
-        selectableItems[i].sprite = loadImage("images/" + selectableItems[i].name + ".png", incrementspritesLoaded);
+        selectableItems[i].sprite = loadImage("images/" + selectableItems[i].name + ".png", incrementSpritesLoaded);
     }
     for (let i = 0; i < craftingStations.length; i ++) {
-        craftingStations[i].sprite = loadImage("images/" + craftingStations[i].name + ".png", incrementspritesLoaded);
+        craftingStations[i].sprite = loadImage("images/" + craftingStations[i].name + ".png", incrementSpritesLoaded);
+    }
+    for (let i = 0; i < layoutImageList.length; i ++) {
+        layoutImages[layoutImageList[i]] = loadImage("images/layouts/" + layoutImageList[i] + ".png", incrementSpritesLoaded);
     }
 }
 
@@ -113,7 +123,9 @@ function draw() {
                 }
             }
         }
-        selectedItem = null;
+        if (!statusSelectingLayout) {
+            selectedItem = null;
+        }
         for (selectableItem of selectableItems) {
             let scaleFactor;
             if (selectableItem.sprite.height > selectableItem.sprite.width) {
@@ -125,13 +137,74 @@ function draw() {
             selectableItem.scaledWidth = selectableItem.sprite.width * scaleFactor;
             image(selectableItem.sprite, selectableItem.position.x - selectableItem.scaledWidth * 0.5, selectableItem.position.y - selectableItem.scaledHeight * 0.5,
                   selectableItem.scaledWidth, selectableItem.scaledHeight);
-            if (dist(mousePos.x, mousePos.y, selectableItem.position.x, selectableItem.position.y) < 45) {
-                selectedItem = selectableItem;
+            if (!statusSelectingLayout) {
+                if (dist(mousePos.x, mousePos.y, selectableItem.position.x, selectableItem.position.y) < 45) {
+                  selectedItem = selectableItem;
+                }
             }
         }
 
         cursor(ARROW);
-        if (selectedItem != null) {
+        // Display layout selection screen
+        if (statusSelectingLayout) {
+            fill(200, 200, 200, 70);
+            circle(0, 0, 30000);
+            fill(255);
+            rect(-400, -175, 800, 350);
+            fill(0);
+            text("Choose a crafting tree layout", 0, -100);
+            image(layoutImages["treeTop"], -360, -60, 120, 120);
+            image(layoutImages["treeLeft"], -210, -60, 120, 120);
+            image(layoutImages["treeBottom"], -60, -60, 120, 120);
+            image(layoutImages["treeRight"], 90, -60, 120, 120);
+            if (selectedItem.radial) {
+                image(layoutImages["radial"], 240, -60, 120, 120);
+            } else {
+                image(layoutImages["disabled"], 240, -60, 120, 120);
+            }
+            textSize(27);
+            fill(0);
+            if (mousePos.y < 50 && mousePos.y > -50) {
+                cursor("pointer");
+                if (mousePos.x < -250 && mousePos.x > -350) {
+                    selectedLayout = "treeTop";
+                    text("Tree with the final product at the top", 0, 120);
+                } else if (mousePos.x < -100 && mousePos.x > -200) {
+                    selectedLayout = "treeLeft";
+                    text("Tree with the final product on the left", 0, 120);
+                } else if (mousePos.x < 50 && mousePos.x > -50) {
+                    selectedLayout = "treeBottom";
+                    text("Tree with the final product at the bottom", 0, 120);
+                } else if (mousePos.x < 200 && mousePos.x > 100) {
+                    selectedLayout = "treeRight";
+                    text("Tree with the final product on the right", 0, 120);
+                } else if (mousePos.x < 350 && mousePos.x > 250) {
+                    if (selectedItem.radial) {
+                        selectedLayout = "radial";
+                        text("Radial tree with the final product in the centre", 0, 120);
+                    } else {
+                        selectedLayout = "disabled";
+                        fill(150);
+                        text("This crafting tree is too crowded for the radial layout", 0, 120);
+                    }
+                } else {
+                    cursor(ARROW);
+                    selectedLayout = "";
+                }
+            }
+            if (mouseIsPressed && !statusClickDisabled) {
+                if (mousePos.x > 400 || mousePos.x < -400 || mousePos.y > 175 || mousePos.y < -175) {
+                    statusSelectingLayout = false;
+                    statusClickDisabled = true;
+                } else if (selectedLayout != "" && selectedLayout != "disabled") {
+                    statusClickDisabled = true;
+                    statusSelectingItem = false;
+                    statusSelectingLayout = false;
+                    cursor(ARROW);
+                    loadCraftingTree();
+                }
+            }
+        } else if (selectedItem != null) {
             cursor("pointer");
             fill(255);
             circle(selectedItem.position.x, selectedItem.position.y, 120)
@@ -150,18 +223,30 @@ function draw() {
             text(selectedItem.displayName, selectedItem.position.x, selectedItem.position.y + selectedItem.scaledHeight * 0.25 + 100);
             textSize(20);
             text(selectedItem.modName, selectedItem.position.x, selectedItem.position.y + selectedItem.scaledHeight * 0.25 + 130);
-            if (mouseIsPressed) {
+            if (mouseIsPressed && !statusClickDisabled) {
+                statusSelectingLayout = true;
                 statusClickDisabled = true;
-                statusSelectingItem = false;
                 cursor(ARROW);
-                loadCraftingTree();
             }
         }
     // Display crafting tree
     } else {
-        for (item of treeItems) {
-            item.display(mousePos);
-            item.update(treeItems);
+        if (selectedLayout == "radial") {
+            for (item of treeItems) {
+                item.update(mousePos, selectedLayout);
+                item.displayItemRadial();
+                if (item.parent != null) {
+                    item.displayArrowRadial(mousePos);
+                }
+            }
+        } else {
+            for (item of treeItems) {
+                item.update(mousePos, selectedLayout);
+                item.displayLinesTree(zoomLevel, treeBranchWidth);
+            }
+            for (item of treeItems) {
+                item.displayItemTree(zoomLevel);
+            }
         }
 
         statusHoveringOverItem = false;
@@ -169,7 +254,7 @@ function draw() {
         for (item of treeItems) {
             if (item.hoveredOver) {
                 statusHoveringOverItem = true;
-                item.displayHoverInformation(craftingStations);
+                item.displayHover(craftingStations);
             }
         }
     }
@@ -215,11 +300,15 @@ function windowResized() {
 
 function keyPressed() {
     if (keyCode == ESCAPE) {
-        statusDragging = false;
-        statusDisplayControls = false;
-        statusHoveringOverItem = false;
-        cameraPan.set(0, 0);
-        statusSelectingItem = true;
+        if (statusSelectingLayout) {
+            statusSelectingLayout = false;
+        } else {
+            statusDragging = false;
+            statusDisplayControls = false;
+            statusHoveringOverItem = false;
+            cameraPan.set(0, 0);
+            statusSelectingItem = true;
+        }
     } else if (keyCode == UP_ARROW) {
         if (!statusLoadingSprites && !statusSelectingItem) {
             zoomLevel = max(zoomLevel * 0.9 * 0.9, 0.4);
@@ -295,6 +384,7 @@ function loadItemRecursive(treeItem, parentItem) {
             newItemPosition.add(parentItem.position);
             // let tempSpacing = [300, 600, 800, 950, 1100, 1250, 1400, 1550];
             newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, selectedItem.itemSpacing);
+            // TEMP: ig
             // newItem = new Item(newItemPosition.x, newItemPosition.y, inGameItems[ingredient[0]], ingredient[1], parentItem, tempSpacing);
             treeItems.push(newItem);
             loadItemRecursive(inGameItems[ingredient[0]], newItem);
@@ -320,9 +410,9 @@ function loadSprites() {
             if (treeItems[i].inGameItem.sprite == null) {
                 let newImage;
                 if (treeItems[i].inGameItem.name.substring(0, 4) == "any-") {
-                    newImage = loadImage("images/any.png", incrementspritesLoaded);
+                    newImage = loadImage("images/any.png", incrementSpritesLoaded);
                 } else {
-                    newImage = loadImage("images/" + treeItems[i].inGameItem.name + ".png", incrementspritesLoaded);
+                    newImage = loadImage("images/" + treeItems[i].inGameItem.name + ".png", incrementSpritesLoaded);
                 }
                 treeItems[i].inGameItem.sprite = newImage;
                 inGameItems[treeItems[i].inGameItem.id].sprite = newImage;
@@ -333,7 +423,7 @@ function loadSprites() {
     }
 }
 
-function incrementspritesLoaded(image) {
+function incrementSpritesLoaded(image) {
     spritesLoaded ++;
     if (spritesLoaded >= spritesTotal) {
         statusLoadingSprites = false;
@@ -343,8 +433,12 @@ function incrementspritesLoaded(image) {
 function loadCraftingTree() {
     treeItems = [];
 
-    itemSpacing = selectedItem.itemSpacing;
-    firstItem = new Item(0, 0, selectedItem.inGameItem, 1, null, itemSpacing);
+    if (selectedLayout == "radial") {
+        itemSpacing = selectedItem.itemSpacing;
+        firstItem = new Item(0, 0, selectedItem.inGameItem, 1, null, itemSpacing);
+    } else {
+        firstItem = new Item(0, 0, selectedItem.inGameItem, 1); // TODO: Does this need a null at the end?
+    }
     treeItems.push(firstItem);
     loadItemRecursive(selectedItem.inGameItem, firstItem);
 
@@ -354,8 +448,14 @@ function loadCraftingTree() {
         countChildrenRecursive(treeItem, treeItem.inGameItem, inGameItems);
     }
 
-    for (treeItem of treeItems) {
-        placeChildrenRadially(treeItem, treeItems[0], treeItems);
+    if (selectedLayout.substring(0, 4) == "tree") {
+        for (treeItem of treeItems) {
+            placeChildrenTree(treeItem, treeItems);
+        }
+    } else {
+        for (treeItem of treeItems) {
+            placeChildrenRadially(treeItem, treeItems[0], treeItems);
+        }
     }
 
     zoomLevel = 1.2;
@@ -414,18 +514,37 @@ function placeChildrenRadially(parentItem, originItem, treeItems) {
     }
 }
 
-function onScreen(position, margin) {
-    if (margin != null) {
-        if (position.x + margin > topCorner.x && position.x - margin < bottomCorner.x && position.y + margin > topCorner.y && position.y - margin < bottomCorner.y) {
-            return true;
-        } else {
-            return false;
+function placeChildrenTree(parentItem, treeItems) {
+    if (parentItem.parent == null) {
+        parentItem.branchLength = min(250 + parentItem.children * 2, 600);
+    }
+    let childList = [];
+    for (item of treeItems) {
+        if (item.parent == parentItem) {
+            append(childList, item);
         }
-    } else {
-        if (position.x > topCorner.x && position.x < bottomCorner.x && position.y > topCorner.y && position.y < bottomCorner.y) {
-            return true;
-        } else {
-            return false;
+    }
+    let runningTotal = 0;
+    for (let i = 0; i < childList.length; i ++) {
+        let prevTotal = runningTotal;
+        runningTotal += childList[i].children * treeBranchSpacing;
+        childList[i].branchLength = max(parentItem.branchLength - 100, 120);
+        if (selectedLayout == "treeTop") {
+            childList[i].position.y = parentItem.position.y + childList[i].branchLength;
+            childList[i].position.x = (runningTotal + prevTotal) / 2 + parentItem.position.x - (treeBranchSpacing * parentItem.children) / 2;
+        } else if (selectedLayout == "treeLeft") {
+            childList[i].position.x = parentItem.position.x + childList[i].branchLength;
+            childList[i].position.y = (runningTotal + prevTotal) / 2 + parentItem.position.y - (treeBranchSpacing * parentItem.children) / 2;
+        } else if (selectedLayout == "treeBottom") {
+            childList[i].position.y = parentItem.position.y - childList[i].branchLength;
+            childList[i].position.x = (runningTotal + prevTotal) / 2 + parentItem.position.x - (treeBranchSpacing * parentItem.children) / 2;
+        } else if (selectedLayout == "treeRight") {
+            childList[i].position.x = parentItem.position.x - childList[i].branchLength;
+            childList[i].position.y = (runningTotal + prevTotal) / 2 + parentItem.position.y - (treeBranchSpacing * parentItem.children) / 2;
         }
+    }
+    if (childList.length > 1) {
+        parentItem.trunkTopOffset = childList[0].children * treeBranchSpacing / 2;
+        parentItem.trunkBottomOffset = childList[childList.length - 1].children * treeBranchSpacing / 2;
     }
 }

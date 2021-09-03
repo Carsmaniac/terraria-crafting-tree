@@ -158,211 +158,246 @@
             "name": "ankh-shield",
             "displayName": "Ankh Shield",
             "modName": "Terraria",
-            "itemSpacing": [150, 300, 450]
+            "itemSpacing": [150, 300, 450],
+            "radial": true
         },
         {
             "name": "cell-phone",
             "displayName": "Cell Phone",
             "modName": "Terraria",
-            "itemSpacing": [150, 300, 450, 500, 600, 750, 850, 1000]
+            "itemSpacing": [150, 300, 450, 500, 600, 750, 850, 1000],
+            "radial": true
         },
         {
             "name": "terraspark-boots",
             "displayName": "Terraspark Boots",
             "modName": "Terraria",
-            "itemSpacing": [150, 300, 450, 580, 670]
+            "itemSpacing": [150, 300, 450, 580, 670],
+            "radial": true
         },
         {
             "name": "zenith",
             "displayName": "Zenith",
             "modName": "Terraria",
-            "itemSpacing": [380, 575, 760, 960, 1160, 1340, 1520]
+            "itemSpacing": [380, 575, 760, 960, 1160, 1340, 1520],
+            "radial": true
         },
         {
             "name": "soul-of-the-universe",
             "displayName": "Soul of Eternity (no mod add-ons)",
             "modName": "Fargo's Soul Mod",
-            "itemSpacing": 250
+            "itemSpacing": 250,
+            "radial": false
         },
         {
             "name": "soul-of-the-universe-mod-addons",
             "displayName": "Soul of Eternity (all mod add-ons)",
             "modName": "Fargo's Soul Mod",
-            "itemSpacing": 250
+            "itemSpacing": 250,
+            "radial": false
         },
         {
             "name": "auric-tesla-armor",
             "displayName": "Auric Tesla Armour",
             "modName": "Calamity",
-            "itemSpacing": [485, 645, 805, 965]
+            "itemSpacing": [485, 645, 805, 965],
+            "radial": true
         },
         {
             "name": "ark-of-the-cosmos",
             "displayName": "Ark of the Cosmos",
             "modName": "Calamity",
-            "itemSpacing": [450, 800, 1070, 1250, 1450, 1600, 1750, 1900]
+            "itemSpacing": [450, 800, 1070, 1250, 1450, 1600, 1750, 1900],
+            "radial": true
         },
         {
             "name": "celestial-tracers",
             "displayName": "Celestial Tracers",
             "modName": "Calamity",
-            "itemSpacing": [300, 600, 800, 950, 1100, 1250, 1400, 1550]
+            "itemSpacing": [300, 600, 800, 950, 1100, 1250, 1400, 1550],
+            "radial": true
         },
         {
             "name": "celestus",
             "displayName": "Celestus",
             "modName": "Calamity",
-            "itemSpacing": [530, 1070, 1270, 1420, 1570, 1720]
+            "itemSpacing": [530, 1070, 1270, 1420, 1570, 1720],
+            "radial": true
         },
         {
             "name": "cosmic-immaterializer",
             "displayName": "Cosmic Immaterializer",
             "modName": "Calamity",
-            "itemSpacing": [400, 600, 800, 970]
+            "itemSpacing": [400, 600, 800, 970],
+            "radial": true
         },
         {
             "name": "devils-devastation",
             "displayName": "Devil's Devastation",
             "modName": "Calamity",
-            "itemSpacing": [300, 550, 800, 900]
+            "itemSpacing": [300, 550, 800, 900],
+            "radial": true
         },
         {
             "name": "drataliornus",
             "displayName": "Drataliornus",
             "modName": "Calamity",
-            "itemSpacing": [900, 1300, 1500, 1700, 1850, 2000, 2150, 2300]
+            "itemSpacing": [900, 1300, 1500, 1700, 1850, 2000, 2150, 2300],
+            "radial": false
         },
         {
             "name": "eclipse-mirror",
             "displayName": "Eclipse Mirror",
             "modName": "Calamity",
-            "itemSpacing": [200, 400, 600, 750, 900, 1050]
+            "itemSpacing": [200, 400, 600, 750, 900, 1050],
+            "radial": true
         },
         {
             "name": "eternity",
             "displayName": "Eternity",
             "modName": "Calamity",
-            "itemSpacing": [550, 900, 1100, 1300, 1500, 1650]
+            "itemSpacing": [550, 900, 1100, 1300, 1500, 1650],
+            "radial": false
         },
         {
             "name": "ethereal-talisman",
             "displayName": "Ethereal Talisman",
             "modName": "Calamity",
-            "itemSpacing": [200, 400, 550, 700, 850, 1000, 1150]
+            "itemSpacing": [200, 400, 550, 700, 850, 1000, 1150],
+            "radial": true
         },
         {
             "name": "exo-gladius",
             "displayName": "Exo Gladius",
             "modName": "Calamity",
-            "itemSpacing": [250, 550, 750, 950, 1100, 1250, 1400, 1550]
+            "itemSpacing": [250, 550, 750, 950, 1100, 1250, 1400, 1550],
+            "radial": true
         },
         {
             "name": "exoblade",
             "displayName": "Exoblade",
             "modName": "Calamity",
-            "itemSpacing": [350, 600, 800, 950, 1100, 1250, 1400, 1550, 1700]
+            "itemSpacing": [350, 600, 800, 950, 1100, 1250, 1400, 1550, 1700],
+            "radial": true
         },
         {
             "name": "magnomaly-cannon",
             "displayName": "Magnomaly Cannon",
             "modName": "Calamity",
-            "itemSpacing": [500, 700, 900, 1050, 1200, 1350]
+            "itemSpacing": [500, 700, 900, 1050, 1200, 1350],
+            "radial": true
         },
         {
             "name": "nanotech",
             "displayName": "Nanotech",
             "modName": "Calamity",
-            "itemSpacing": [200, 400, 550, 700, 850, 1000]
+            "itemSpacing": [200, 400, 550, 700, 850, 1000],
+            "radial": true
         },
         {
             "name": "nucleogenesis",
             "displayName": "Nucleogenesis",
             "modName": "Calamity",
-            "itemSpacing": [175, 350, 500, 650, 800, 950, 1100]
+            "itemSpacing": [175, 350, 500, 650, 800, 950, 1100],
+            "radial": true
         },
         {
             "name": "photoviscerator",
             "displayName": "Photoviscerator",
             "modName": "Calamity",
-            "itemSpacing": [300, 600, 750, 900, 1050, 1200]
+            "itemSpacing": [300, 600, 750, 900, 1050, 1200],
+            "radial": true
         },
         {
             "name": "rampart-of-deities",
             "displayName": "Rampart of Deities",
             "modName": "Calamity",
-            "itemSpacing": [175, 320, 465]
+            "itemSpacing": [175, 320, 465],
+            "radial": true
         },
         {
             "name": "the-sponge",
             "displayName": "The Sponge",
             "modName": "Calamity",
-            "itemSpacing": [215, 410, 600, 750, 900, 1050]
+            "itemSpacing": [215, 410, 600, 750, 900, 1050],
+            "radial": true
         },
         {
             "name": "supernova",
             "displayName": "Supernova",
             "modName": "Calamity",
-            "itemSpacing": [500, 750, 950, 1100, 1250, 1400, 1550, 1700]
+            "itemSpacing": [500, 750, 950, 1100, 1250, 1400, 1550, 1700],
+            "radial": true
         },
         {
             "name": "vivid-clarity",
             "displayName": "Vivid Clarity",
             "modName": "Calamity",
-            "itemSpacing": [500, 850, 1050, 1200, 1400, 1550]
+            "itemSpacing": [500, 850, 1050, 1200, 1400, 1550],
+            "radial": true
         },
         {
             "name": "celestial-edge-pandolarra",
             "displayName": "Celestial Edge Pandolarra",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": [300, 550, 700, 850, 1000, 1150, 1300, 1450]
+            "itemSpacing": [300, 550, 700, 850, 1000, 1150, 1300, 1450],
+            "radial": true
         },
         {
             "name": "cosmic-desolation",
             "displayName": "Cosmic Desolation",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": [300, 500, 700, 900, 1150, 1300]
+            "itemSpacing": [300, 500, 700, 900, 1150, 1300],
+            "radial": true
         },
         {
             "name": "the-leviathan-iii",
             "displayName": "The Leviathan III",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": [300, 600, 800, 950, 1100, 1250]
+            "itemSpacing": [300, 600, 800, 950, 1100, 1250],
+            "radial": true
         },
         {
             "name": "memento-mori",
             "displayName": "Memento Mori",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": [180, 350]
+            "itemSpacing": [180, 350],
+            "radial": true
         },
         {
             "name": "moon-edged-cold-front",
             "displayName": "Moon Edged Cold Front",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": [300, 550, 750, 900]
+            "itemSpacing": [300, 550, 750, 900],
+            "radial": true
         },
         {
             "name": "shield-of-reflections",
             "displayName": "Shield of Reflections",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": [200, 350, 500, 650, 800]
+            "itemSpacing": [200, 350, 500, 650, 800],
+            "radial": true
         },
         {
             "name": "warp-tracers",
             "displayName": "Warp Tracers",
             "modName": "Shadows of Abaddon",
-            "itemSpacing": [250, 400, 550, 700]
+            "itemSpacing": [250, 400, 550, 700],
+            "radial": true
         },
         {
             "name": "terrarium-defender",
             "displayName": "Terrarium Defender",
             "modName": "Thorium",
-            "itemSpacing": [200, 350, 500, 650]
+            "itemSpacing": [200, 350, 500, 650],
+            "radial": true
         },
         {
             "name": "terrarium-particle-sprinters",
             "displayName": "Terrarium Particle Sprinters",
             "modName": "Thorium",
-            "itemSpacing": [200, 350, 500, 650, 800, 950]
+            "itemSpacing": [200, 350, 500, 650, 800, 950],
+            "radial": true
         }
     ]
 }
