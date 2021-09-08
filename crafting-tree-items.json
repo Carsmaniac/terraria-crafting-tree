@@ -151,6 +151,10 @@
         {
             "name": "crystal-ball-and-water",
             "displayName": "Crystal Ball and Water/Sink"
+        },
+        {
+            "name": "static-refiner",
+            "displayName": "Static Refiner"
         }
 	],
     "selectableItems": [
@@ -183,16 +187,16 @@
             "radial": true
         },
         {
-            "name": "soul-of-the-universe",
-            "displayName": "Soul of Eternity (no mod add-ons)",
+            "name": "soul-of-eternity",
+            "displayName": "Soul of Eternity",
             "modName": "Fargo's Soul Mod",
             "itemSpacing": 250,
             "radial": false
         },
         {
-            "name": "soul-of-the-universe-mod-addons",
-            "displayName": "Soul of Eternity (all mod add-ons)",
-            "modName": "Fargo's Soul Mod",
+            "name": "soul-of-eternity-mod-addons",
+            "displayName": "Soul of Eternity (with mod add-ons)",
+            "modName": "Fargo's Soul Mod, Calamity, Thorium and Souls of Abaddon",
             "itemSpacing": 250,
             "radial": false
         },

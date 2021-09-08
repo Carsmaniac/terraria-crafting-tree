@@ -206,6 +206,8 @@ function draw() {
             }
         } else if (selectedItem != null) {
             cursor("pointer");
+            fill(200, 200, 200, 50);
+            circle(0, 0, 30000);
             fill(255);
             circle(selectedItem.position.x, selectedItem.position.y, 120)
             image(selectedItem.sprite, selectedItem.position.x - selectedItem.scaledWidth * 0.75, selectedItem.position.y - selectedItem.scaledHeight * 0.75,
