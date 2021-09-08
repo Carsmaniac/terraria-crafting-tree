@@ -267,9 +267,9 @@ function draw() {
         textSize(25 * zoomLevel);
         textAlign(LEFT);
         fill(255, 255, 255, textOpacity);
-        text("Press enter to toggle controls", (-width / 2 + 10) * zoomLevel + cameraPan.x + 2, (-height / 2 + 30) * zoomLevel + cameraPan.y + 2);
+        text("Press enter to toggle controls", (-width / 2 + 12) * zoomLevel + cameraPan.x, (-height / 2 + 67) * zoomLevel + cameraPan.y);
         fill(0, 0, 0, textOpacity);
-        text("Press enter to toggle controls", (-width / 2 + 10) * zoomLevel + cameraPan.x, (-height / 2 + 30) * zoomLevel + cameraPan.y);
+        text("Press enter to toggle controls", (-width / 2 + 10) * zoomLevel + cameraPan.x, (-height / 2 + 65) * zoomLevel + cameraPan.y);
         textAlign(CENTER);
     }
 
@@ -279,17 +279,39 @@ function draw() {
         textSize(20 * zoomLevel);
         textAlign(LEFT);
         fill(255);
-        text("Click and drag to pan around", textPosition.x + 2, textPosition.y + 25 * zoomLevel + 2);
-        text("Scroll or use arrow keys to zoom in and out", textPosition.x + 2, textPosition.y + 52 * zoomLevel + 2);
-        text("ESC to choose a different item", textPosition.x + 2, textPosition.y + 79 * zoomLevel + 2);
-        text("Click on an item to open its wiki page", textPosition.x + 2, textPosition.y + 106 * zoomLevel + 2);
-        text("Enter to close controls", textPosition.x + 2, textPosition.y + 133 * zoomLevel + 2);
+        text("Click and drag to pan around", textPosition.x + 2 * zoomLevel, textPosition.y + 27 * zoomLevel);
+        text("Scroll or use arrow keys to zoom in and out", textPosition.x + 2 * zoomLevel, textPosition.y + 54 * zoomLevel);
+        text("ESC to choose a different item", textPosition.x + 2 * zoomLevel, textPosition.y + 81 * zoomLevel);
+        text("Click on an item to open its wiki page", textPosition.x + 2 * zoomLevel, textPosition.y + 108 * zoomLevel);
+        text("Enter to close controls", textPosition.x + 2 * zoomLevel, textPosition.y + 135 * zoomLevel);
         fill(0);
         text("Click and drag to pan around", textPosition.x, textPosition.y + 25 * zoomLevel);
         text("Scroll or use arrow keys to zoom in and out", textPosition.x, textPosition.y + 52 * zoomLevel);
         text("ESC to choose a different item", textPosition.x, textPosition.y + 79 * zoomLevel);
         text("Click on an item to open its wiki page", textPosition.x, textPosition.y + 106 * zoomLevel);
         text("Enter to close controls", textPosition.x, textPosition.y + 133 * zoomLevel);
+        textAlign(CENTER);
+    }
+
+    // Display back button
+    if (!statusSelectingItem && !statusLoadingSprites && !statusDisplayControls) {
+        if (mousePos.x < (-width / 2 + 112) * zoomLevel + cameraPan.x && mousePos.y < (-height / 2 + 42) * zoomLevel + cameraPan.y) {
+            fill(255);
+            rect((-width / 2) * zoomLevel + cameraPan.x, (-height / 2) * zoomLevel + cameraPan.y, 112 * zoomLevel, 42 * zoomLevel);
+            if (mouseIsPressed) {
+                statusDragging = false;
+                statusDisplayControls = false;
+                statusHoveringOverItem = false;
+                cameraPan.set(0, 0);
+                statusSelectingItem = true;
+            }
+        }
+        textSize(25 * zoomLevel);
+        textAlign(LEFT);
+        fill(255, 255, 255);
+        text("< Back", (-width / 2 + 12) * zoomLevel + cameraPan.x, (-height / 2 + 32) * zoomLevel + cameraPan.y);
+        fill(0, 0, 0);
+        text("< Back", (-width / 2 + 10) * zoomLevel + cameraPan.x, (-height / 2 + 30) * zoomLevel + cameraPan.y);
         textAlign(CENTER);
     }
 }
@@ -328,7 +350,7 @@ function keyPressed() {
 }
 
 function mousePressed() {
-    if (!statusDragging && !statusHoveringOverItem && !statusLoadingSprites && !statusSelectingItem) {
+    if (!statusDragging && !statusHoveringOverItem && !statusLoadingSprites && !statusSelectingItem && !statusClickDisabled) {
         dragStart.set(mouseX, mouseY);
         panStart.set(cameraPan);
         statusDragging = true;
@@ -429,6 +451,9 @@ function incrementSpritesLoaded(image) {
     spritesLoaded ++;
     if (spritesLoaded >= spritesTotal) {
         statusLoadingSprites = false;
+        if (!statusSelectingItem && firstLoadTime == 0) {
+            firstLoadTime = frameCount;
+        }
     }
 }
 
@@ -462,10 +487,6 @@ function loadCraftingTree() {
 
     zoomLevel = 1.2;
     cameraPan.set(0, 0);
-
-    if (firstLoadTime == 0) {
-        firstLoadTime = frameCount;
-    }
 }
 
 function countChildrenRecursive(treeItem, inGameItem, inGameItems) {

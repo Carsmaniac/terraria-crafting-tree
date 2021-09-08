@@ -212,7 +212,7 @@ class Item {
         if (this.position.x + (this.scaledWidth / 2) + 7.5 > topCorner.x && this.position.x - (this.scaledWidth / 2) - 7.5 < bottomCorner.x && this.position.y + (this.scaledHeight / 2) + 7.5 > topCorner.y && this.position.y - (this.scaledHeight / 2) - 7.5 < bottomCorner.y) {
             fill(240);
             rect(this.position.x - (this.scaledWidth / 2) - 7.5, this.position.y - (this.scaledHeight / 2) - 7.5, this.scaledWidth + 15, this.scaledHeight + 15);
-            if (zoomLevel > 4) {
+            if (zoomLevel > 4.5) {
                 fill(200);
                 ellipse(this.position.x, this.position.y, 30);
             } else {
