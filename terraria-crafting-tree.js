@@ -298,7 +298,7 @@ function draw() {
         if (mousePos.x < (-width / 2 + 112) * zoomLevel + cameraPan.x && mousePos.y < (-height / 2 + 42) * zoomLevel + cameraPan.y) {
             fill(255);
             rect((-width / 2) * zoomLevel + cameraPan.x, (-height / 2) * zoomLevel + cameraPan.y, 112 * zoomLevel, 42 * zoomLevel);
-            if (mouseIsPressed) {
+            if (mouseIsPressed && !statusDragging) {
                 statusDragging = false;
                 statusDisplayControls = false;
                 statusHoveringOverItem = false;
@@ -351,9 +351,12 @@ function keyPressed() {
 
 function mousePressed() {
     if (!statusDragging && !statusHoveringOverItem && !statusLoadingSprites && !statusSelectingItem && !statusClickDisabled) {
-        dragStart.set(mouseX, mouseY);
-        panStart.set(cameraPan);
-        statusDragging = true;
+        // Make sure the mouse isn't over the back button
+        if (!((mousePos.x < (-width / 2 + 112) * zoomLevel + cameraPan.x && mousePos.y < (-height / 2 + 42) * zoomLevel + cameraPan.y))) {
+            dragStart.set(mouseX, mouseY);
+            panStart.set(cameraPan);
+            statusDragging = true;
+        }
     }
 }
 
