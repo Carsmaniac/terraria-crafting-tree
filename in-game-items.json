@@ -147,7 +147,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[11, 1],[15, 1],[539, 1],[2124, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Earth",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Adamantite_Enchantment"
 		},
 		{
@@ -627,7 +627,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[61, 1],[1756, 1],[1765, 1],[1764, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Shadow",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Ancient_Shadow_Enchantment"
 		},
 		{
@@ -2287,7 +2287,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[225, 1],[1061, 1],[229, 1],[1070, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Life",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Bee_Enchantment"
 		},
 		{
@@ -2357,7 +2357,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[233, 1],[238, 1],[232, 1],[366, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Life",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Beetle_Enchantment"
 		},
 		{
@@ -2867,7 +2867,7 @@
 			"craftingStation": "",
 			"ingredients": [],
 			"quantityMade": 1,
-			"acquisition": "Dropped by corrupt and crimson slimes and mummies",
+			"acquisition": "Dropped by Corrupt/Crimson Slimes and Mummies",
 			"wikiLink": "https://terraria.fandom.com/wiki/Blindfold"
 		},
 		{
@@ -3357,7 +3357,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[334, 1],[1844, 300],[1782, 1],[460, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Timber",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Boreal_Wood_Enchantment"
 		},
 		{
@@ -4207,7 +4207,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[415, 1],[1148, 1],[427, 1],[419, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Nature",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Chlorophyte_Enchantment"
 		},
 		{
@@ -4487,7 +4487,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[446, 1],[56, 1],[542, 1],[543, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Earth",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Cobalt_Enchantment"
 		},
 		{
@@ -4797,7 +4797,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[477, 1],[483, 1],[47, 1],[802, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Earth",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Copper_Enchantment"
 		},
 		{
@@ -5177,7 +5177,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[515, 1],[2084, 1],[2077, 1],[519, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Nature",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Crimson_Enchantment"
 		},
 		{
@@ -5617,7 +5617,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[560, 1],[136, 1],[814, 1],[1119, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Shadow",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Dark_Artist_Enchantment"
 		},
 		{
@@ -6857,7 +6857,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[684, 1],[686, 1],[2243, 1],[1217, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Timber",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Ebonwood_Enchantment"
 		},
 		{
@@ -8567,7 +8567,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[855, 1],[642, 1],[1914, 1],[1823, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Spirit",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Forbidden_Enchantment"
 		},
 		{
@@ -8907,7 +8907,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[889, 1],[1291, 1],[44, 1],[328, 300]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Spirit",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Fossil_Enchantment"
 		},
 		{
@@ -9027,7 +9027,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[898, 1],[1841, 1],[905, 1],[1087, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Nature",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Frost_Enchantment"
 		},
 		{
@@ -9447,7 +9447,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[943, 1],[1888, 1],[1136, 300],[324, 300]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Will",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Gladiator_Enchantment"
 		},
 		{
@@ -9637,7 +9637,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[958, 1],[962, 1],[992, 1],[968, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Will",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Gold_Enchantment"
 		},
 		{
@@ -10147,7 +10147,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1010, 1],[1814, 1],[1004, 1],[1631, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Spirit",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Hallowed_Enchantment"
 		},
 		{
@@ -11307,7 +11307,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[1125, 1],[721, 1],[1129, 1],[2341, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Terra",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Iron_Enchantment"
 		},
 		{
@@ -11807,7 +11807,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[1176, 1],[1182, 1],[988, 100],[1990, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Terra",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Lead_Enchantment"
 		},
 		{
@@ -13247,7 +13247,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1323, 1],[1882, 1],[1326, 1],[1533, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by Eridanus, Champion of Cosmos",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Meteor_Enchantment"
 		},
 		{
@@ -13437,7 +13437,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[1342, 1],[1998, 1],[1523, 1],[609, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Nature",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Molten_Enchantment"
 		},
 		{
@@ -13787,7 +13787,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1376, 1],[440, 1],[931, 1],[1463, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Earth",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Mythril_Enchantment"
 		},
 		{
@@ -13927,7 +13927,7 @@
 			"craftingStation": "ancient-manipulator",
 			"ingredients": [[1390, 1],[1389, 1],[1391, 1],[1250, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by Eridanus, Champion of Cosmos",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Nebula_Enchantment"
 		},
 		{
@@ -14007,7 +14007,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[1399, 1],[322, 1],[332, 1],[2067, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Shadow",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Necro_Enchantment"
 		},
 		{
@@ -14387,7 +14387,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[1437, 1],[1441, 1],[378, 1],[799, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Terra",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Obsidian_Enchantment"
 		},
 		{
@@ -14485,7 +14485,7 @@
 			"name": "obsidian-water-walking-boots",
 			"displayName": "Obsidian Water Walking Boots",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[2278, 1]],
+			"ingredients": [[2278, 1],[1444,1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian_Water_Walking_Boots"
@@ -14727,7 +14727,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1470, 1],[848, 1],[849, 1],[548, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Earth",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Orichalcum_Enchantment"
 		},
 		{
@@ -14857,7 +14857,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1483, 1],[1487, 1],[1206, 1],[2193, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Earth",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Palladium_Enchantment"
 		},
 		{
@@ -14927,7 +14927,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[1491, 1],[1493, 1],[348, 1],[2168, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Timber",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Palm_Wood_Enchantment"
 		},
 		{
@@ -15057,7 +15057,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1504, 1],[1506, 1],[2201, 1],[2070, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Timber",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Pearlwood_Enchantment"
 		},
 		{
@@ -15547,7 +15547,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[1547, 1],[1553, 1],[630, 1],[2295, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Will",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Platinum_Enchantment"
 		},
 		{
@@ -15897,7 +15897,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[1587, 1],[1340, 50],[1799, 1],[1591, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Life",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Pumpkin_Enchantment"
 		},
 		{
@@ -16277,7 +16277,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1625, 1],[2191, 1],[2190, 1],[1413, 1],[2277, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Nature",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo's_Mod/Rain_Enchantment"
 		},
 		{
@@ -16537,7 +16537,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1652, 1],[1076, 1],[1297, 1],[19, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Will",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Red_Riding_Enchantment"
 		},
 		{
@@ -16727,7 +16727,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[1671, 1],[1135, 1],[1360, 1],[643, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Timber",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Rich_Mahogany_Enchantment"
 		},
 		{
@@ -17797,7 +17797,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1416, 1],[1352, 1],[1581, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Shadow",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Shinobi_Infiltrator_Enchantment"
 		},
 		{
@@ -17977,7 +17977,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1792, 1],[1369, 1],[2205, 1],[2013, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Nature",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Shroomite_Enchantment"
 		},
 		{
@@ -18487,7 +18487,7 @@
 			"craftingStation": "ancient-manipulator",
 			"ingredients": [[1849, 1],[1047, 1],[582, 1],[1944, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by Eridanus, Champion of Cosmos",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Solar_Enchantment"
 		},
 		{
@@ -18967,7 +18967,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1892, 1],[2198, 1],[1898, 1],[222, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Spirit",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Spectre_Enchantment"
 		},
 		{
@@ -19057,7 +19057,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1904, 1],[1907, 1],[1620, 1],[2283, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Life",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Spider_Enchantment"
 		},
 		{
@@ -19197,7 +19197,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[1918, 1],[364, 1],[587, 1],[1637, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Shadow",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Spooky_Enchantment"
 		},
 		{
@@ -19507,7 +19507,7 @@
 			"craftingStation": "ancient-manipulator",
 			"ingredients": [[1947, 1],[1948, 1],[1949, 1],[1628, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by Eridanus, Champion of Cosmos",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Stardust_Enchantment"
 		},
 		{
@@ -21037,7 +21037,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[2102, 1],[313, 1],[1608, 1],[1531, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Spirit",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Tiki_Enchantment"
 		},
 		{
@@ -21097,7 +21097,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[2107, 1],[2131, 1],[583, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Terra",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Tin_Enchantment"
 		},
 		{
@@ -21737,7 +21737,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[2170, 1],[376, 1],[997, 1],[720, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Terra",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Tungsten_Enchantment"
 		},
 		{
@@ -21797,7 +21797,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[2178, 1],[369, 1],[423, 1],[2327, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Life",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Turtle_Enchantment"
 		},
 		{
@@ -22137,7 +22137,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[2212, 1],[2241, 1],[1931, 1],[854, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Will",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Valhalla_Knight_Enchantment"
 		},
 		{
@@ -22617,7 +22617,7 @@
 			"craftingStation": "ancient-manipulator",
 			"ingredients": [[2258, 1],[2259, 1],[1514, 1],[1722, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by Eridanus, Champion of Cosmos",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Vortex_Enchantment"
 		},
 		{
@@ -23037,7 +23037,7 @@
 			"craftingStation": "crystal-ball",
 			"ingredients": [[2304, 1],[1710, 1],[719, 1],[1693, 1],[629, 1],[1636, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Will",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Wizard_Enchantment"
 		},
 		{
@@ -23077,7 +23077,7 @@
 			"craftingStation": "altar",
 			"ingredients": [[2306, 1],[581, 1],[362, 1],[126, 1]],
 			"quantityMade": 1,
-			"acquisition": "",
+			"acquisition": "Dropped by the Champion of Timber",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Wood_Enchantment"
 		},
 		{
