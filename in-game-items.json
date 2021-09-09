@@ -14485,7 +14485,7 @@
 			"name": "obsidian-water-walking-boots",
 			"displayName": "Obsidian Water Walking Boots",
 			"craftingStation": "tinkerers-workshop",
-			"ingredients": [[2278, 1],[1444,1]],
+			"ingredients": [[2278, 1],[1444, 1]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terraria.fandom.com/wiki/Obsidian_Water_Walking_Boots"
@@ -18645,7 +18645,7 @@
 			"name": "soul-of-eternity-mod-addons",
 			"displayName": "Soul of Eternity",
 			"craftingStation": "crucible-of-the-cosmos",
-			"ingredients": [[1875, 1],[1862, 1],[1871, 1],[1872, 1],[1877, 1],[1876, 1],[740, 30]],
+			"ingredients": [[1875, 1],[1862, 1],[1871, 1],[1872, 1],[1877, 1],[1873, 1],[1876, 1],[740, 30]],
 			"quantityMade": 1,
 			"acquisition": "",
 			"wikiLink": "https://terrariamods.fandom.com/wiki/Fargo%27s_Mod/Soul_of_Eternity"
@@ -18732,7 +18732,7 @@
 		},
 		{
 			"id": 1873,
-			"name": "soul-of-the-tyrnat",
+			"name": "soul-of-the-tyrant",
 			"displayName": "Soul of the Tyrant",
 			"craftingStation": "crucible-of-the-cosmos",
 			"ingredients": [[861, 1],[863, 1],[864, 1],[866, 1],[1, 10]],
