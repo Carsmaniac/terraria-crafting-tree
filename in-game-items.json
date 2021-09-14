@@ -6293,7 +6293,7 @@
 		{
 			"id": 629,
 			"name": "diamond-robe",
-			"displayName": "Diamond Rob",
+			"displayName": "Diamond Robe",
 			"craftingStation": "loom",
 			"ingredients": [[1678, 1],[628, 10]],
 			"quantityMade": 1,
